@@ -1854,6 +1854,16 @@
         href: ~/docs-ref-services/{moniker}/mgmt-serialconsole-readme.md
         children:
         - azure-mgmt-serialconsole
+  - name: Server Management
+    href: ~/docs-ref-services/{moniker}/server-management.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Server Management (deprecated)
+        href: ~/docs-ref-services/{moniker}/mgmt-servermanager-readme.md
+        children:
+        - azure-mgmt-servermanager
   - name: Service Bus
     href: ~/docs-ref-services/{moniker}/service-bus.md
     landingPageType: Service
