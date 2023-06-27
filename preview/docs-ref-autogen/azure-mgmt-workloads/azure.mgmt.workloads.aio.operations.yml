@@ -12,4 +12,4 @@ classes:
 - azure.mgmt.workloads.aio.operations.SAPDatabaseInstancesOperations
 - azure.mgmt.workloads.aio.operations.SAPVirtualInstancesOperations
 - azure.mgmt.workloads.aio.operations.SapLandscapeMonitorOperations
-- azure.mgmt.workloads.aio.operations.WorkloadsClientOperationsMixin
+- azure.mgmt.workloads.aio.operations.WorkloadsMgmtClientOperationsMixin

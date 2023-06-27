@@ -1,0 +1,15 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.RouterJob
+name: RouterJob
+fullName: azure.communication.jobrouter.RouterJob
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterJob
+constructor:
+  syntax: 'RouterJob(*, channel_reference: str | None = None, channel_id: str | None
+    = None, classification_policy_id: str | None = None, queue_id: str | None = None,
+    priority: int | None = None, disposition_code: str | None = None, requested_worker_selectors:
+    List[_models.WorkerSelector] | None = None, labels: Dict[str, int | float | str
+    | bool | None] | None = None, tags: Dict[str, int | float | str | bool | None]
+    | None = None, notes: Dict[str | datetime, str] = None, matching_mode: _models.JobMatchingMode
+    | None = None, **kwargs)'

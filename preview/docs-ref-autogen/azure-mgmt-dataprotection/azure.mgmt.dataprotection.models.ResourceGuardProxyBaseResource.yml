@@ -5,13 +5,16 @@ fullName: azure.mgmt.dataprotection.models.ResourceGuardProxyBaseResource
 module: azure.mgmt.dataprotection.models
 inheritances:
 - azure.mgmt.dataprotection.models._models_py3.DppResource
-summary: 'ResourceGuardProxyBaseResource.
+summary: 'ResourceGuardProxyBaseResource object, used for response and request bodies
+  for
+
+  ResourceGuardProxy APIs.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'ResourceGuardProxyBaseResource(*, properties: _models.ResourceGuardProxyBase
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: properties
     description: ResourceGuardProxyBaseResource properties.

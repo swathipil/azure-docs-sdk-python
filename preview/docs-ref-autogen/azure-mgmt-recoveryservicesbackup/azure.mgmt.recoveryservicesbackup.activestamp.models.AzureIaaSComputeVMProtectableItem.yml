@@ -15,7 +15,7 @@ constructor:
     = None, workload_type: str | None = None, friendly_name: str | None = None, protection_state:
     str | _models.ProtectionStatus | None = None, virtual_machine_id: str | None =
     None, virtual_machine_version: str | None = None, resource_group: str | None =
-    None, **kwargs)'
+    None, **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: Type of backup management to backup an item.

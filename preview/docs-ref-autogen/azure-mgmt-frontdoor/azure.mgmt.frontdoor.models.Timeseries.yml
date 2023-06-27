@@ -15,7 +15,7 @@ constructor:
     str | None = None, aggregation_interval: str | _models.AggregationInterval | None
     = None, timeseries_type: str | _models.TimeseriesType | None = None, country:
     str | None = None, timeseries_data: List[_models.TimeseriesDataPoint] | None =
-    None, **kwargs)'
+    None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

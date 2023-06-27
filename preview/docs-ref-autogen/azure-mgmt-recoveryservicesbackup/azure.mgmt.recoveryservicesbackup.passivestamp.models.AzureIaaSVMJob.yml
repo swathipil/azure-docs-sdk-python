@@ -17,7 +17,7 @@ constructor:
     actions_info: List[str | _models.JobSupportedAction] | None = None, error_details:
     List[_models.AzureIaaSVMErrorInfo] | None = None, virtual_machine_version: str
     | None = None, extended_info: _models.AzureIaaSVMJobExtendedInfo | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: entity_friendly_name
     description: 'Friendly name of the entity on which the current job is

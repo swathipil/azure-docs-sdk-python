@@ -9,7 +9,7 @@ summary: NginxFrontendIPConfiguration.
 constructor:
   syntax: 'NginxFrontendIPConfiguration(*, public_ip_addresses: List[_models.NginxPublicIPAddress]
     | None = None, private_ip_addresses: List[_models.NginxPrivateIPAddress] | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: public_ip_addresses
     types:

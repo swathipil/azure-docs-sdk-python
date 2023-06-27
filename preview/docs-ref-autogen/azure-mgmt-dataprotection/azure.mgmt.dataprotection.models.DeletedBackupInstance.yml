@@ -16,7 +16,8 @@ constructor:
   syntax: 'DeletedBackupInstance(*, data_source_info: _models.Datasource, policy_info:
     _models.PolicyInfo, object_type: str, friendly_name: str | None = None, data_source_set_info:
     _models.DatasourceSet | None = None, datasource_auth_credentials: _models.AuthCredentials
-    | None = None, validation_type: str | _models.ValidationType | None = None, **kwargs)'
+    | None = None, validation_type: str | _models.ValidationType | None = None, **kwargs:
+    Any)'
   parameters:
   - name: friendly_name
     description: Gets or sets the Backup Instance friendly name.

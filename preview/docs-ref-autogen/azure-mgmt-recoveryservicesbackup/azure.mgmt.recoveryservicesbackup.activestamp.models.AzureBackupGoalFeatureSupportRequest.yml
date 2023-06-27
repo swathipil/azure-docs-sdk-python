@@ -10,7 +10,7 @@ summary: 'Azure backup goal feature specific request.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: AzureBackupGoalFeatureSupportRequest(**kwargs)
+  syntax: 'AzureBackupGoalFeatureSupportRequest(**kwargs: Any)'
 variables:
 - description: backup support feature type. Required.
   name: feature_type

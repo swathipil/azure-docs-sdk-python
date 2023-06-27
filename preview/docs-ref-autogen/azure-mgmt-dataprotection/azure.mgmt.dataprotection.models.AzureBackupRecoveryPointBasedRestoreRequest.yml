@@ -18,7 +18,7 @@ summary: 'Azure backup recoveryPoint based restore request.
 constructor:
   syntax: 'AzureBackupRecoveryPointBasedRestoreRequest(*, restore_target_info: _models.RestoreTargetInfoBase,
     source_data_store_type: str | _models.SourceDataStoreType, recovery_point_id:
-    str, source_resource_id: str | None = None, **kwargs)'
+    str, source_resource_id: str | None = None, **kwargs: Any)'
   parameters:
   - name: restore_target_info
     description: Gets or sets the restore target information. Required.
@@ -27,7 +27,7 @@ constructor:
   - name: source_data_store_type
     description: 'Gets or sets the type of the source data store. Required.
 
-      Known values are: "ArchiveStore", "SnapshotStore", and "VaultStore".'
+      Known values are: "ArchiveStore", "SnapshotStore", "OperationalStore", and "VaultStore".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.dataprotection.models.SourceDataStoreType>
@@ -52,7 +52,7 @@ variables:
   - <xref:azure.mgmt.dataprotection.models.RestoreTargetInfoBase>
 - description: 'Gets or sets the type of the source data store. Required. Known
 
-    values are: "ArchiveStore", "SnapshotStore", and "VaultStore".'
+    values are: "ArchiveStore", "SnapshotStore", "OperationalStore", and "VaultStore".'
   name: source_data_store_type
   types:
   - <xref:str>

@@ -8,7 +8,7 @@ inheritances:
 summary: BEK is bitlocker encryption key.
 constructor:
   syntax: 'BEKDetails(*, secret_url: str | None = None, secret_vault_id: str | None
-    = None, secret_data: str | None = None, **kwargs)'
+    = None, secret_data: str | None = None, **kwargs: Any)'
   parameters:
   - name: secret_url
     description: Secret is BEK.

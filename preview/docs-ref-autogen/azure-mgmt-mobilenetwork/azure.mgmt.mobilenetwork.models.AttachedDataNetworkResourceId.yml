@@ -4,7 +4,7 @@ name: AttachedDataNetworkResourceId
 fullName: azure.mgmt.mobilenetwork.models.AttachedDataNetworkResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to an attached data network resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'AttachedDataNetworkResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Attached data network resource ID.
+    description: Attached data network resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Attached data network resource ID.
+- description: Attached data network resource ID. Required.
   name: id
   types:
   - <xref:str>

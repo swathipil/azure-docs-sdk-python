@@ -13,7 +13,7 @@ constructor:
   syntax: 'SimpleSchedulePolicyV2(*, schedule_run_frequency: str | _models.ScheduleRunType
     | None = None, hourly_schedule: _models.HourlySchedule | None = None, daily_schedule:
     _models.DailySchedule | None = None, weekly_schedule: _models.WeeklySchedule |
-    None = None, **kwargs)'
+    None = None, **kwargs: Any)'
   parameters:
   - name: schedule_run_frequency
     description: 'Frequency of the schedule operation of this policy. Known

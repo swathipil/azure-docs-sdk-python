@@ -4,7 +4,6 @@ name: operations
 fullName: azure.mgmt.hybridcompute.operations
 type: import
 classes:
-- azure.mgmt.hybridcompute.operations.ExtensionMetadataOperations
 - azure.mgmt.hybridcompute.operations.HybridComputeManagementClientOperationsMixin
 - azure.mgmt.hybridcompute.operations.MachineExtensionsOperations
 - azure.mgmt.hybridcompute.operations.MachinesOperations

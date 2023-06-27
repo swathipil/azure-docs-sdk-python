@@ -7,7 +7,8 @@ inheritances:
 - azure.mgmt.recoveryservicesbackup.activestamp._serialization.Model
 summary: Day of the week.
 constructor:
-  syntax: 'Day(*, date: int | None = None, is_last: bool | None = None, **kwargs)'
+  syntax: 'Day(*, date: int | None = None, is_last: bool | None = None, **kwargs:
+    Any)'
   parameters:
   - name: date
     description: Date of the month.

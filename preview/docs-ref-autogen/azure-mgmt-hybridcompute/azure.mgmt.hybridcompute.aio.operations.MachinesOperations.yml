@@ -13,7 +13,7 @@ constructor:
 methods:
 - uid: azure.mgmt.hybridcompute.aio.operations.MachinesOperations.delete
   name: delete
-  summary: The operation to delete a hybrid machine.
+  summary: The operation to remove a hybrid machine identity in Azure.
   signature: 'async delete(resource_group_name: str, machine_name: str, **kwargs:
     Any) -> None'
   parameters:

@@ -12,9 +12,9 @@ summary: "Performs cryptographic operations using Azure Key Vault keys.\n\nThis 
   \nCreate a CryptographyClient<!--[!code-python[Main](s\\test_examples_crypto.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
   : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\\
-  43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\\test_examples_crypto.py\", \"xml:space\"\
-  : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\":\
-  \ {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   # create a CryptographyClient\
+  43\\\\azure-keyvault-keys-4.9.0a20230625001\\\\tests\\\\test_examples_crypto.py\"\
+  , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+  : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   # create a CryptographyClient\
   \ using a KeyVaultKey instance\n   key = key_client.get_key(key_name)\n   crypto_client\
   \ = CryptographyClient(key, credential)\n\n   # or a key's id, which must include\
   \ a version\n   key_id = \"https://<your vault>.vault.azure.net/keys/<key name>/fe4fdcab688c479a9aa80f01ffeac26\"\
@@ -62,12 +62,12 @@ methods:
     \ whose size depends on\nthe key and encryption algorithm.\n\nDecrypt bytes<!--[!code-python[Main](s\\\
     test_examples_crypto.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\
-    \\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\": false, \"\
-    language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
-    : false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto import EncryptionAlgorithm\n\
-    \n   result = client.decrypt(EncryptionAlgorithm.rsa_oaep, ciphertext)\n   print(result.plaintext)\n\
-    \n   ````"
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\
+    \\tests\\\\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\":\
+    \ false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
+    linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto import\
+    \ EncryptionAlgorithm\n\n   result = client.decrypt(EncryptionAlgorithm.rsa_oaep,\
+    \ ciphertext)\n   print(result.plaintext)\n\n   ````"
   signature: 'decrypt(algorithm: EncryptionAlgorithm, ciphertext: bytes, **kwargs)
     -> DecryptResult'
   parameters:
@@ -109,6 +109,7 @@ methods:
     - <xref:bytes>
     - <xref:None>
   return:
+    description: The result of the decryption operation.
     types:
     - <xref:azure.keyvault.keys.crypto.DecryptResult>
   exceptions:
@@ -122,7 +123,7 @@ methods:
     \ key and encryption algorithm.\n\nEncrypt bytes<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\\test_examples_crypto.py\"\
+    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\\tests\\\\test_examples_crypto.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.keyvault.keys.crypto import EncryptionAlgorithm\n\n   # the result\
@@ -165,6 +166,7 @@ methods:
     - <xref:bytes>
     - <xref:None>
   return:
+    description: The result of the encryption operation.
     types:
     - <xref:azure.keyvault.keys.crypto.EncryptResult>
   exceptions:
@@ -185,6 +187,7 @@ methods:
     - <xref:azure.keyvault.keys.JsonWebKey>
     - <xref:Dict>[<xref:str>, <xref:Any>]
   return:
+    description: A client that can only perform local cryptographic operations.
     types:
     - <xref:azure.keyvault.keys.crypto.CryptographyClient>
 - uid: azure.keyvault.keys.crypto.CryptographyClient.sign
@@ -193,7 +196,7 @@ methods:
     \ keys/sign permission.\n\nSign bytes<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\\test_examples_crypto.py\"\
+    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\\tests\\\\test_examples_crypto.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   import hashlib\n\n   from azure.keyvault.keys.crypto import SignatureAlgorithm\n\
@@ -214,6 +217,7 @@ methods:
     types:
     - <xref:bytes>
   return:
+    description: The result of the signing operation.
     types:
     - <xref:azure.keyvault.keys.crypto.SignResult>
 - uid: azure.keyvault.keys.crypto.CryptographyClient.unwrap_key
@@ -222,7 +226,7 @@ methods:
     \ keys/unwrapKey permission.\n\nUnwrap a key<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\\test_examples_crypto.py\"\
+    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\\tests\\\\test_examples_crypto.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.keyvault.keys.crypto import KeyWrapAlgorithm\n\n   result = client.unwrap_key(KeyWrapAlgorithm.rsa_oaep,\
@@ -241,6 +245,7 @@ methods:
     types:
     - <xref:bytes>
   return:
+    description: The result of the unwrapping operation.
     types:
     - <xref:azure.keyvault.keys.crypto.UnwrapResult>
 - uid: azure.keyvault.keys.crypto.CryptographyClient.verify
@@ -249,7 +254,7 @@ methods:
     \ permission.\n\nVerify a signature<!--[!code-python[Main](s\\test_examples_crypto.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\\tests\\\\test_examples_crypto.py\"\
+    dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\\tests\\\\test_examples_crypto.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.keyvault.keys.crypto import SignatureAlgorithm\n\n   result =\
@@ -277,6 +282,7 @@ methods:
     types:
     - <xref:bytes>
   return:
+    description: The result of the verifying operation.
     types:
     - <xref:azure.keyvault.keys.crypto.VerifyResult>
 - uid: azure.keyvault.keys.crypto.CryptographyClient.wrap_key
@@ -284,7 +290,7 @@ methods:
   summary: "Wrap a key with the client's key.\n\nRequires the keys/wrapKey permission.\n\
     \nWrap a key<!--[!code-python[Main](s\\test_examples_crypto.py )]-->\n\n<!-- literal_block\
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
-    : [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0b1\\\
+    : [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\43\\\\azure-keyvault-keys-4.9.0a20230625001\\\
     \\tests\\\\test_examples_crypto.py\", \"xml:space\": \"preserve\", \"force\":\
     \ false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   from azure.keyvault.keys.crypto import\
@@ -305,6 +311,7 @@ methods:
     types:
     - <xref:bytes>
   return:
+    description: The result of the wrapping operation.
     types:
     - <xref:azure.keyvault.keys.crypto.WrapResult>
 attributes:
@@ -315,6 +322,7 @@ attributes:
 
     This property may be None when a client is constructed with <xref:azure.keyvault.keys.crypto.CryptographyClient.from_jwk>.'
   return:
+    description: The full identifier of the client's key.
     types:
     - <xref:str>
     - <xref:None>
@@ -325,6 +333,7 @@ attributes:
 
     This property may be None when a client is constructed with <xref:azure.keyvault.keys.crypto.CryptographyClient.from_jwk>.'
   return:
+    description: The base vault URL of the client's key.
     types:
     - <xref:str>
     - <xref:None>

@@ -8,7 +8,8 @@ inheritances:
 summary: Details of an inquired protectable item.
 constructor:
   syntax: 'WorkloadInquiryDetails(*, type: str | None = None, item_count: int | None
-    = None, inquiry_validation: _models.InquiryValidation | None = None, **kwargs)'
+    = None, inquiry_validation: _models.InquiryValidation | None = None, **kwargs:
+    Any)'
   parameters:
   - name: type
     description: Type of the Workload such as SQL, Oracle etc.

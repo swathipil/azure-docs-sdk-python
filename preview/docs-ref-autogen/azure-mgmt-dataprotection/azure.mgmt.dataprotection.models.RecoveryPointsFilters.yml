@@ -10,7 +10,7 @@ constructor:
   syntax: 'RecoveryPointsFilters(*, restore_point_data_store_id: str | None = None,
     is_visible: bool | None = None, start_date: str | None = None, end_date: str |
     None = None, extended_info: bool | None = None, restore_point_state: str | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: restore_point_data_store_id
     types:

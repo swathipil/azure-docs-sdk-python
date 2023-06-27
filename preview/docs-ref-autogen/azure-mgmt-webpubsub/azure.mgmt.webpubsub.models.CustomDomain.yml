@@ -14,7 +14,7 @@ summary: 'A custom domain.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'CustomDomain(*, domain_name: str, custom_certificate: _models.ResourceReference,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: domain_name
     description: The custom domain name. Required.

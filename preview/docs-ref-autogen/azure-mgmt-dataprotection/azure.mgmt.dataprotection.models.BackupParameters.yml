@@ -16,7 +16,7 @@ summary: 'BackupParameters base.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: BackupParameters(**kwargs)
+  syntax: 'BackupParameters(**kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

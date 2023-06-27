@@ -2,10 +2,10 @@
 uid: azure.mgmt.dataprotection.models.PersistentVolumeRestoreMode
 name: PersistentVolumeRestoreMode
 fullName: azure.mgmt.dataprotection.models.PersistentVolumeRestoreMode
-summary: 'Gets or sets the PV Restore Mode property. This property sets whether volumes
-  needs to be
+summary: 'Gets or sets the PV (Persistent Volume) Restore Mode property. This property
+  sets whether
 
-  restored.'
+  volumes needs to be restored.'
 module: azure.mgmt.dataprotection.models
 constructor:
   syntax: PersistentVolumeRestoreMode(value, names=None, *, module=None, qualname=None,

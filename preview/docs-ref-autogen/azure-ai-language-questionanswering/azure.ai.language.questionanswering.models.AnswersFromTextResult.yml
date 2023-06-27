@@ -4,11 +4,11 @@ name: AnswersFromTextResult
 fullName: azure.ai.language.questionanswering.models.AnswersFromTextResult
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Represents the answer results.
 constructor:
   syntax: 'AnswersFromTextResult(*, answers: List[_models.TextAnswer] | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: answers
     description: Represents the answer results.

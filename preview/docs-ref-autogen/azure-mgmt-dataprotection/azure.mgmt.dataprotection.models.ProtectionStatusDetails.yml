@@ -8,7 +8,7 @@ inheritances:
 summary: Protection status details.
 constructor:
   syntax: 'ProtectionStatusDetails(*, error_details: _models.UserFacingError | None
-    = None, status: str | _models.Status | None = None, **kwargs)'
+    = None, status: str | _models.Status | None = None, **kwargs: Any)'
   parameters:
   - name: error_details
     description: Specifies the protection status error of the resource.

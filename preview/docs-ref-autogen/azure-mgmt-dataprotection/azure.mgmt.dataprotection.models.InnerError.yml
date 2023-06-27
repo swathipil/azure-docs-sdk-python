@@ -8,7 +8,8 @@ inheritances:
 summary: Inner Error.
 constructor:
   syntax: 'InnerError(*, additional_info: Dict[str, str] | None = None, code: str
-    | None = None, embedded_inner_error: _models.InnerError | None = None, **kwargs)'
+    | None = None, embedded_inner_error: _models.InnerError | None = None, **kwargs:
+    Any)'
   parameters:
   - name: additional_info
     description: 'Any Key value pairs that can be provided to the client for additional

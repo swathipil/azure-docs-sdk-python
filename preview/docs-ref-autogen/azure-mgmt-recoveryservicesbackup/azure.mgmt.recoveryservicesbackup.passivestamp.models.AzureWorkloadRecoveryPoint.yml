@@ -24,7 +24,7 @@ summary: 'Workload specific recovery point, specifically encapsulates full/diff 
 constructor:
   syntax: 'AzureWorkloadRecoveryPoint(*, recovery_point_tier_details: List[_models.RecoveryPointTierInformation]
     | None = None, recovery_point_move_readiness_info: Dict[str, _models.RecoveryPointMoveReadinessInfo]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: recovery_point_tier_details
     description: Recovery point tier information.

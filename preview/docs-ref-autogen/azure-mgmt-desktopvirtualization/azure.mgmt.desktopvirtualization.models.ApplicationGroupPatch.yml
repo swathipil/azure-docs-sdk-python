@@ -11,7 +11,7 @@ summary: 'ApplicationGroup properties that can be patched.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'ApplicationGroupPatch(*, tags: Dict[str, str] | None = None, description:
-    str | None = None, friendly_name: str | None = None, **kwargs)'
+    str | None = None, friendly_name: str | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: tags to be updated.

@@ -7,7 +7,7 @@ inheritances:
 - azure.mgmt.nginx._serialization.Model
 summary: NginxPublicIPAddress.
 constructor:
-  syntax: 'NginxPublicIPAddress(*, id: str | None = None, **kwargs)'
+  syntax: 'NginxPublicIPAddress(*, id: str | None = None, **kwargs: Any)'
   parameters:
   - name: id
     types:

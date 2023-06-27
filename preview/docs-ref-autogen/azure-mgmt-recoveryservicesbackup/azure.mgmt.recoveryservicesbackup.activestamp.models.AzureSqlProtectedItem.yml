@@ -23,7 +23,7 @@ constructor:
     str | None = None, soft_delete_retention_period: int | None = None, protected_item_data_id:
     str | None = None, protection_state: str | _models.ProtectedItemState | None =
     None, extended_info: _models.AzureSqlProtectedItemExtendedInfo | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: container_name
     description: Unique name of container.
@@ -110,7 +110,10 @@ constructor:
   - name: protection_state
     description: 'Backup state of the backed up item. Known values are: "Invalid",
 
-      "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+      "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+      and
+
+      "BackupsSuspended".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.ProtectedItemState>
@@ -228,7 +231,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of the backed up item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

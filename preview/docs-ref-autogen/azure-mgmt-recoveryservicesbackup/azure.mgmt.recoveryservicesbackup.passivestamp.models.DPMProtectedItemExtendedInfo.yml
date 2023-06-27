@@ -14,7 +14,8 @@ constructor:
     int | None = None, on_premise_oldest_recovery_point: datetime | None = None, on_premise_latest_recovery_point:
     datetime | None = None, on_premise_recovery_point_count: int | None = None, is_collocated:
     bool | None = None, protection_group_name: str | None = None, disk_storage_used_in_bytes:
-    str | None = None, total_disk_storage_size_in_bytes: str | None = None, **kwargs)'
+    str | None = None, total_disk_storage_size_in_bytes: str | None = None, **kwargs:
+    Any)'
   parameters:
   - name: protectable_object_load_path
     description: Attribute to provide information on various DBs.

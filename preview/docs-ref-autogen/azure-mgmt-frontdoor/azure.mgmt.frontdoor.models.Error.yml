@@ -9,7 +9,7 @@ summary: Error.
 constructor:
   syntax: 'Error(*, code: str | None = None, message: str | None = None, target: str
     | None = None, details: List[_models.ErrorDetails] | None = None, inner_error:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: code
     types:

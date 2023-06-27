@@ -10,7 +10,7 @@ summary: 'Extended info class details.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: AzureWorkloadSQLRecoveryPointExtendedInfo(**kwargs)
+  syntax: 'AzureWorkloadSQLRecoveryPointExtendedInfo(**kwargs: Any)'
 variables:
 - description: UTC time at which data directory info was captured.
   name: data_directory_time_in_utc

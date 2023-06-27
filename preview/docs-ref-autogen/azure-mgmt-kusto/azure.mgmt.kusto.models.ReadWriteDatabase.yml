@@ -14,7 +14,7 @@ summary: 'Class representing a read write database.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ReadWriteDatabase(*, location: str | None = None, soft_delete_period: timedelta
-    | None = None, hot_cache_period: timedelta | None = None, **kwargs)'
+    | None = None, hot_cache_period: timedelta | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

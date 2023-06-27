@@ -15,7 +15,8 @@ constructor:
     package_relative_path: str | None = None, is_regular_registration: bool | None
     = None, is_active: bool | None = None, package_dependencies: List[_models.MsixPackageDependencies]
     | None = None, version: str | None = None, last_updated: datetime | None = None,
-    package_applications: List[_models.MsixPackageApplications] | None = None, **kwargs)'
+    package_applications: List[_models.MsixPackageApplications] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: image_path
     description: VHD/CIM image path on Network Share.

@@ -12,7 +12,7 @@ summary: 'PrivateLinkScopeValidationDetails.
 constructor:
   syntax: 'PrivateLinkScopeValidationDetails(*, public_network_access: str | _models.PublicNetworkAccessType
     = ''Disabled'', connection_details: List[_models.ConnectionDetail] | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: public_network_access
     description: 'Indicates whether machines associated with the private link
@@ -27,7 +27,7 @@ constructor:
   - name: connection_details
     description: List of Private Endpoint Connection details.
     types:
-    - <xref:azure.mgmt.hybridcompute.aio.operations.ExtensionMetadataOperations.list>[<xref:azure.mgmt.hybridcompute.models.ConnectionDetail>]
+    - <xref:azure.mgmt.hybridcompute.aio.operations.MachineExtensionsOperations.list>[<xref:azure.mgmt.hybridcompute.models.ConnectionDetail>]
 variables:
 - description: Azure resource Id.
   name: id

@@ -4,7 +4,7 @@ name: MobileNetworkResourceId
 fullName: azure.mgmt.mobilenetwork.models.MobileNetworkResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to a mobile network resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'MobileNetworkResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Mobile network resource ID.
+    description: Mobile network resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Mobile network resource ID.
+- description: Mobile network resource ID. Required.
   name: id
   types:
   - <xref:str>

@@ -6,7 +6,9 @@ module: azure.mgmt.recoveryservicesbackup.activestamp.models
 inheritances:
 - azure.mgmt.recoveryservicesbackup.activestamp._serialization.Model
 summary: 'Base class for container with backup items. Containers with specific workloads
-  are derived from this class.
+  are derived from
+
+  this class.
 
 
   You probably want to use the sub-classes and not this class directly. Known sub-classes
@@ -22,7 +24,7 @@ constructor:
   syntax: 'ProtectionContainer(*, friendly_name: str | None = None, backup_management_type:
     str | _models.BackupManagementType | None = None, registration_status: str | None
     = None, health_status: str | None = None, protectable_object_type: str | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: friendly_name
     description: Friendly name of the container.

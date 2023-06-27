@@ -19,11 +19,11 @@ constructor:
     **kwargs)'
   parameters:
   - name: tags
-    description: A set of tags. Resource tags.
+    description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: location
-    description: Required. The geo-location where the resource lives.
+    description: The geo-location where the resource lives. Required.
     types:
     - <xref:str>
   - name: identity
@@ -35,7 +35,10 @@ constructor:
     types:
     - <xref:azure.mgmt.mobilenetwork.models.KeyVaultKey>
   - name: mobile_network
-    description: Mobile network that this SIM belongs to.
+    description: 'Mobile network that this SIM group belongs to. The mobile network
+      must
+
+      be in the same location as the SIM group.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.MobileNetworkResourceId>
 variables:
@@ -62,11 +65,11 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SystemData>
-- description: A set of tags. Resource tags.
+- description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Required. The geo-location where the resource lives.
+- description: The geo-location where the resource lives. Required.
   name: location
   types:
   - <xref:str>
@@ -76,7 +79,7 @@ variables:
   - <xref:azure.mgmt.mobilenetwork.models.ManagedServiceIdentity>
 - description: 'The provisioning state of the SIM group resource. Known values are:
 
-    "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", "Deleted".'
+    "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", and "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>
@@ -85,7 +88,10 @@ variables:
   name: encryption_key
   types:
   - <xref:azure.mgmt.mobilenetwork.models.KeyVaultKey>
-- description: Mobile network that this SIM belongs to.
+- description: 'Mobile network that this SIM group belongs to. The mobile network
+    must be
+
+    in the same location as the SIM group.'
   name: mobile_network
   types:
   - <xref:azure.mgmt.mobilenetwork.models.MobileNetworkResourceId>

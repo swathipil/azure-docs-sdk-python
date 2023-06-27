@@ -16,7 +16,7 @@ constructor:
   syntax: 'DevBoxDefinition(*, location: str, tags: Dict[str, str] | None = None,
     image_reference: _models.ImageReference | None = None, sku: _models.Sku | None
     = None, os_storage_type: str | None = None, hibernate_support: str | _models.HibernateSupport
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.

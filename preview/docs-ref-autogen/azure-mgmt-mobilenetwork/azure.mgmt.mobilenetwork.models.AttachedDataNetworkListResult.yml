@@ -4,7 +4,7 @@ name: AttachedDataNetworkListResult
 fullName: azure.mgmt.mobilenetwork.models.AttachedDataNetworkListResult
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Response for attached data network API service call.
 
 

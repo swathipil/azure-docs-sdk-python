@@ -77,6 +77,7 @@ methods:
     - <xref:uuid.UUID>
     - <xref:None>
   return:
+    description: The created role assignment.
     types:
     - <xref:azure.keyvault.administration.KeyVaultRoleAssignment>
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.delete_role_assignment
@@ -103,6 +104,8 @@ methods:
     - <xref:uuid.UUID>
   return:
     description: None
+    types:
+    - <xref:None>
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.delete_role_definition
   name: delete_role_definition
   summary: Deletes a custom role definition.
@@ -126,6 +129,8 @@ methods:
     - <xref:uuid.UUID>
   return:
     description: None
+    types:
+    - <xref:None>
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.get_role_assignment
   name: get_role_assignment
   summary: Get a role assignment.
@@ -149,6 +154,7 @@ methods:
     - <xref:str>
     - <xref:uuid.UUID>
   return:
+    description: The fetched role assignment.
     types:
     - <xref:azure.keyvault.administration.KeyVaultRoleAssignment>
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.get_role_definition
@@ -173,6 +179,7 @@ methods:
     - <xref:str>
     - <xref:uuid.UUID>
   return:
+    description: The fetched role definition.
     types:
     - <xref:azure.keyvault.administration.KeyVaultRoleDefinition>
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.list_role_assignments
@@ -190,6 +197,8 @@ methods:
     - <xref:str>
     - <xref:azure.keyvault.administration.KeyVaultRoleScope>
   return:
+    description: A paged response containing the role assignments for the specified
+      scope.
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.keyvault.administration.KeyVaultRoleAssignment>]
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.list_role_definitions
@@ -207,6 +216,8 @@ methods:
     - <xref:str>
     - <xref:azure.keyvault.administration.KeyVaultRoleScope>
   return:
+    description: A paged response containing the role definitions for the specified
+      scope.
     types:
     - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.keyvault.administration.KeyVaultRoleDefinition>]
 - uid: azure.keyvault.administration.aio.KeyVaultAccessControlClient.set_role_definition

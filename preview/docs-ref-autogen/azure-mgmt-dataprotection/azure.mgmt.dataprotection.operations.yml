@@ -4,7 +4,6 @@ name: operations
 fullName: azure.mgmt.dataprotection.operations
 type: import
 classes:
-- azure.mgmt.dataprotection.operations.BackupInstancesExtensionRoutingOperations
 - azure.mgmt.dataprotection.operations.BackupInstancesOperations
 - azure.mgmt.dataprotection.operations.BackupPoliciesOperations
 - azure.mgmt.dataprotection.operations.BackupVaultOperationResultsOperations

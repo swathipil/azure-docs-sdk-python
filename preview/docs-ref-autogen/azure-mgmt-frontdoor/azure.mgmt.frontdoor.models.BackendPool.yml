@@ -12,7 +12,8 @@ summary: 'A backend pool is a collection of backends that can be routed to.
 constructor:
   syntax: 'BackendPool(*, id: str | None = None, name: str | None = None, backends:
     List[_models.Backend] | None = None, load_balancing_settings: _models.SubResource
-    | None = None, health_probe_settings: _models.SubResource | None = None, **kwargs)'
+    | None = None, health_probe_settings: _models.SubResource | None = None, **kwargs:
+    Any)'
   parameters:
   - name: id
     description: Resource ID.

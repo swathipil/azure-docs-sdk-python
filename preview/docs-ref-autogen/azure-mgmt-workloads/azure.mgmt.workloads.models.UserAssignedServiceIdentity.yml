@@ -5,7 +5,10 @@ fullName: azure.mgmt.workloads.models.UserAssignedServiceIdentity
 module: azure.mgmt.workloads.models
 inheritances:
 - azure.mgmt.workloads._serialization.Model
-summary: 'Managed service identity (user assigned identities).
+summary: 'A pre-created user assigned identity with appropriate roles assigned. To
+  learn more on identity
+
+  and roles required, visit the ACSS how-to-guide.
 
 
   All required parameters must be populated in order to send to Azure.'

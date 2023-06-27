@@ -12,7 +12,7 @@ summary: 'AADPropertiesResource.
 constructor:
   syntax: 'AADPropertiesResource(*, location: str | None = None, tags: Dict[str, str]
     | None = None, e_tag: str | None = None, properties: _models.AADProperties | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

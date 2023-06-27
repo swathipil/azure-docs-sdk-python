@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.CloseJobResult
+name: CloseJobResult
+fullName: azure.communication.jobrouter.CloseJobResult
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: CloseJobResult()

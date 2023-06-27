@@ -9,7 +9,7 @@ summary: MAB workload-specific Health Details.
 constructor:
   syntax: 'MABContainerHealthDetails(*, code: int | None = None, title: str | None
     = None, message: str | None = None, recommendations: List[str] | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: code
     description: Health Code.

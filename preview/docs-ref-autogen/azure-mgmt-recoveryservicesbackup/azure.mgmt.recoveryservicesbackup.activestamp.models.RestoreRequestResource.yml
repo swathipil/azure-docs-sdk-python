@@ -13,7 +13,7 @@ summary: 'Base class for restore request. Workload-specific restore requests are
 constructor:
   syntax: 'RestoreRequestResource(*, location: str | None = None, tags: Dict[str,
     str] | None = None, e_tag: str | None = None, properties: _models.RestoreRequest
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

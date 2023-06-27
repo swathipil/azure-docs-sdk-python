@@ -46,7 +46,7 @@ constructor:
       "InternalServerError", "NotImplemented", "BadGateway", "ServiceUnavailable",
       "GatewayTimeout",
 
-      and "HttpVersionNotSupported".'
+      "HttpVersionNotSupported", and "Continue".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.dns.v2016_04_01.models.HttpStatusCode>
@@ -85,7 +85,7 @@ variables:
 
     "InternalServerError", "NotImplemented", "BadGateway", "ServiceUnavailable", "GatewayTimeout",
 
-    and "HttpVersionNotSupported".'
+    "HttpVersionNotSupported", and "Continue".'
   name: status_code
   types:
   - <xref:str>
