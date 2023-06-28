@@ -25,7 +25,7 @@ constructor:
     | _models.ProtectionState | None = None, last_backup_status: str | None = None,
     last_backup_time: datetime | None = None, kpis_healths: Dict[str, _models.KPIResourceHealthDetails]
     | None = None, extended_info: _models.AzureFileshareProtectedItemExtendedInfo
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: container_name
     description: Unique name of container.
@@ -114,7 +114,10 @@ constructor:
   - name: protection_state
     description: 'Backup state of this backup item. Known values are: "Invalid",
 
-      "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+      "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+      and
+
+      "BackupsSuspended".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.ProtectionState>
@@ -246,7 +249,10 @@ variables:
   - <xref:str>
 - description: 'Backup state of this backup item. Known values are: "Invalid",
 
-    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", and "ProtectionPaused".'
+    "IRPending", "Protected", "ProtectionError", "ProtectionStopped", "ProtectionPaused",
+    and
+
+    "BackupsSuspended".'
   name: protection_state
   types:
   - <xref:str>

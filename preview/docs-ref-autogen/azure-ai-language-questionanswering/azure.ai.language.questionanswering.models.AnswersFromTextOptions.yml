@@ -4,14 +4,14 @@ name: AnswersFromTextOptions
 fullName: azure.ai.language.questionanswering.models.AnswersFromTextOptions
 module: azure.ai.language.questionanswering.models
 inheritances:
-- azure.ai.language.questionanswering.models._models_py3.AnswersFromTextOptions
+- azure.ai.language.questionanswering.models._models.AnswersFromTextOptions
 summary: 'The question and text record parameters to answer.
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'AnswersFromTextOptions(*, question: str, text_documents: List[str | TextDocument],
-    language: str | None = None, **kwargs)'
+    language: str | None = None, **kwargs: Any)'
   parameters:
   - name: question
     description: Required. User question to query against the given text records.

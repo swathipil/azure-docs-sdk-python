@@ -10,7 +10,7 @@ summary: 'Operation result error properties.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: OperationResultErrorProperties(**kwargs)
+  syntax: 'OperationResultErrorProperties(**kwargs: Any)'
 variables:
 - description: The code of the error.
   name: code

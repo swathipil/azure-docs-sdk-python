@@ -13,7 +13,7 @@ summary: 'Azure File Share workload specific backup copy.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: AzureFileShareRecoveryPoint(**kwargs)
+  syntax: 'AzureFileShareRecoveryPoint(**kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

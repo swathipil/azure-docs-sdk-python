@@ -14,7 +14,8 @@ constructor:
     protocol_type: str | _models.FrontDoorTlsProtocolType, minimum_tls_version: str
     | _models.MinimumTLSVersion, certificate_type: str | _models.FrontDoorCertificateType
     | None = None, vault: _models.KeyVaultCertificateSourceParametersVault | None
-    = None, secret_name: str | None = None, secret_version: str | None = None, **kwargs)'
+    = None, secret_name: str | None = None, secret_version: str | None = None, **kwargs:
+    Any)'
   parameters:
   - name: certificate_source
     description: 'Defines the source of the SSL certificate. Required. Known values

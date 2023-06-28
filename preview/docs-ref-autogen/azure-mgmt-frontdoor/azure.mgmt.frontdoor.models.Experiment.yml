@@ -13,7 +13,7 @@ constructor:
   syntax: 'Experiment(*, location: str | None = None, tags: Dict[str, str] | None
     = None, description: str | None = None, endpoint_a: _models.Endpoint | None =
     None, endpoint_b: _models.Endpoint | None = None, enabled_state: str | _models.State
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

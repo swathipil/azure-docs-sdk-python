@@ -12,7 +12,7 @@ summary: 'Cognitive Services account commitment plan.
 constructor:
   syntax: 'CommitmentPlan(*, kind: str | None = None, sku: _models.Sku | None = None,
     tags: Dict[str, str] | None = None, location: str | None = None, properties: _models.CommitmentPlanProperties
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: kind
     description: The Kind of the resource.

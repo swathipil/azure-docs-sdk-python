@@ -29,7 +29,7 @@ constructor:
     types:
     - <xref:str>
   - name: identity
-    description: Managed service identity (user assigned identities).
+    description: '[currently not in use] Managed service identity(user assigned identities).'
     types:
     - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>
   - name: app_location
@@ -102,7 +102,7 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Managed service identity (user assigned identities).
+- description: '[currently not in use] Managed service identity(user assigned identities).'
   name: identity
   types:
   - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>

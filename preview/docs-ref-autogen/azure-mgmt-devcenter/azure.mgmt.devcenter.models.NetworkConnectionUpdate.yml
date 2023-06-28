@@ -5,13 +5,15 @@ fullName: azure.mgmt.devcenter.models.NetworkConnectionUpdate
 module: azure.mgmt.devcenter.models
 inheritances:
 - azure.mgmt.devcenter.models._models_py3.TrackedResourceUpdate
-summary: The network connection properties for partial update. Properties not provided
-  in the update request will not be changed.
+summary: 'The network connection properties for partial update. Properties not provided
+  in the update
+
+  request will not be changed.'
 constructor:
   syntax: 'NetworkConnectionUpdate(*, tags: Dict[str, str] | None = None, location:
     str | None = None, subnet_id: str | None = None, domain_name: str | None = None,
     organization_unit: str | None = None, domain_username: str | None = None, domain_password:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.

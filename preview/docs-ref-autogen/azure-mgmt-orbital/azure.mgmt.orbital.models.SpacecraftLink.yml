@@ -6,7 +6,9 @@ module: azure.mgmt.orbital.models
 inheritances:
 - azure.mgmt.orbital._serialization.Model
 summary: 'List of authorized spacecraft links per ground station and the expiration
-  date of the authorization.
+  date of the
+
+  authorization.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.
@@ -16,7 +18,7 @@ summary: 'List of authorized spacecraft links per ground station and the expirat
 constructor:
   syntax: 'SpacecraftLink(*, name: str, center_frequency_m_hz: float, bandwidth_m_hz:
     float, direction: str | _models.Direction, polarization: str | _models.Polarization,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: name
     description: Link name. Required.
@@ -31,10 +33,10 @@ constructor:
     types:
     - <xref:float>
   - name: direction
-    description: 'Direction (uplink or downlink). Required. Known values are: "uplink"
+    description: 'Direction (Uplink or Downlink). Required. Known values are: "Uplink"
       and
 
-      "downlink".'
+      "Downlink".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.orbital.models.Direction>
@@ -58,10 +60,10 @@ variables:
   name: bandwidth_m_hz
   types:
   - <xref:float>
-- description: 'Direction (uplink or downlink). Required. Known values are: "uplink"
+- description: 'Direction (Uplink or Downlink). Required. Known values are: "Uplink"
     and
 
-    "downlink".'
+    "Downlink".'
   name: direction
   types:
   - <xref:str>

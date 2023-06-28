@@ -26,6 +26,8 @@ classes:
 - azure.mgmt.devcenter.models.DevCenterListResult
 - azure.mgmt.devcenter.models.DevCenterSku
 - azure.mgmt.devcenter.models.DevCenterUpdate
+- azure.mgmt.devcenter.models.EndpointDependency
+- azure.mgmt.devcenter.models.EndpointDetail
 - azure.mgmt.devcenter.models.EnvironmentRole
 - azure.mgmt.devcenter.models.EnvironmentType
 - azure.mgmt.devcenter.models.EnvironmentTypeListResult
@@ -39,6 +41,7 @@ classes:
 - azure.mgmt.devcenter.models.HealthCheck
 - azure.mgmt.devcenter.models.HealthCheckStatusDetails
 - azure.mgmt.devcenter.models.HealthCheckStatusDetailsListResult
+- azure.mgmt.devcenter.models.HealthStatusDetail
 - azure.mgmt.devcenter.models.Image
 - azure.mgmt.devcenter.models.ImageListResult
 - azure.mgmt.devcenter.models.ImageReference
@@ -57,6 +60,8 @@ classes:
 - azure.mgmt.devcenter.models.OperationListResult
 - azure.mgmt.devcenter.models.OperationStatus
 - azure.mgmt.devcenter.models.OperationStatusResult
+- azure.mgmt.devcenter.models.OutboundEnvironmentEndpoint
+- azure.mgmt.devcenter.models.OutboundEnvironmentEndpointCollection
 - azure.mgmt.devcenter.models.Pool
 - azure.mgmt.devcenter.models.PoolListResult
 - azure.mgmt.devcenter.models.PoolProperties
@@ -84,6 +89,7 @@ classes:
 - azure.mgmt.devcenter.models.ScheduleUpdateProperties
 - azure.mgmt.devcenter.models.Sku
 - azure.mgmt.devcenter.models.SkuListResult
+- azure.mgmt.devcenter.models.StopOnDisconnectConfiguration
 - azure.mgmt.devcenter.models.SystemData
 - azure.mgmt.devcenter.models.TrackedResource
 - azure.mgmt.devcenter.models.TrackedResourceUpdate
@@ -97,8 +103,9 @@ enums:
 - azure.mgmt.devcenter.models.CheckNameAvailabilityReason
 - azure.mgmt.devcenter.models.CreatedByType
 - azure.mgmt.devcenter.models.DomainJoinType
-- azure.mgmt.devcenter.models.EnableStatus
+- azure.mgmt.devcenter.models.EnvironmentTypeEnableStatus
 - azure.mgmt.devcenter.models.HealthCheckStatus
+- azure.mgmt.devcenter.models.HealthStatus
 - azure.mgmt.devcenter.models.HibernateSupport
 - azure.mgmt.devcenter.models.ImageValidationStatus
 - azure.mgmt.devcenter.models.LicenseType
@@ -106,7 +113,9 @@ enums:
 - azure.mgmt.devcenter.models.ManagedServiceIdentityType
 - azure.mgmt.devcenter.models.Origin
 - azure.mgmt.devcenter.models.ProvisioningState
+- azure.mgmt.devcenter.models.ScheduleEnableStatus
 - azure.mgmt.devcenter.models.ScheduledFrequency
 - azure.mgmt.devcenter.models.ScheduledType
 - azure.mgmt.devcenter.models.SkuTier
+- azure.mgmt.devcenter.models.StopOnDisconnectEnableStatus
 - azure.mgmt.devcenter.models.UsageUnit

@@ -10,7 +10,7 @@ summary: 'Deletion Info.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: DeletionInfo(**kwargs)
+  syntax: 'DeletionInfo(**kwargs: Any)'
 variables:
 - description: Specifies time of deletion.
   name: deletion_time

@@ -6,12 +6,14 @@ module: azure.mgmt.hybridcompute.models
 inheritances:
 - azure.mgmt.hybridcompute._serialization.Model
 summary: 'Configurable properties that the user can set locally via the azcmagent
-  config command, or remotely via ARM.
+  config command, or
+
+  remotely via ARM.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: AgentConfiguration(**kwargs)
+  syntax: 'AgentConfiguration(**kwargs: Any)'
 variables:
 - description: Specifies the URL of the proxy to be used.
   name: proxy_url
@@ -47,14 +49,3 @@ variables:
   name: guest_configuration_enabled
   types:
   - <xref:str>
-- description: 'Name of configuration mode to use. Modes are pre-defined configurations
-    of
-
-    security controls, extension allowlists and guest configuration, maintained by
-    Microsoft. Known
-
-    values are: "full" and "monitor".'
-  name: config_mode
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.hybridcompute.models.AgentConfigurationMode>

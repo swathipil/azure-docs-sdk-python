@@ -1,0 +1,68 @@
+### YamlMime:PythonClass
+uid: azure.mgmt.servermanager.models.gateway_profile_py3.GatewayProfile
+name: GatewayProfile
+fullName: azure.mgmt.servermanager.models.gateway_profile_py3.GatewayProfile
+module: azure.mgmt.servermanager.models.gateway_profile_py3
+inheritances:
+- msrest.serialization.Model
+summary: 'JSON properties that the gateway service uses know how to communicate with
+
+  the resource.'
+constructor:
+  syntax: 'GatewayProfile(*, data_plane_service_base_address: str = None, gateway_id:
+    str = None, environment: str = None, upgrade_manifest_url: str = None, messaging_namespace:
+    str = None, messaging_account: str = None, messaging_key: str = None, request_queue:
+    str = None, response_topic: str = None, status_blob_signature: str = None, **kwargs)'
+  parameters:
+  - name: data_plane_service_base_address
+    description: The Dataplane connection URL.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: gateway_id
+    description: The ID of the gateway.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: environment
+    description: 'The environment for the gateway (DEV, DogFood, or
+
+      Production).'
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: upgrade_manifest_url
+    description: Gateway upgrade manifest URL.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: messaging_namespace
+    description: Messaging namespace.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: messaging_account
+    description: Messaging Account.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: messaging_key
+    description: Messaging Key.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: request_queue
+    description: Request queue name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: response_topic
+    description: Response topic name.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: status_blob_signature
+    description: The gateway status blob SAS URL.
+    isRequired: true
+    types:
+    - <xref:str>

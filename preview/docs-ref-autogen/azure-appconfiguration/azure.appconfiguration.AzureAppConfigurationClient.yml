@@ -162,8 +162,7 @@ methods:
     types:
     - <xref:azure.core.MatchConditions>
   - name: accept_datetime
-    description: the retrieved ConfigurationSetting that created no later than this
-      datetime
+    description: retrieve ConfigurationSetting existed at this datetime
     types:
     - <xref:datetime>
   return:
@@ -183,7 +182,7 @@ methods:
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
     \ \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n   from datetime\
-    \ import datetime, timedelta\n\n   accept_datetime = datetime.today() + timedelta(days=-1)\n\
+    \ import datetime, timedelta\n\n   accept_datetime = datetime.utcnow() + timedelta(days=-1)\n\
     \n   all_listed = client.list_configuration_settings()\n   for item in all_listed:\n\
     \       pass  # do something\n\n   filtered_listed = client.list_configuration_settings(\n\
     \       label_filter=\"Labe*\", key_filter=\"Ke*\", accept_datetime=accept_datetime\n\
@@ -206,7 +205,7 @@ methods:
     types:
     - <xref:str>
   - name: accept_datetime
-    description: filter out ConfigurationSetting created after this datetime
+    description: retrieve ConfigurationSetting existed at this datetime
     types:
     - <xref:datetime>
   - name: fields
@@ -227,7 +226,7 @@ methods:
     \ {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\"\
     : [], \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\"\
     , \"highlight_args\": {}, \"linenos\": false} -->\n\n````python\n\n   from datetime\
-    \ import datetime, timedelta\n\n   accept_datetime = datetime.today() + timedelta(days=-1)\n\
+    \ import datetime, timedelta\n\n   accept_datetime = datetime.utcnow() + timedelta(days=-1)\n\
     \n   all_revisions = client.list_revisions()\n   for item in all_revisions:\n\
     \       pass  # do something\n\n   filtered_revisions = client.list_revisions(\n\
     \       label_filter=\"Labe*\", key_filter=\"Ke*\", accept_datetime=accept_datetime\n\
@@ -250,7 +249,7 @@ methods:
     types:
     - <xref:str>
   - name: accept_datetime
-    description: filter out ConfigurationSetting created after this datetime
+    description: retrieve ConfigurationSetting existed at this datetime
     types:
     - <xref:datetime>
   - name: fields

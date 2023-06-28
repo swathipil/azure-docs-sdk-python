@@ -5,10 +5,10 @@ fullName: azure.mgmt.dataprotection.models.ResourceGuardOperationDetail
 module: azure.mgmt.dataprotection.models
 inheritances:
 - azure.mgmt.dataprotection._serialization.Model
-summary: ResourceGuardOperationDetail.
+summary: VaultCritical Operation protected by a resource guard.
 constructor:
   syntax: 'ResourceGuardOperationDetail(*, vault_critical_operation: str | None =
-    None, default_resource_request: str | None = None, **kwargs)'
+    None, default_resource_request: str | None = None, **kwargs: Any)'
   parameters:
   - name: vault_critical_operation
     types:

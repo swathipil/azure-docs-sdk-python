@@ -1,0 +1,43 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ExpressionRule
+name: ExpressionRule
+fullName: azure.communication.jobrouter.ExpressionRule
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterRule
+summary: 'A rule providing inline expression rules.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ExpressionRule(*, expression: str, language: str | _models.ExpressionLanguage
+    | None = None, **kwargs: Any)'
+  parameters:
+  - name: language
+    description: The expression language to compile to and execute. "powerFx"
+    types:
+    - <xref:str>
+    - <xref:azure.communication.jobrouter.models.ExpressionLanguage>
+  - name: expression
+    description: 'The string containing the expression to evaluate. Should contain
+      return
+
+      statement with calculated values. Required.'
+    types:
+    - <xref:str>
+variables:
+- description: The type discriminator describing a sub-type of Rule. Required.
+  name: kind
+  types:
+  - <xref:str>
+- description: The expression language to compile to and execute. "powerFx"
+  name: language
+  types:
+  - <xref:str>
+  - <xref:azure.communication.jobrouter.models.ExpressionLanguage>
+- description: 'The string containing the expression to evaluate. Should contain return
+
+    statement with calculated values. Required.'
+  name: expression
+  types:
+  - <xref:str>

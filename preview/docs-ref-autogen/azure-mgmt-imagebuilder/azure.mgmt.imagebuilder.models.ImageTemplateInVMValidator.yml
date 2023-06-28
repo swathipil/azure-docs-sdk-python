@@ -11,12 +11,12 @@ summary: 'Describes a unit of in-VM validation of image.
   You probably want to use the sub-classes and not this class directly. Known sub-classes
   are:
 
-  ImageTemplatePowerShellValidator, ImageTemplateShellValidator
+  ImageTemplateFileValidator, ImageTemplatePowerShellValidator, ImageTemplateShellValidator
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'ImageTemplateInVMValidator(*, name: str | None = None, **kwargs)'
+  syntax: 'ImageTemplateInVMValidator(*, name: str | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: Friendly Name to provide context on what this validation step does.

@@ -14,7 +14,7 @@ constructor:
     resource_guard_operation_requests: List[str] | None = None, work_load_type: str
     | _models.WorkloadType | None = None, schedule_policy: _models.SchedulePolicy
     | None = None, retention_policy: _models.RetentionPolicy | None = None, time_zone:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: protected_items_count
     description: Number of items associated with this policy.

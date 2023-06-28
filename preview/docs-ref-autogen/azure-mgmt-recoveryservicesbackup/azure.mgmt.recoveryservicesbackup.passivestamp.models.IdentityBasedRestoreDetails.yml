@@ -8,7 +8,7 @@ inheritances:
 summary: IaaS VM workload specific restore details for restores using managed identity.
 constructor:
   syntax: 'IdentityBasedRestoreDetails(*, object_type: str | None = None, target_storage_account_id:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: object_type
     description: Gets the class type.

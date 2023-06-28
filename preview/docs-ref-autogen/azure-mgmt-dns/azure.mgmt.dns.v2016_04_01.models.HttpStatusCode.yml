@@ -23,6 +23,8 @@ fields:
   uid: azure.mgmt.dns.v2016_04_01.models.HttpStatusCode.CONFLICT
 - name: CONTINUE
   uid: azure.mgmt.dns.v2016_04_01.models.HttpStatusCode.CONTINUE
+- name: CONTINUE_ENUM
+  uid: azure.mgmt.dns.v2016_04_01.models.HttpStatusCode.CONTINUE_ENUM
 - name: CREATED
   uid: azure.mgmt.dns.v2016_04_01.models.HttpStatusCode.CREATED
 - name: EXPECTATION_FAILED

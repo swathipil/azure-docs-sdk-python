@@ -10,3 +10,4 @@ classes:
 - azure.mgmt.search.operations.PrivateLinkResourcesOperations
 - azure.mgmt.search.operations.QueryKeysOperations
 - azure.mgmt.search.operations.ServicesOperations
+- azure.mgmt.search.operations.SharedPrivateLinkResourcesOperations

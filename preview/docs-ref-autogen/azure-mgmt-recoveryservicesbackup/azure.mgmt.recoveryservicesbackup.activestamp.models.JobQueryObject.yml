@@ -10,7 +10,7 @@ constructor:
   syntax: 'JobQueryObject(*, status: str | _models.JobStatus | None = None, backup_management_type:
     str | _models.BackupManagementType | None = None, operation: str | _models.JobOperationType
     | None = None, job_id: str | None = None, start_time: datetime | None = None,
-    end_time: datetime | None = None, **kwargs)'
+    end_time: datetime | None = None, **kwargs: Any)'
   parameters:
   - name: status
     description: 'Status of the job. Known values are: "Invalid", "InProgress", "Completed",

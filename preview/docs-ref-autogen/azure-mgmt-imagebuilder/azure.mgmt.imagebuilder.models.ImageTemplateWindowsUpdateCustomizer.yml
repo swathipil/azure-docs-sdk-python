@@ -6,14 +6,15 @@ module: azure.mgmt.imagebuilder.models
 inheritances:
 - azure.mgmt.imagebuilder.models._models_py3.ImageTemplateCustomizer
 summary: 'Installs Windows Updates. Corresponds to Packer Windows Update Provisioner
+
   ([https://github.com/rgl/packer-provisioner-windows-update](https://github.com/rgl/packer-provisioner-windows-update)).
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ImageTemplateWindowsUpdateCustomizer(*, name: str | None = None, search_criteria:
-    str | None = None, filters: List[str] | None = None, update_limit: int | None
-    = None, **kwargs)'
+    str | None = None, filters: List[str] | None = None, update_limit: int = 0, **kwargs:
+    Any)'
   parameters:
   - name: name
     description: Friendly Name to provide context on what this customization step

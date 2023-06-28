@@ -4,24 +4,20 @@ name: ResourceGuardResource
 fullName: azure.mgmt.dataprotection.models.ResourceGuardResource
 module: azure.mgmt.dataprotection.models
 inheritances:
-- azure.mgmt.dataprotection.models._models_py3.DppTrackedResource
+- azure.mgmt.dataprotection.models._models_py3.DppBaseTrackedResource
 summary: 'ResourceGuardResource.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'ResourceGuardResource(*, e_tag: str | None = None, identity: _models.DppIdentityDetails
-    | None = None, location: str | None = None, tags: Dict[str, str] | None = None,
-    properties: _models.ResourceGuard | None = None, **kwargs)'
+  syntax: 'ResourceGuardResource(*, e_tag: str | None = None, location: str | None
+    = None, tags: Dict[str, str] | None = None, properties: _models.ResourceGuard
+    | None = None, **kwargs: Any)'
   parameters:
   - name: e_tag
     description: Optional ETag.
     types:
     - <xref:str>
-  - name: identity
-    description: Input Managed Identity Details.
-    types:
-    - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
   - name: location
     description: Resource location.
     types:
@@ -43,10 +39,6 @@ variables:
   name: id
   types:
   - <xref:str>
-- description: Input Managed Identity Details.
-  name: identity
-  types:
-  - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
 - description: Resource location.
   name: location
   types:

@@ -20,7 +20,7 @@ constructor:
     | None = None, ignore_first_record: bool | None = None, blob_storage_event_type:
     str | _models.BlobStorageEventType | None = None, managed_identity_resource_id:
     str | None = None, database_routing: str | _models.DatabaseRouting | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

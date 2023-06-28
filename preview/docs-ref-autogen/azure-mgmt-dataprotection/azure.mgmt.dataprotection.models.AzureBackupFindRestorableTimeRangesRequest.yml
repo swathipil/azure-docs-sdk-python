@@ -12,7 +12,7 @@ summary: 'List Restore Ranges Request.
 constructor:
   syntax: 'AzureBackupFindRestorableTimeRangesRequest(*, source_data_store_type: str
     | _models.RestoreSourceDataStoreType, start_time: str | None = None, end_time:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: source_data_store_type
     description: 'Gets or sets the type of the source data store. Required.

@@ -17,7 +17,7 @@ constructor:
     = None, is_auto_protectable: bool | None = None, is_auto_protected: bool | None
     = None, subinquireditemcount: int | None = None, subprotectableitemcount: int
     | None = None, prebackupvalidation: _models.PreBackupValidation | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: Type of backup management to backup an item.

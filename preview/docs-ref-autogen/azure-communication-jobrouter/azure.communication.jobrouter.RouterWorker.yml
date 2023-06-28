@@ -1,0 +1,13 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.RouterWorker
+name: RouterWorker
+fullName: azure.communication.jobrouter.RouterWorker
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterWorker
+constructor:
+  syntax: 'RouterWorker(*, queue_assignments: Dict[str, QueueAssignment | MutableMapping[str,
+    Any] | None] | None = None, total_capacity: int | None = None, labels: Dict[str,
+    int | float | str | bool | None] | None = None, tags: Dict[str, int | float |
+    str | bool | None] | None = None, channel_configurations: Dict[str, _models.ChannelConfiguration]
+    | None = None, available_for_offers: bool | None = None, **kwargs)'

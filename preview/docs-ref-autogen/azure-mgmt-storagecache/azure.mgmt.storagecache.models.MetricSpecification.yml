@@ -11,7 +11,7 @@ constructor:
     = None, display_description: str | None = None, unit: str | None = None, aggregation_type:
     str | None = None, supported_aggregation_types: List[str | _models.MetricAggregationType]
     | None = None, metric_class: str | None = None, dimensions: List[_models.MetricDimension]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: The name of the metric.
@@ -36,7 +36,7 @@ constructor:
   - name: supported_aggregation_types
     description: Support metric aggregation type.
     types:
-    - <xref:azure.mgmt.storagecache.aio.operations.AscUsagesOperations.list>[<xref:str>
+    - <xref:azure.mgmt.storagecache.aio.operations.AmlFilesystemsOperations.list>[<xref:str>
     - <xref:azure.mgmt.storagecache.models.MetricAggregationType>]
   - name: metric_class
     description: Type of metrics.
@@ -45,7 +45,7 @@ constructor:
   - name: dimensions
     description: Dimensions of the metric.
     types:
-    - <xref:azure.mgmt.storagecache.aio.operations.AscUsagesOperations.list>[<xref:azure.mgmt.storagecache.models.MetricDimension>]
+    - <xref:azure.mgmt.storagecache.aio.operations.AmlFilesystemsOperations.list>[<xref:azure.mgmt.storagecache.models.MetricDimension>]
 variables:
 - description: The name of the metric.
   name: name

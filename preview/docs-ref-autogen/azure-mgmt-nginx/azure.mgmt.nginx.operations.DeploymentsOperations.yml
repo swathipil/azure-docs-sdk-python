@@ -34,7 +34,7 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Is either a model type or a IO type. Default value is None.
+    description: Is either a NginxDeployment type or a IO type. Default value is None.
     isRequired: true
     types:
     - <xref:azure.mgmt.nginx.models.NginxDeployment>
@@ -155,7 +155,10 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: Is either a model type or a IO type. Default value is None.
+    description: 'Is either a NginxDeploymentUpdateParameters type or a IO type. Default
+      value is
+
+      None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.nginx.models.NginxDeploymentUpdateParameters>

@@ -10,7 +10,8 @@ summary: 'Extended Information about the job.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'JobExtendedInfo(*, additional_details: Dict[str, str] | None = None, **kwargs)'
+  syntax: 'JobExtendedInfo(*, additional_details: Dict[str, str] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: additional_details
     description: Job's Additional Details.

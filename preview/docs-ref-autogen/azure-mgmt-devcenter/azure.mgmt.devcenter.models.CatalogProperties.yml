@@ -11,7 +11,7 @@ summary: 'Properties of a catalog.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'CatalogProperties(*, git_hub: _models.GitCatalog | None = None, ado_git:
-    _models.GitCatalog | None = None, **kwargs)'
+    _models.GitCatalog | None = None, **kwargs: Any)'
   parameters:
   - name: git_hub
     description: Properties for a GitHub catalog type.

@@ -6,12 +6,14 @@ module: azure.mgmt.frontdoor.models
 inheritances:
 - azure.mgmt.frontdoor._serialization.Model
 summary: 'Defines a list of Experiments. It contains a list of Experiment objects
-  and a URL link to get the next set of results.
+  and a URL link to get
+
+  the next set of results.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'ExperimentList(*, next_link: str | None = None, **kwargs)'
+  syntax: 'ExperimentList(*, next_link: str | None = None, **kwargs: Any)'
   parameters:
   - name: next_link
     description: URL to get the next set of Experiment objects if there are any.

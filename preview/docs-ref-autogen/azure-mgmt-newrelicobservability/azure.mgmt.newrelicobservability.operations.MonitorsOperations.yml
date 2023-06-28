@@ -414,7 +414,7 @@ methods:
   summary: Switches the billing for NewRelic monitor resource.
   signature: 'switch_billing(resource_group_name: str, monitor_name: str, request:
     _models.SwitchBillingRequest, *, content_type: str = ''application/json'', **kwargs:
-    Any) -> None'
+    Any) -> _models.NewRelicMonitorResource | None'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -447,8 +447,9 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: None or the result of cls(response)
+    description: NewRelicMonitorResource or None or the result of cls(response)
     types:
+    - <xref:azure.mgmt.newrelicobservability.models.NewRelicMonitorResource>
     - <xref:None>
   exceptions:
   - type: azure.core.exceptions.HttpResponseError

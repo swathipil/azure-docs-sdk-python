@@ -10,7 +10,8 @@ summary: 'List of SessionHost definitions.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'SessionHostList(*, value: List[_models.SessionHost] | None = None, **kwargs)'
+  syntax: 'SessionHostList(*, value: List[_models.SessionHost] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: value
     description: List of SessionHost definitions.

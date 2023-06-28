@@ -16,6 +16,7 @@ classes:
 - azure.mgmt.recoveryservicessiterecovery.models.A2ACrossClusterMigrationReplicationDetails
 - azure.mgmt.recoveryservicessiterecovery.models.A2AEnableProtectionInput
 - azure.mgmt.recoveryservicessiterecovery.models.A2AEventDetails
+- azure.mgmt.recoveryservicessiterecovery.models.A2AExtendedLocationDetails
 - azure.mgmt.recoveryservicessiterecovery.models.A2APolicyCreationInput
 - azure.mgmt.recoveryservicessiterecovery.models.A2APolicyDetails
 - azure.mgmt.recoveryservicessiterecovery.models.A2AProtectedDiskDetails

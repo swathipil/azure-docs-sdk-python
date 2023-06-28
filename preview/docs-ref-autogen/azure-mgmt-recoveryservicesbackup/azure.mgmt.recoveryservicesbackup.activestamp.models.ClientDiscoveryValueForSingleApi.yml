@@ -9,7 +9,7 @@ summary: Available operation details.
 constructor:
   syntax: 'ClientDiscoveryValueForSingleApi(*, name: str | None = None, display: _models.ClientDiscoveryDisplay
     | None = None, origin: str | None = None, properties: _models.ClientDiscoveryForProperties
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: Name of the Operation.

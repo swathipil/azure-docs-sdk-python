@@ -11,7 +11,7 @@ summary: 'Describes a Shared Private Link Resource.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'SharedPrivateLinkResource(*, group_id: str | None = None, private_link_resource_id:
-    str | None = None, request_message: str | None = None, **kwargs)'
+    str | None = None, request_message: str | None = None, **kwargs: Any)'
   parameters:
   - name: group_id
     description: 'The group id from the provider of resource the shared private link

@@ -13,7 +13,7 @@ constructor:
 methods:
 - uid: azure.mgmt.search.operations.PrivateEndpointConnectionsOperations.delete
   name: delete
-  summary: Disconnects the private endpoint connection and deletes it from the Search
+  summary: Disconnects the private endpoint connection and deletes it from the search
     service.
   signature: 'delete(resource_group_name: str, search_service_name: str, private_endpoint_connection_name:
     str, search_management_request_options: SearchManagementRequestOptions | None
@@ -59,7 +59,7 @@ methods:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.search.operations.PrivateEndpointConnectionsOperations.get
   name: get
-  summary: 'Gets the details of the private endpoint connection to the Search service
+  summary: 'Gets the details of the private endpoint connection to the search service
     in the given resource
 
     group.'
@@ -146,7 +146,7 @@ methods:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.search.operations.PrivateEndpointConnectionsOperations.update
   name: update
-  summary: Updates a Private Endpoint connection to the Search service in the given
+  summary: Updates a Private Endpoint connection to the search service in the given
     resource group.
   signature: 'update(resource_group_name: str, search_service_name: str, private_endpoint_connection_name:
     str, private_endpoint_connection: _models.PrivateEndpointConnection, search_management_request_options:

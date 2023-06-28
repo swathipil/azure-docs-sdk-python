@@ -10,7 +10,8 @@ summary: 'The commitment plan association.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'CommitmentPlanAccountAssociation(*, account_id: str | None = None, **kwargs)'
+  syntax: 'CommitmentPlanAccountAssociation(*, account_id: str | None = None, **kwargs:
+    Any)'
   parameters:
   - name: account_id
     description: The Azure resource id of the account.

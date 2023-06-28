@@ -141,6 +141,7 @@ enums:
 - azure.mgmt.databox.v2022_12_01.models.DatacenterAddressType
 - azure.mgmt.databox.v2022_12_01.models.DoubleEncryption
 - azure.mgmt.databox.v2022_12_01.models.FilterFileType
+- azure.mgmt.databox.v2022_12_01.models.HardwareEncryption
 - azure.mgmt.databox.v2022_12_01.models.JobDeliveryType
 - azure.mgmt.databox.v2022_12_01.models.KekType
 - azure.mgmt.databox.v2022_12_01.models.LogCollectionLevel

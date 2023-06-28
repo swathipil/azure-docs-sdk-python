@@ -8,7 +8,7 @@ inheritances:
 summary: Immutability Settings at vault level.
 constructor:
   syntax: 'ImmutabilitySettings(*, state: str | _models.ImmutabilityState | None =
-    None, **kwargs)'
+    None, **kwargs: Any)'
   parameters:
   - name: state
     description: 'Immutability state. Known values are: "Disabled", "Unlocked", and

@@ -10,7 +10,7 @@ summary: 'Contact Instance Properties.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: ContactInstanceProperties(**kwargs)
+  syntax: 'ContactInstanceProperties(**kwargs: Any)'
 variables:
 - description: 'Maximum elevation of the antenna during the contact in decimal
 

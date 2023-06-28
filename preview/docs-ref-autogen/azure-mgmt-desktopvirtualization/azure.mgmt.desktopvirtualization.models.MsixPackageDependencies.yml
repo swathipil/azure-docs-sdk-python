@@ -8,7 +8,7 @@ inheritances:
 summary: Schema for MSIX Package Dependencies properties.
 constructor:
   syntax: 'MsixPackageDependencies(*, dependency_name: str | None = None, publisher:
-    str | None = None, min_version: str | None = None, **kwargs)'
+    str | None = None, min_version: str | None = None, **kwargs: Any)'
   parameters:
   - name: dependency_name
     description: Name of package dependency.

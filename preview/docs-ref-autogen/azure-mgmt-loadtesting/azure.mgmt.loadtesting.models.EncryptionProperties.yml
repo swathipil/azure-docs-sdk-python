@@ -9,7 +9,7 @@ summary: Key and identity details for Customer Managed Key encryption of load te
   resource.
 constructor:
   syntax: 'EncryptionProperties(*, identity: _models.EncryptionPropertiesIdentity
-    | None = None, key_url: str | None = None, **kwargs)'
+    | None = None, key_url: str | None = None, **kwargs: Any)'
   parameters:
   - name: identity
     description: 'All identity configuration for Customer-managed key settings defining

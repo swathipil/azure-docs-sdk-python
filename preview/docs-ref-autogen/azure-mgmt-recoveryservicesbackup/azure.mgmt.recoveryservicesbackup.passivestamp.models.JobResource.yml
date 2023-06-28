@@ -11,7 +11,8 @@ summary: 'Defines workload agnostic properties for a job.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'JobResource(*, location: str | None = None, tags: Dict[str, str] | None
-    = None, e_tag: str | None = None, properties: _models.Job | None = None, **kwargs)'
+    = None, e_tag: str | None = None, properties: _models.Job | None = None, **kwargs:
+    Any)'
   parameters:
   - name: location
     description: Resource location.

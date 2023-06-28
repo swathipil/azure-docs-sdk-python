@@ -1,0 +1,32 @@
+### YamlMime:PythonClass
+uid: azure.communication.callautomation.SsmlSource
+name: SsmlSource
+fullName: azure.communication.callautomation.SsmlSource
+module: azure.communication.callautomation
+inheritances:
+- builtins.object
+summary: 'SsmlSource to be played in actions such as Play media.
+
+
+  SsmlSource to be played in actions such as Play media.'
+constructor:
+  syntax: 'SsmlSource(ssml_text: str, *, play_source_id: str | None = None, **kwargs)'
+  parameters:
+  - name: ssml_text
+    description: Ssml string for the cognitive service to be played.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: play_source_id
+    description: source id of the play media.
+    types:
+    - <xref:str>
+variables:
+- description: Ssml string for the cognitive service to be played.
+  name: ssml_text
+  types:
+  - <xref:str>
+- description: source id of the play media.
+  name: play_source_id
+  types:
+  - <xref:str>

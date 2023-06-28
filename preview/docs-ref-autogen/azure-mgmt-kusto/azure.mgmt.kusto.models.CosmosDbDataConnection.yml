@@ -17,7 +17,7 @@ constructor:
     | None = None, mapping_rule_name: str | None = None, managed_identity_resource_id:
     str | None = None, cosmos_db_account_resource_id: str | None = None, cosmos_db_database:
     str | None = None, cosmos_db_container: str | None = None, retrieval_start_date:
-    datetime | None = None, **kwargs)'
+    datetime | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

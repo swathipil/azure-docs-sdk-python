@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.DeclineJobOfferResult
+name: DeclineJobOfferResult
+fullName: azure.communication.jobrouter.DeclineJobOfferResult
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: DeclineJobOfferResult()

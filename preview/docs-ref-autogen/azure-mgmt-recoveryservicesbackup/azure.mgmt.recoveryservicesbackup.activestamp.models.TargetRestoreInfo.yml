@@ -9,7 +9,7 @@ summary: Details about target workload during restore operation.
 constructor:
   syntax: 'TargetRestoreInfo(*, overwrite_option: str | _models.OverwriteOptions |
     None = None, container_id: str | None = None, database_name: str | None = None,
-    target_directory_for_file_restore: str | None = None, **kwargs)'
+    target_directory_for_file_restore: str | None = None, **kwargs: Any)'
   parameters:
   - name: overwrite_option
     description: 'Can Overwrite if Target DataBase already exists. Known values are:

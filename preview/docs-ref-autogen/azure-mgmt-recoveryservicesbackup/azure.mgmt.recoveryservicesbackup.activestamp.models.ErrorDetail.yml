@@ -10,7 +10,7 @@ summary: 'Error Detail class which encapsulates Code, Message and Recommendation
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: ErrorDetail(**kwargs)
+  syntax: 'ErrorDetail(**kwargs: Any)'
 variables:
 - description: Error code.
   name: code

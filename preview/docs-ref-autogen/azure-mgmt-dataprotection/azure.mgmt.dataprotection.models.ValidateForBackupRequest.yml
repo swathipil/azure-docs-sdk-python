@@ -10,7 +10,8 @@ summary: 'Validate for backup request.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'ValidateForBackupRequest(*, backup_instance: _models.BackupInstance, **kwargs)'
+  syntax: 'ValidateForBackupRequest(*, backup_instance: _models.BackupInstance, **kwargs:
+    Any)'
   parameters:
   - name: backup_instance
     description: Backup Instance. Required.

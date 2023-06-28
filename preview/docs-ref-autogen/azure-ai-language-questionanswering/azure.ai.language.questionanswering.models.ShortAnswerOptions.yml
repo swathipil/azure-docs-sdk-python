@@ -4,7 +4,7 @@ name: ShortAnswerOptions
 fullName: azure.ai.language.questionanswering.models.ShortAnswerOptions
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: 'To configure Answer span prediction feature.
 
 
@@ -14,7 +14,7 @@ summary: 'To configure Answer span prediction feature.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ShortAnswerOptions(*, confidence_threshold: float | None = None, top: int
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: confidence_threshold
     description: 'Minimum threshold score required to include an answer span,
@@ -28,7 +28,8 @@ constructor:
     types:
     - <xref:int>
 variables:
-- description: 'Enable or disable Answer Span prediction. Has constant value: True.'
+- description: Enable or disable Answer Span prediction. Required. Default value is
+    True.
   name: enable
   types:
   - <xref:bool>

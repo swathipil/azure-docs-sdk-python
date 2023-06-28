@@ -7,7 +7,7 @@ inheritances:
 - azure.mgmt.orbital._serialization.Model
 summary: ResourceIdListResultValueItem.
 constructor:
-  syntax: 'ResourceIdListResultValueItem(*, id: str | None = None, **kwargs)'
+  syntax: 'ResourceIdListResultValueItem(*, id: str | None = None, **kwargs: Any)'
   parameters:
   - name: id
     description: The Azure Resource ID.

@@ -34,7 +34,7 @@ constructor:
     None, protected_item_data_source_id: str | None = None, protected_item_health_status:
     str | _models.ProtectedItemHealthStatus | None = None, extended_info: _models.AzureVmWorkloadProtectedItemExtendedInfo
     | None = None, kpis_healths: Dict[str, _models.KPIResourceHealthDetails] | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: 'Type of backup management for the backed up item. Known values

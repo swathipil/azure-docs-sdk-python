@@ -31,10 +31,10 @@ methods:
     types:
     - <xref:str>
   - name: msix_image_uri
-    description: 'Object containing URI to MSIX Image. Is either a model type or a
-      IO
+    description: 'Object containing URI to MSIX Image. Is either a MSIXImageURI type
+      or a
 
-      type. Required.'
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.MSIXImageURI>

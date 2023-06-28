@@ -9,7 +9,8 @@ summary: Describes an available Cognitive Services SKU.
 constructor:
   syntax: 'ResourceSku(*, resource_type: str | None = None, name: str | None = None,
     tier: str | None = None, kind: str | None = None, locations: List[str] | None
-    = None, restrictions: List[_models.ResourceSkuRestrictions] | None = None, **kwargs)'
+    = None, restrictions: List[_models.ResourceSkuRestrictions] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: resource_type
     description: The type of resource the SKU applies to.

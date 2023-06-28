@@ -12,7 +12,7 @@ summary: 'A private endpoint connection to an azure resource.
 constructor:
   syntax: 'PrivateEndpointConnection(*, private_endpoint: _models.PrivateEndpoint
     | None = None, private_link_service_connection_state: _models.PrivateLinkServiceConnectionState
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: private_endpoint
     description: Private endpoint.

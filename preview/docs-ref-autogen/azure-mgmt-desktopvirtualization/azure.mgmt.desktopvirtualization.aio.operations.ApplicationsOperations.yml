@@ -38,10 +38,10 @@ methods:
     types:
     - <xref:str>
   - name: application
-    description: 'Object containing Application definitions. Is either a model type
-      or a IO
+    description: 'Object containing Application definitions. Is either a Application
+      type or
 
-      type. Required.'
+      a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.Application>
@@ -205,10 +205,9 @@ methods:
     types:
     - <xref:str>
   - name: application
-    description: 'Object containing Application definitions. Is either a model type
-      or a IO
+    description: 'Object containing Application definitions. Is either a ApplicationPatch
 
-      type. Default value is None.'
+      type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.ApplicationPatch>

@@ -13,7 +13,7 @@ summary: 'The base backup engine class. All workload specific backup engines der
 constructor:
   syntax: 'BackupEngineBaseResource(*, location: str | None = None, tags: Dict[str,
     str] | None = None, e_tag: str | None = None, properties: _models.BackupEngineBase
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

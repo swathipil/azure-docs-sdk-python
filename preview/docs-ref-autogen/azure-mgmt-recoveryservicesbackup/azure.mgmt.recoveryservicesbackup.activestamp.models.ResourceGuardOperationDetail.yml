@@ -8,7 +8,7 @@ inheritances:
 summary: ResourceGuardOperationDetail.
 constructor:
   syntax: 'ResourceGuardOperationDetail(*, vault_critical_operation: str | None =
-    None, default_resource_request: str | None = None, **kwargs)'
+    None, default_resource_request: str | None = None, **kwargs: Any)'
   parameters:
   - name: vault_critical_operation
     types:
