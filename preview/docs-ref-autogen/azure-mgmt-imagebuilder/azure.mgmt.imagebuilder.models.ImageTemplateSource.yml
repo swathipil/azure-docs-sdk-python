@@ -18,7 +18,7 @@ summary: 'Describes a virtual machine image source for building, customizing and
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: ImageTemplateSource(**kwargs)
+  syntax: 'ImageTemplateSource(**kwargs: Any)'
 variables:
 - description: Specifies the type of source image you want to start with. Required.
   name: type

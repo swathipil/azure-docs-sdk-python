@@ -4,7 +4,7 @@ name: InterfaceProperties
 fullName: azure.mgmt.mobilenetwork.models.InterfaceProperties
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: Interface properties.
 constructor:
   syntax: 'InterfaceProperties(*, name: str | None = None, ipv4_address: str | None

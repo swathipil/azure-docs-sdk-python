@@ -170,10 +170,9 @@ methods:
     types:
     - <xref:bool>
   - name: session_host
-    description: 'Object containing SessionHost definitions. Is either a model type
-      or a IO
+    description: 'Object containing SessionHost definitions. Is either a SessionHostPatch
 
-      type. Default value is None.'
+      type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.SessionHostPatch>

@@ -5,7 +5,10 @@ fullName: azure.mgmt.workloads.models.SkipFileShareConfiguration
 module: azure.mgmt.workloads.models
 inheritances:
 - azure.mgmt.workloads.models._models_py3.FileShareConfiguration
-summary: 'Gets or sets the skip file share configuration.
+summary: 'Gets or sets the file share configuration for scenarios where transport
+  directory fileshare is
+
+  not created or required.
 
 
   All required parameters must be populated in order to send to Azure.'

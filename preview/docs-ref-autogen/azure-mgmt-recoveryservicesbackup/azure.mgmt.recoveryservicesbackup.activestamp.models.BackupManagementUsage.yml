@@ -10,7 +10,7 @@ constructor:
   syntax: 'BackupManagementUsage(*, unit: str | _models.UsagesUnit | None = None,
     quota_period: str | None = None, next_reset_time: datetime | None = None, current_value:
     int | None = None, limit: int | None = None, name: _models.NameInfo | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: unit
     description: 'Unit of the usage. Known values are: "Count", "Bytes", "Seconds",

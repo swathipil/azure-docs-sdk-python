@@ -8,7 +8,7 @@ inheritances:
 summary: The list Kusto data connections operation response.
 constructor:
   syntax: 'DataConnectionListResult(*, value: List[_models.DataConnection] | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: value
     description: The list of Kusto data connections.

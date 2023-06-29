@@ -8,7 +8,7 @@ inheritances:
 summary: Parameters for updating an image template.
 constructor:
   syntax: 'ImageTemplateUpdateParameters(*, identity: _models.ImageTemplateIdentity
-    | None = None, tags: Dict[str, str] | None = None, **kwargs)'
+    | None = None, tags: Dict[str, str] | None = None, **kwargs: Any)'
   parameters:
   - name: identity
     description: The identity of the image template, if configured.

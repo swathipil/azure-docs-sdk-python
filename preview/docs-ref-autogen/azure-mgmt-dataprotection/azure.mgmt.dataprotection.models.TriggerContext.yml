@@ -16,7 +16,7 @@ summary: 'Trigger context.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: TriggerContext(**kwargs)
+  syntax: 'TriggerContext(**kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

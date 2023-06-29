@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.CancelJobResult
+name: CancelJobResult
+fullName: azure.communication.jobrouter.CancelJobResult
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: CancelJobResult()

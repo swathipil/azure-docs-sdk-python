@@ -10,7 +10,7 @@ constructor:
   syntax: 'ClientDiscoveryValueForSingleApi(*, display: _models.ClientDiscoveryDisplay
     | None = None, name: str | None = None, is_data_action: bool | None = None, origin:
     str | None = None, properties: _models.ClientDiscoveryForProperties | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: display
     description: Contains the localized display information for this particular operation.

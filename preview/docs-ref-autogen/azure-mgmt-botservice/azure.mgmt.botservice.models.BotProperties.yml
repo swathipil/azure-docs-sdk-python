@@ -23,7 +23,7 @@ constructor:
     = None, is_cmek_enabled: bool = False, cmek_key_vault_url: str | None = None,
     tenant_id: str | None = None, public_network_access: str | _models.PublicNetworkAccess
     = ''Enabled'', is_streaming_supported: bool = False, disable_local_auth: bool
-    | None = None, schema_transformation_version: str = ''0.0'', storage_resource_id:
+    | None = None, schema_transformation_version: str | None = None, storage_resource_id:
     str | None = None, open_with_hint: str | None = None, app_password_hint: str |
     None = None, publishing_credentials: str | None = None, **kwargs)'
   parameters:

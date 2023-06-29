@@ -11,7 +11,7 @@ summary: 'List of quota bucket objects. It contains a URL link to get the next s
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: QuotaResourceList(**kwargs)
+  syntax: 'QuotaResourceList(**kwargs: Any)'
 variables:
 - description: List of quota bucket objects provided by the loadtestservice.
   name: value

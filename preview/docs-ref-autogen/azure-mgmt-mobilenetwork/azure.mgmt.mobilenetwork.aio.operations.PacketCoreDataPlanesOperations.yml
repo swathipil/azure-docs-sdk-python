@@ -13,33 +13,45 @@ constructor:
 methods:
 - uid: azure.mgmt.mobilenetwork.aio.operations.PacketCoreDataPlanesOperations.begin_create_or_update
   name: begin_create_or_update
-  summary: Creates or updates a packet core data plane.
+  summary: 'Creates or updates a packet core data plane. Must be created in the same
+    location as its parent
+
+    packet core control plane.'
   signature: 'async begin_create_or_update(resource_group_name: str, packet_core_control_plane_name:
-    str, packet_core_data_plane_name: str, parameters: PacketCoreDataPlane, **kwargs:
-    Any) -> AsyncLROPoller[PacketCoreDataPlane]'
+    str, packet_core_data_plane_name: str, parameters: _models.PacketCoreDataPlane,
+    *, content_type: str = ''application/json'', **kwargs: Any) -> AsyncLROPoller[_models.PacketCoreDataPlane]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
     description: 'Parameters supplied to the create or update packet core data plane
 
-      operation.'
+      operation. Is either a model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.PacketCoreDataPlane>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -81,17 +93,19 @@ methods:
     str, packet_core_data_plane_name: str, **kwargs: Any) -> AsyncLROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -134,17 +148,19 @@ methods:
     str, packet_core_data_plane_name: str, **kwargs: Any) -> PacketCoreDataPlane'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -153,7 +169,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: PacketCoreDataPlane, or the result of cls(response)
+    description: PacketCoreDataPlane or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.PacketCoreDataPlane>
   exceptions:
@@ -163,15 +179,17 @@ methods:
   summary: Lists all the packet core data planes associated with a packet core control
     plane.
   signature: 'list_by_packet_core_control_plane(resource_group_name: str, packet_core_control_plane_name:
-    str, **kwargs: Any) -> AsyncIterable[PacketCoreDataPlaneListResult]'
+    str, **kwargs: Any) -> AsyncIterable[PacketCoreDataPlane]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -180,47 +198,57 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: 'An iterator like instance of either PacketCoreDataPlaneListResult
-      or the result of
-
-      cls(response)'
+    description: An iterator like instance of either PacketCoreDataPlane or the result
+      of cls(response)
     types:
-    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.mobilenetwork.models.PacketCoreDataPlaneListResult>]
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.mobilenetwork.models.PacketCoreDataPlane>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.aio.operations.PacketCoreDataPlanesOperations.update_tags
   name: update_tags
   summary: Updates packet core data planes tags.
   signature: 'async update_tags(resource_group_name: str, packet_core_control_plane_name:
-    str, packet_core_data_plane_name: str, parameters: TagsObject, **kwargs: Any)
-    -> PacketCoreDataPlane'
+    str, packet_core_data_plane_name: str, parameters: _models.TagsObject, *, content_type:
+    str = ''application/json'', **kwargs: Any) -> _models.PacketCoreDataPlane'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update packet core data plane tags.
+    description: 'Parameters supplied to update packet core data plane tags. Is either
+      a model
+
+      type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: PacketCoreDataPlane, or the result of cls(response)
+    description: PacketCoreDataPlane or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.PacketCoreDataPlane>
   exceptions:

@@ -285,7 +285,7 @@ methods:
     description: 'Object containing message includes title and message body. Is either
       a
 
-      model type or a IO type. Default value is None.'
+      SendMessage type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.SendMessage>

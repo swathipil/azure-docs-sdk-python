@@ -9,7 +9,7 @@ summary: Describes a particular API error with an error code and a message.
 constructor:
   syntax: 'CloudErrorBody(*, code: str | None = None, message: str | None = None,
     target: str | None = None, details: List[_models.CloudErrorBody] | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: code
     description: 'An error code that describes the error condition more precisely

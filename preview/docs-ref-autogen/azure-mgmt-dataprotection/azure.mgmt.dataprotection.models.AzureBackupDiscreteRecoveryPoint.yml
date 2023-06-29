@@ -8,6 +8,9 @@ inheritances:
 summary: 'Azure backup discrete RecoveryPoint.
 
 
+  Variables are only populated by the server, and will be ignored when sending a request.
+
+
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'AzureBackupDiscreteRecoveryPoint(*, recovery_point_time: datetime, friendly_name:
@@ -15,14 +18,14 @@ constructor:
     | None = None, policy_name: str | None = None, policy_version: str | None = None,
     recovery_point_id: str | None = None, recovery_point_type: str | None = None,
     retention_tag_name: str | None = None, retention_tag_version: str | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: friendly_name
     types:
     - <xref:str>
   - name: recovery_point_data_stores_details
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:azure.mgmt.dataprotection.models.RecoveryPointDataStoreDetails>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:azure.mgmt.dataprotection.models.RecoveryPointDataStoreDetails>]
   - name: recovery_point_time
     description: Required.
     types:
@@ -78,3 +81,6 @@ variables:
 - name: retention_tag_version
   types:
   - <xref:str>
+- name: expiry_time
+  types:
+  - <xref:datetime.datetime>

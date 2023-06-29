@@ -11,7 +11,7 @@ summary: 'Schedule based trigger context.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ScheduleBasedTriggerContext(*, schedule: _models.BackupSchedule, tagging_criteria:
-    List[_models.TaggingCriteria], **kwargs)'
+    List[_models.TaggingCriteria], **kwargs: Any)'
   parameters:
   - name: schedule
     description: Schedule for this backup. Required.
@@ -20,7 +20,7 @@ constructor:
   - name: tagging_criteria
     description: List of tags that can be applicable for given schedule. Required.
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:azure.mgmt.dataprotection.models.TaggingCriteria>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:azure.mgmt.dataprotection.models.TaggingCriteria>]
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

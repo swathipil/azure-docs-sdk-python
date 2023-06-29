@@ -8,7 +8,8 @@ inheritances:
 summary: The query filters that can be used with the inquire container API.
 constructor:
   syntax: 'BMSContainersInquiryQueryObject(*, backup_management_type: str | _models.BackupManagementType
-    | None = None, workload_type: str | _models.WorkloadType | None = None, **kwargs)'
+    | None = None, workload_type: str | _models.WorkloadType | None = None, **kwargs:
+    Any)'
   parameters:
   - name: backup_management_type
     description: 'Backup management type for this container. Known values are:

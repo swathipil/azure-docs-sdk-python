@@ -11,7 +11,7 @@ constructor:
     | None = None, friendly_name: str | None = None, time_zone: str | None = None,
     exclusion_tag: str | None = None, schedules: List[_models.ScalingSchedule] | None
     = None, host_pool_references: List[_models.ScalingHostPoolReference] | None =
-    None, **kwargs)'
+    None, **kwargs: Any)'
   parameters:
   - name: tags
     description: tags to be updated.

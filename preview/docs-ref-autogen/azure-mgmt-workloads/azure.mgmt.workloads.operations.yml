@@ -12,4 +12,4 @@ classes:
 - azure.mgmt.workloads.operations.SAPDatabaseInstancesOperations
 - azure.mgmt.workloads.operations.SAPVirtualInstancesOperations
 - azure.mgmt.workloads.operations.SapLandscapeMonitorOperations
-- azure.mgmt.workloads.operations.WorkloadsClientOperationsMixin
+- azure.mgmt.workloads.operations.WorkloadsMgmtClientOperationsMixin

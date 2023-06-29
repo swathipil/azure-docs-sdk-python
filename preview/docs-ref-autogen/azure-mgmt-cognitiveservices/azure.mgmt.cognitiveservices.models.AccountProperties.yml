@@ -17,7 +17,8 @@ constructor:
     = None, api_properties: _models.ApiProperties | None = None, dynamic_throttling_enabled:
     bool | None = None, restrict_outbound_network_access: bool | None = None, allowed_fqdn_list:
     List[str] | None = None, disable_local_auth: bool | None = None, restore: bool
-    | None = None, locations: _models.MultiRegionSettings | None = None, **kwargs)'
+    | None = None, locations: _models.MultiRegionSettings | None = None, **kwargs:
+    Any)'
   parameters:
   - name: migration_token
     description: Resource migration token.

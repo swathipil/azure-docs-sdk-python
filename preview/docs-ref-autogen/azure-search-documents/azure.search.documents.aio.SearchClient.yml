@@ -44,12 +44,12 @@ examples:
 - "Creating the SearchClient with an API key.<!--[!code-python[Main](les\\async_samples\\\
   sample_authentication_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
   : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\
-  \\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\
-  \\async_samples\\\\sample_authentication_async.py\", \"xml:space\": \"preserve\"\
-  , \"force\": false, \"language\": \"python\", \"highlight_args\": {\"linenostart\"\
-  : 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials import\
-  \ AzureKeyCredential\n   from azure.search.documents.aio import SearchClient\n \
-  \  service_endpoint = os.getenv(\"AZURE_SEARCH_SERVICE_ENDPOINT\")\n   index_name\
+  \\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
+  \\samples\\\\async_samples\\\\sample_authentication_async.py\", \"xml:space\": \"\
+  preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\": {\"\
+  linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
+  \ import AzureKeyCredential\n   from azure.search.documents.aio import SearchClient\n\
+  \   service_endpoint = os.getenv(\"AZURE_SEARCH_SERVICE_ENDPOINT\")\n   index_name\
   \ = os.getenv(\"AZURE_SEARCH_INDEX_NAME\")\n   key = os.getenv(\"AZURE_SEARCH_API_KEY\"\
   )\n\n   search_client = SearchClient(service_endpoint, index_name, AzureKeyCredential(key))\n\
   \n   ````\n"
@@ -134,7 +134,7 @@ methods:
   - "Get a auto-completions.<!--[!code-python[Main](les\\async_samples\\sample_autocomplete_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\async_samples\\\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\async_samples\\\
     \\sample_autocomplete_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
     \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
     : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
@@ -181,9 +181,9 @@ methods:
   - "Delete existing documents to an index<!--[!code-python[Main](les\\async_samples\\\
     sample_crud_operations_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\\
-    samples\\\\async_samples\\\\sample_crud_operations_async.py\", \"xml:space\":\
-    \ \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
+    \\samples\\\\async_samples\\\\sample_crud_operations_async.py\", \"xml:space\"\
+    : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   result = await\
     \ search_client.upload_documents(documents=[{\"HotelId\": \"1000\"}])\n\n   print(\"\
     Delete new document succeeded: {}\".format(result[0].succeeded))\n\n   ````\n"
@@ -210,8 +210,8 @@ methods:
   - "Get a specific document from the search index.<!--[!code-python[Main](les\\async_samples\\\
     sample_get_document_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\\
-    samples\\\\async_samples\\\\sample_get_document_async.py\", \"xml:space\": \"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
+    \\samples\\\\async_samples\\\\sample_get_document_async.py\", \"xml:space\": \"\
     preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\": {\"\
     linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
     \ import AzureKeyCredential\n   from azure.search.documents.aio import SearchClient\n\
@@ -271,7 +271,7 @@ methods:
   - "Merge fields into existing documents to an index<!--[!code-python[Main](les\\\
     async_samples\\sample_crud_operations_async.py )]-->\n\n<!-- literal_block {\"\
     ids\": [], \"classes\": [], \"names\": [], \"dupnames\": [], \"backrefs\": [],\
-    \ \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\
+    \ \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
     \\samples\\\\async_samples\\\\sample_crud_operations_async.py\", \"xml:space\"\
     : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   result = await\
@@ -303,42 +303,7 @@ methods:
     - <xref:List>[<xref:azure.search.documents.models.IndexingResult>]
 - uid: azure.search.documents.aio.SearchClient.search
   name: search
-  summary: 'Search the Azure search index for documents.
-
-
-    statistics (such as document frequency) globally for more consistent scoring,
-    or locally, for
-
-    lower latency. The default is ''local''. Use ''global'' to aggregate scoring statistics
-    globally
-
-    before scoring. Using global scoring statistics can increase latency of search
-    queries.
-
-    Possible values include: "local", "global".
-
-    :paramtype scoring_statistics: str or ~azure.search.documents.models.ScoringStatistics
-
-    :keyword session_id: A value to be used to create a sticky session, which can
-    help getting more
-
-    consistent results. As long as the same sessionId is used, a best-effort attempt
-    will be made
-
-    to target the same replica set. Be wary that reusing the same sessionID values
-    repeatedly can
-
-    interfere with the load balancing of the requests across replicas and adversely
-    affect the
-
-    performance of the search service. The value used as sessionId cannot start with
-    a ''_''
-
-    character.
-
-    :paramtype session_id: str
-
-    :rtype:  AsyncSearchItemPaged[Dict]'
+  summary: Search the Azure search index for documents.
   signature: 'async search(search_text: str, *, include_total_count: bool | None =
     None, facets: List[str] | None = None, filter: str | None = None, highlight_fields:
     str | None = None, highlight_post_tag: str | None = None, highlight_pre_tag: str
@@ -348,11 +313,14 @@ methods:
     None = None, search_mode: str | SearchMode | None = None, query_language: str
     | QueryLanguage | None = None, query_speller: str | QuerySpellerType | None =
     None, query_answer: str | QueryAnswerType | None = None, query_answer_count: int
-    | None = None, query_caption: str | QueryCaptionType | None = None, query_caption_highlight:
-    bool | None = None, semantic_fields: List[str] | None = None, semantic_configuration_name:
-    str | None = None, select: List[str] | None = None, skip: int | None = None, top:
-    int | None = None, scoring_statistics: str | ScoringStatistics | None = None,
-    session_id: str | None = None, **kwargs) -> AsyncSearchItemPaged[Dict]'
+    | None = None, query_answer_threshold: float | None = None, query_caption: str
+    | QueryCaptionType | None = None, query_caption_highlight: bool | None = None,
+    semantic_fields: List[str] | None = None, semantic_configuration_name: str | None
+    = None, select: List[str] | None = None, skip: int | None = None, top: int | None
+    = None, scoring_statistics: str | ScoringStatistics | None = None, session_id:
+    str | None = None, vector: Vector | None = None, semantic_error_handling: str
+    | SemanticErrorHandling | None = None, semantic_max_wait_in_milliseconds: int
+    | None = None, debug: str | QueryDebugMode | None = None, **kwargs) -> AsyncSearchItemPaged[Dict]'
   parameters:
   - name: search_text
     description: 'A full-text search query expression; Use "*" or omit this parameter
@@ -533,6 +501,13 @@ methods:
       Configures the number of answers returned. Default count is 1.'
     types:
     - <xref:int>
+  - name: query_answer_threshold
+    description: 'This parameter is only valid if the query type is ''semantic'' and
+
+      query answer is ''extractive''. Configures the number of confidence threshold.
+      Default count is 0.7.'
+    types:
+    - <xref:float>
   - name: query_caption
     description: 'This parameter is only valid if the query type is ''semantic''.
       If set, the
@@ -593,12 +568,78 @@ methods:
     types:
     - <xref:int>
   - name: scoring_statistics
-    description: A value that specifies whether we want to calculate scoring
+    description: 'A value that specifies whether we want to calculate scoring
+
+      statistics (such as document frequency) globally for more consistent scoring,
+      or locally, for
+
+      lower latency. The default is ''local''. Use ''global'' to aggregate scoring
+      statistics globally
+
+      before scoring. Using global scoring statistics can increase latency of search
+      queries.
+
+      Possible values include: "local", "global".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.ScoringStatistics>
+  - name: session_id
+    description: 'A value to be used to create a sticky session, which can help getting
+      more
+
+      consistent results. As long as the same sessionId is used, a best-effort attempt
+      will be made
+
+      to target the same replica set. Be wary that reusing the same sessionID values
+      repeatedly can
+
+      interfere with the load balancing of the requests across replicas and adversely
+      affect the
+
+      performance of the search service. The value used as sessionId cannot start
+      with a ''_''
+
+      character.'
+    types:
+    - <xref:str>
+  - name: semantic_error_handling
+    description: 'Allows the user to choose whether a semantic call should fail
+
+      completely (default / current behavior), or to return partial results. Known
+      values are:
+
+      "partial" and "fail".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.SemanticErrorHandling>
+  - name: semantic_max_wait_in_milliseconds
+    description: 'Allows the user to set an upper bound on the amount of
+
+      time it takes for semantic enrichment to finish processing before the request
+      fails.'
+    types:
+    - <xref:int>
+  - name: debug
+    description: 'Enables a debugging tool that can be used to further explore your
+      Semantic search
+
+      results. Known values are: "disabled", "speller", "semantic", and "all".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.QueryDebugMode>
+  - name: vector
+    description: The query parameters for vector and hybrid search queries.
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.Vector>
+  return:
+    types:
+    - <xref:azure.search.documents.aio.AsyncSearchItemPaged>[<xref:Dict>]
   examples:
   - "Get search result facets.<!--[!code-python[Main](les\\async_samples\\sample_facet_query_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\async_samples\\\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\async_samples\\\
     \\sample_facet_query_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
     \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
     : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
@@ -699,7 +740,7 @@ methods:
   - "Get search suggestions.<!--[!code-python[Main](les\\async_samples\\sample_suggestions_async.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\async_samples\\\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\async_samples\\\
     \\sample_suggestions_async.py\", \"xml:space\": \"preserve\", \"force\": false,\
     \ \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"linenos\"\
     : false} -->\n\n````python\n\n   from azure.core.credentials import AzureKeyCredential\n\
@@ -734,9 +775,9 @@ methods:
   - "Upload new documents to an index<!--[!code-python[Main](les\\async_samples\\\
     sample_crud_operations_async.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\\
-    samples\\\\async_samples\\\\sample_crud_operations_async.py\", \"xml:space\":\
-    \ \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
+    \\samples\\\\async_samples\\\\sample_crud_operations_async.py\", \"xml:space\"\
+    : \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
     : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   DOCUMENT =\
     \ {\n       'Category': 'Hotel',\n       'HotelId': '1000',\n       'Rating':\
     \ 4.0,\n       'Rooms': [],\n       'HotelName': 'Azure Inn',\n   }\n\n   result\

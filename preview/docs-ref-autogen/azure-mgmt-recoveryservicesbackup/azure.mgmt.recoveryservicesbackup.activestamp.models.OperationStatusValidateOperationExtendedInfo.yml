@@ -11,7 +11,7 @@ summary: 'Operation status extended info for ValidateOperation action.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'OperationStatusValidateOperationExtendedInfo(*, validate_operation_response:
-    _models.ValidateOperationResponse | None = None, **kwargs)'
+    _models.ValidateOperationResponse | None = None, **kwargs: Any)'
   parameters:
   - name: validate_operation_response
     description: Gets the validation operation response.

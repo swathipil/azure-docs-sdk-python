@@ -28,7 +28,10 @@ constructor:
     types:
     - <xref:str>
   - name: identity
-    description: Managed service identity (user assigned identities).
+    description: 'A pre-created user assigned identity with appropriate roles assigned.
+      To
+
+      learn more on identity and roles required, visit the ACSS how-to-guide.'
     types:
     - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>
   - name: environment
@@ -90,7 +93,10 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Managed service identity (user assigned identities).
+- description: 'A pre-created user assigned identity with appropriate roles assigned.
+    To learn
+
+    more on identity and roles required, visit the ACSS how-to-guide.'
   name: identity
   types:
   - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>

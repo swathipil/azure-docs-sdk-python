@@ -4,11 +4,11 @@ name: AnswerSpan
 fullName: azure.ai.language.questionanswering.models.AnswerSpan
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Answer span object of QnA.
 constructor:
   syntax: 'AnswerSpan(*, text: str | None = None, confidence: float | None = None,
-    offset: int | None = None, length: int | None = None, **kwargs)'
+    offset: int | None = None, length: int | None = None, **kwargs: Any)'
   parameters:
   - name: text
     description: Predicted text of answer span.

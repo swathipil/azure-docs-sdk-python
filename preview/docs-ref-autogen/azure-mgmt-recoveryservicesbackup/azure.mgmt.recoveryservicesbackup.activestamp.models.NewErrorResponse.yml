@@ -8,7 +8,7 @@ inheritances:
 summary: The resource management error response.
 constructor:
   syntax: 'NewErrorResponse(*, error: _models.NewErrorResponseError | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: error
     description: The error object.

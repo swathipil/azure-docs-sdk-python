@@ -39,8 +39,10 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: The certificate. Is either a model type or a IO type. Default value
-      is None.
+    description: 'The certificate. Is either a NginxCertificate type or a IO type.
+      Default value is
+
+      None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.nginx.models.NginxCertificate>

@@ -114,10 +114,10 @@ methods:
     types:
     - <xref:str>
   - name: desktop
-    description: 'Object containing Desktop definitions. Is either a model type or
-      a IO type.
+    description: 'Object containing Desktop definitions. Is either a DesktopPatch
+      type or a IO
 
-      Default value is None.'
+      type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.DesktopPatch>

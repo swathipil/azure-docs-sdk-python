@@ -18,7 +18,8 @@ constructor:
     None = None, kind: str | None = None, tags: Dict[str, str] | None = None, identity:
     _models.ResourceModelWithAllowedPropertySetIdentity | None = None, sku: _models.ResourceModelWithAllowedPropertySetSku
     | None = None, plan: _models.ResourceModelWithAllowedPropertySetPlan | None =
-    None, description: str | None = None, friendly_name: str | None = None, **kwargs)'
+    None, description: str | None = None, friendly_name: str | None = None, **kwargs:
+    Any)'
   parameters:
   - name: location
     description: The geo-location where the resource lives.

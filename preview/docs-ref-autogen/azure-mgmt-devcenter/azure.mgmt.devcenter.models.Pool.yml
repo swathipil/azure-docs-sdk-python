@@ -16,7 +16,8 @@ constructor:
   syntax: 'Pool(*, location: str, tags: Dict[str, str] | None = None, dev_box_definition_name:
     str | None = None, network_connection_name: str | None = None, license_type: str
     | _models.LicenseType | None = None, local_administrator: str | _models.LocalAdminStatus
-    | None = None, **kwargs)'
+    | None = None, stop_on_disconnect: _models.StopOnDisconnectConfiguration | None
+    = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
@@ -48,6 +49,13 @@ constructor:
     types:
     - <xref:str>
     - <xref:azure.mgmt.devcenter.models.LocalAdminStatus>
+  - name: stop_on_disconnect
+    description: 'Stop on disconnect configuration settings for Dev Boxes created
+      in
+
+      this pool.'
+    types:
+    - <xref:azure.mgmt.devcenter.models.StopOnDisconnectConfiguration>
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 
@@ -102,6 +110,29 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.devcenter.models.LocalAdminStatus>
+- description: 'Stop on disconnect configuration settings for Dev Boxes created in
+
+    this pool.'
+  name: stop_on_disconnect
+  types:
+  - <xref:azure.mgmt.devcenter.models.StopOnDisconnectConfiguration>
+- description: 'Overall health status of the Pool. Indicates whether or not the Pool
+    is
+
+    available to create Dev Boxes. Known values are: "Unknown", "Pending", "Healthy",
+    "Warning",
+
+    and "Unhealthy".'
+  name: health_status
+  types:
+  - <xref:str>
+  - <xref:azure.mgmt.devcenter.models.HealthStatus>
+- description: 'Details on the Pool health status to help diagnose issues. This is
+
+    only populated when the pool status indicates the pool is in a non-healthy state.'
+  name: health_status_details
+  types:
+  - <xref:list>[<xref:azure.mgmt.devcenter.models.HealthStatusDetail>]
 - description: 'The provisioning state of the resource. Known values are:
 
     "NotSpecified", "Accepted", "Running", "Creating", "Created", "Updating", "Updated",

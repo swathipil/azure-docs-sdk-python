@@ -5,8 +5,16 @@ fullName: azure.mgmt.workloads.models.CreateAndMountFileShareConfiguration
 module: azure.mgmt.workloads.models
 inheritances:
 - azure.mgmt.workloads.models._models_py3.FileShareConfiguration
-summary: 'Gets or sets the file share configuration for file share created with the
-  VIS case.
+summary: 'Gets or sets the file share configuration where the transport directory
+  fileshare is created
+
+  and mounted as a part of the create infra flow. Please pre-create the resource group
+  you intend
+
+  to place the transport directory in. The storage account and fileshare will be auto-created
+  by
+
+  the ACSS and doesn''t need to pre-created.
 
 
   All required parameters must be populated in order to send to Azure.'
@@ -15,10 +23,10 @@ constructor:
     storage_account_name: str | None = None, **kwargs: Any)'
   parameters:
   - name: resource_group
-    description: 'The name of file share resource group. The app rg is used in case
-      of
+    description: 'The name of transport file share resource group. This should be
+      pre
 
-      missing input.'
+      created by the customer. The app rg is used in case of missing input.'
     types:
     - <xref:str>
   - name: storage_account_name
@@ -35,10 +43,9 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.workloads.models.ConfigurationType>
-- description: 'The name of file share resource group. The app rg is used in case
-    of
+- description: 'The name of transport file share resource group. This should be pre
 
-    missing input.'
+    created by the customer. The app rg is used in case of missing input.'
   name: resource_group
   types:
   - <xref:str>

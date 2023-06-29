@@ -11,7 +11,8 @@ constructor:
     tables_to_exclude: List[str] | None = None, external_tables_to_include: List[str]
     | None = None, external_tables_to_exclude: List[str] | None = None, materialized_views_to_include:
     List[str] | None = None, materialized_views_to_exclude: List[str] | None = None,
-    **kwargs)'
+    functions_to_include: List[str] | None = None, functions_to_exclude: List[str]
+    | None = None, **kwargs: Any)'
   parameters:
   - name: tables_to_include
     description: List of tables to include in the follower database.
@@ -28,7 +29,7 @@ constructor:
     types:
     - <xref:azure.mgmt.kusto.aio.operations.ClusterPrincipalAssignmentsOperations.list>[<xref:str>]
   - name: external_tables_to_exclude
-    description: 'List of external tables exclude from the follower
+    description: 'List of external tables to exclude from the follower
 
       database.'
     types:
@@ -40,9 +41,17 @@ constructor:
     types:
     - <xref:azure.mgmt.kusto.aio.operations.ClusterPrincipalAssignmentsOperations.list>[<xref:str>]
   - name: materialized_views_to_exclude
-    description: 'List of materialized views exclude from the follower
+    description: 'List of materialized views to exclude from the follower
 
       database.'
+    types:
+    - <xref:azure.mgmt.kusto.aio.operations.ClusterPrincipalAssignmentsOperations.list>[<xref:str>]
+  - name: functions_to_include
+    description: List of functions to include in the follower database.
+    types:
+    - <xref:azure.mgmt.kusto.aio.operations.ClusterPrincipalAssignmentsOperations.list>[<xref:str>]
+  - name: functions_to_exclude
+    description: List of functions to exclude from the follower database.
     types:
     - <xref:azure.mgmt.kusto.aio.operations.ClusterPrincipalAssignmentsOperations.list>[<xref:str>]
 variables:
@@ -58,7 +67,9 @@ variables:
   name: external_tables_to_include
   types:
   - <xref:list>[<xref:str>]
-- description: List of external tables exclude from the follower database.
+- description: 'List of external tables to exclude from the follower
+
+    database.'
   name: external_tables_to_exclude
   types:
   - <xref:list>[<xref:str>]
@@ -68,9 +79,17 @@ variables:
   name: materialized_views_to_include
   types:
   - <xref:list>[<xref:str>]
-- description: 'List of materialized views exclude from the follower
+- description: 'List of materialized views to exclude from the follower
 
     database.'
   name: materialized_views_to_exclude
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of functions to include in the follower database.
+  name: functions_to_include
+  types:
+  - <xref:list>[<xref:str>]
+- description: List of functions to exclude from the follower database.
+  name: functions_to_exclude
   types:
   - <xref:list>[<xref:str>]

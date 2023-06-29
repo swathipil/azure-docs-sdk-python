@@ -14,7 +14,8 @@ constructor:
     str | None = None, base_model: _models.DeploymentModel | None = None, max_capacity:
     int | None = None, capabilities: Dict[str, str] | None = None, finetune_capabilities:
     Dict[str, str] | None = None, deprecation: _models.ModelDeprecationInfo | None
-    = None, lifecycle_status: str | _models.ModelLifecycleStatus | None = None, **kwargs)'
+    = None, lifecycle_status: str | _models.ModelLifecycleStatus | None = None, **kwargs:
+    Any)'
   parameters:
   - name: format
     description: Deployment model format.

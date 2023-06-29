@@ -6,7 +6,7 @@ module: azure.mgmt.workloads.aio.operations
 inheritances:
 - builtins.object
 summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
-  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.aio.WorkloadsClient>'s\n\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.aio.WorkloadsMgmtClient>'s\n\
   >\n> <xref:sap_application_server_instances> attribute.\n>"
 constructor:
   syntax: SAPApplicationServerInstancesOperations(*args, **kwargs)
@@ -45,9 +45,9 @@ methods:
     - <xref:str>
   - name: body
     description: 'The SAP Application Server Instance resource request body. Is either
-      a model type
+      a
 
-      or a IO type. Default value is None.'
+      SAPApplicationServerInstance type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.SAPApplicationServerInstance>
@@ -246,10 +246,10 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'SAP Application server instance stop request body. Is either a model
-      type or a IO
+    description: 'SAP Application server instance stop request body. Is either a StopRequest
+      type or
 
-      type. Default value is None.'
+      a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.StopRequest>
@@ -325,9 +325,9 @@ methods:
     - <xref:str>
   - name: body
     description: 'The SAP Application Server Instance resource request body. Is either
-      a model type
+      a
 
-      or a IO type. Default value is None.'
+      UpdateSAPApplicationInstanceRequest type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.UpdateSAPApplicationInstanceRequest>

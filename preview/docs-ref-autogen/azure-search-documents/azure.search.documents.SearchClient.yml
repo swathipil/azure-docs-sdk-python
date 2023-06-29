@@ -44,8 +44,8 @@ examples:
 - "Creating the SearchClient with an API key.<!--[!code-python[Main](les\\sample_authentication.py\
   \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
   : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\\
-  40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_authentication.py\",\
-  \ \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
+  40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_authentication.py\"\
+  , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"highlight_args\"\
   : {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\n   from azure.core.credentials\
   \ import AzureKeyCredential\n   from azure.search.documents import SearchClient\n\
   \n   service_endpoint = os.getenv(\"AZURE_SEARCH_SERVICE_ENDPOINT\")\n   index_name\
@@ -133,7 +133,7 @@ methods:
   - "Get a auto-completions.<!--[!code-python[Main](les\\sample_autocomplete.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\
-    \\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_autocomplete.py\"\
+    \\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_autocomplete.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.core.credentials import AzureKeyCredential\n   from azure.search.documents\
@@ -179,7 +179,7 @@ methods:
   - "Delete existing documents to an index<!--[!code-python[Main](les\\sample_crud_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_crud_operations.py\"\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_crud_operations.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   result = search_client.delete_documents(documents=[{\"HotelId\": \"1000\"\
@@ -208,7 +208,7 @@ methods:
   - "Get a specific document from the search index.<!--[!code-python[Main](les\\sample_get_document.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_get_document.py\"\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_get_document.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.core.credentials import AzureKeyCredential\n   from azure.search.documents\
@@ -267,8 +267,8 @@ methods:
   - "Merge fields into existing documents to an index<!--[!code-python[Main](les\\\
     sample_crud_operations.py )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\"\
     : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\\
-    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\\
-    samples\\\\sample_crud_operations.py\", \"xml:space\": \"preserve\", \"force\"\
+    a\\\\_work\\\\1\\\\s\\\\dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\
+    \\samples\\\\sample_crud_operations.py\", \"xml:space\": \"preserve\", \"force\"\
     : false, \"language\": \"python\", \"highlight_args\": {\"linenostart\": 1}, \"\
     linenos\": false} -->\n\n````python\n\n   result = search_client.merge_documents(documents=[{\"\
     HotelId\": \"1000\", \"Rating\": 4.5}])\n\n   print(\"Merge into new document\
@@ -307,11 +307,14 @@ methods:
     None = None, search_mode: str | SearchMode | None = None, query_language: str
     | QueryLanguage | None = None, query_speller: str | QuerySpellerType | None =
     None, query_answer: str | QueryAnswerType | None = None, query_answer_count: int
-    | None = None, query_caption: str | QueryCaptionType | None = None, query_caption_highlight:
-    bool | None = None, semantic_fields: List[str] | None = None, semantic_configuration_name:
-    str | None = None, select: List[str] | None = None, skip: int | None = None, top:
-    int | None = None, scoring_statistics: str | ScoringStatistics | None = None,
-    session_id: str | None = None, **kwargs: Any) -> SearchItemPaged[Dict]'
+    | None = None, query_answer_threshold: float | None = None, query_caption: str
+    | QueryCaptionType | None = None, query_caption_highlight: bool | None = None,
+    semantic_fields: List[str] | None = None, semantic_configuration_name: str | None
+    = None, select: List[str] | None = None, skip: int | None = None, top: int | None
+    = None, scoring_statistics: str | ScoringStatistics | None = None, session_id:
+    str | None = None, vector: Vector | None = None, semantic_error_handling: str
+    | SemanticErrorHandling | None = None, semantic_max_wait_in_milliseconds: int
+    | None = None, debug: str | QueryDebugMode | None = None, **kwargs: Any) -> SearchItemPaged[Dict]'
   parameters:
   - name: search_text
     description: 'A full-text search query expression; Use "*" or omit this parameter
@@ -491,6 +494,13 @@ methods:
       count is 1.'
     types:
     - <xref:int>
+  - name: query_answer_threshold
+    description: 'This parameter is only valid if the query type is ''semantic'' and
+
+      query answer is ''extractive''. Configures the number of confidence threshold.
+      Default count is 0.7.'
+    types:
+    - <xref:float>
   - name: query_caption
     description: 'This parameter is only valid if the query type is ''semantic''.
       If set, the
@@ -585,6 +595,36 @@ methods:
       character.'
     types:
     - <xref:str>
+  - name: semantic_error_handling
+    description: 'Allows the user to choose whether a semantic call should fail
+
+      completely (default / current behavior), or to return partial results. Known
+      values are:
+
+      "partial" and "fail".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.SemanticErrorHandling>
+  - name: semantic_max_wait_in_milliseconds
+    description: 'Allows the user to set an upper bound on the amount of
+
+      time it takes for semantic enrichment to finish processing before the request
+      fails.'
+    types:
+    - <xref:int>
+  - name: debug
+    description: 'Enables a debugging tool that can be used to further explore your
+      Semantic search
+
+      results. Known values are: "disabled", "speller", "semantic", and "all".'
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.QueryDebugMode>
+  - name: vector
+    description: The query parameters for vector and hybrid search queries.
+    types:
+    - <xref:str>
+    - <xref:azure.search.documents.models.Vector>
   return:
     types:
     - <xref:azure.search.documents.SearchItemPaged>[<xref:Dict>]
@@ -592,7 +632,7 @@ methods:
   - "Get search result facets.<!--[!code-python[Main](les\\sample_facet_query.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\
-    \\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_facet_query.py\"\
+    \\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_facet_query.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.core.credentials import AzureKeyCredential\n   from azure.search.documents\
@@ -691,7 +731,7 @@ methods:
   - "Get search suggestions.<!--[!code-python[Main](les\\sample_suggestions.py )]-->\n\
     \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
     : [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\dist_temp\\\
-    \\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_suggestions.py\"\
+    \\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_suggestions.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   from azure.core.credentials import AzureKeyCredential\n   from azure.search.documents\
@@ -725,7 +765,7 @@ methods:
   - "Upload new documents to an index<!--[!code-python[Main](les\\sample_crud_operations.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\40\\\\azure-search-documents-11.4.0b3\\\\samples\\\\sample_crud_operations.py\"\
+    dist_temp\\\\40\\\\azure-search-documents-11.4.0a20230628001\\\\samples\\\\sample_crud_operations.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   DOCUMENT = {\n       'Category': 'Hotel',\n       'HotelId': '1000',\n  \

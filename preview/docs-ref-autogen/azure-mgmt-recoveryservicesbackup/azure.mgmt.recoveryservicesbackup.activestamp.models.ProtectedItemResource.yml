@@ -12,7 +12,7 @@ summary: 'Base class for backup items.
 constructor:
   syntax: 'ProtectedItemResource(*, location: str | None = None, tags: Dict[str, str]
     | None = None, e_tag: str | None = None, properties: _models.ProtectedItem | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

@@ -9,7 +9,7 @@ summary: NginxPrivateIPAddress.
 constructor:
   syntax: 'NginxPrivateIPAddress(*, private_ip_address: str | None = None, private_ip_allocation_method:
     str | _models.NginxPrivateIPAllocationMethod | None = None, subnet_id: str | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: private_ip_address
     types:

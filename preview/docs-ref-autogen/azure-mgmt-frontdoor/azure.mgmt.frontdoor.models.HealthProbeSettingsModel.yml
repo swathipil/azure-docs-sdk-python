@@ -13,7 +13,8 @@ constructor:
   syntax: 'HealthProbeSettingsModel(*, id: str | None = None, name: str | None = None,
     path: str | None = None, protocol: str | _models.FrontDoorProtocol | None = None,
     interval_in_seconds: int | None = None, health_probe_method: str | _models.FrontDoorHealthProbeMethod
-    = ''HEAD'', enabled_state: str | _models.HealthProbeEnabled | None = None, **kwargs)'
+    = ''HEAD'', enabled_state: str | _models.HealthProbeEnabled | None = None, **kwargs:
+    Any)'
   parameters:
   - name: id
     description: Resource ID.

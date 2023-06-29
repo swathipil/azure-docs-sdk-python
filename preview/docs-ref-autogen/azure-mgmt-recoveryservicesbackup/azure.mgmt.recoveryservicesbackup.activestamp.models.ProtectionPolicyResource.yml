@@ -13,7 +13,7 @@ summary: 'Base class for backup policy. Workload-specific backup policies are de
 constructor:
   syntax: 'ProtectionPolicyResource(*, location: str | None = None, tags: Dict[str,
     str] | None = None, e_tag: str | None = None, properties: _models.ProtectionPolicy
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

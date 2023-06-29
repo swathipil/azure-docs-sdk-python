@@ -1,0 +1,20 @@
+### YamlMime:PythonClass
+uid: azure.security.attestation.TpmAttestationResult
+name: TpmAttestationResult
+fullName: azure.security.attestation.TpmAttestationResult
+module: azure.security.attestation
+inheritances:
+- builtins.object
+summary: 'Represents the Tpm Attestation response data returned from the attestation
+  service
+
+  as a result of a call to <xref:azure.security.attestation.AttestationClient.attest_tpm>.'
+constructor:
+  syntax: 'TpmAttestationResult(data: bytes)'
+  parameters:
+  - name: data
+variables:
+- description: The result of the operation.
+  name: data
+  types:
+  - <xref:bytes>

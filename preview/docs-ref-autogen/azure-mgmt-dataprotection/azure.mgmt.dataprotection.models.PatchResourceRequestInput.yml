@@ -9,7 +9,7 @@ summary: Patch Request content for Microsoft.DataProtection resources.
 constructor:
   syntax: 'PatchResourceRequestInput(*, identity: _models.DppIdentityDetails | None
     = None, properties: _models.PatchBackupVaultInput | None = None, tags: Dict[str,
-    str] | None = None, **kwargs)'
+    str] | None = None, **kwargs: Any)'
   parameters:
   - name: identity
     description: Input Managed Identity Details.

@@ -4,13 +4,13 @@ name: KnowledgeBaseAnswer
 fullName: azure.ai.language.questionanswering.models.KnowledgeBaseAnswer
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Represents knowledge base answer.
 constructor:
   syntax: 'KnowledgeBaseAnswer(*, questions: List[str] | None = None, answer: str
     | None = None, confidence: float | None = None, qna_id: int | None = None, source:
     str | None = None, metadata: Dict[str, str] | None = None, dialog: _models.KnowledgeBaseAnswerDialog
-    | None = None, short_answer: _models.AnswerSpan | None = None, **kwargs)'
+    | None = None, short_answer: _models.AnswerSpan | None = None, **kwargs: Any)'
   parameters:
   - name: questions
     description: List of questions associated with the answer.

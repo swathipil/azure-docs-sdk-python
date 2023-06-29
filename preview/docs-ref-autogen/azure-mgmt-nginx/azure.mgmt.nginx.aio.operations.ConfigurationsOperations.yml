@@ -42,10 +42,10 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'The Nginx configuration. Is either a model type or a IO type. Default
-      value is
+    description: 'The Nginx configuration. Is either a NginxConfiguration type or
+      a IO type. Default
 
-      None.'
+      value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.nginx.models.NginxConfiguration>

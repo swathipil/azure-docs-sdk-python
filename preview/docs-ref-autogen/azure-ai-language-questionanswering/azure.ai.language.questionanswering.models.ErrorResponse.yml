@@ -4,10 +4,10 @@ name: ErrorResponse
 fullName: azure.ai.language.questionanswering.models.ErrorResponse
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Error response.
 constructor:
-  syntax: 'ErrorResponse(*, error: _models.Error | None = None, **kwargs)'
+  syntax: 'ErrorResponse(*, error: _models.Error | None = None, **kwargs: Any)'
   parameters:
   - name: error
     description: The error object.

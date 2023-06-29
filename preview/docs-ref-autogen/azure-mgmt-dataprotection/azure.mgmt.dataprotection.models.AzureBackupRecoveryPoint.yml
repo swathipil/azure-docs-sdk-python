@@ -16,7 +16,7 @@ summary: 'Azure backup recoveryPoint.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: AzureBackupRecoveryPoint(**kwargs)
+  syntax: 'AzureBackupRecoveryPoint(**kwargs: Any)'
 variables:
 - description: Required.
   name: object_type

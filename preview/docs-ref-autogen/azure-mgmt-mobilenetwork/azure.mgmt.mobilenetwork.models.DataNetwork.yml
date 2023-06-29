@@ -5,7 +5,8 @@ fullName: azure.mgmt.mobilenetwork.models.DataNetwork
 module: azure.mgmt.mobilenetwork.models
 inheritances:
 - azure.mgmt.mobilenetwork.models._models_py3.TrackedResource
-summary: 'Data network resource.
+summary: 'Data network resource. Must be created in the same location as its parent
+  mobile network.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.
@@ -17,11 +18,11 @@ constructor:
     str | None = None, **kwargs)'
   parameters:
   - name: tags
-    description: A set of tags. Resource tags.
+    description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: location
-    description: Required. The geo-location where the resource lives.
+    description: The geo-location where the resource lives. Required.
     types:
     - <xref:str>
   - name: description
@@ -52,17 +53,18 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SystemData>
-- description: A set of tags. Resource tags.
+- description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Required. The geo-location where the resource lives.
+- description: The geo-location where the resource lives. Required.
   name: location
   types:
   - <xref:str>
 - description: 'The provisioning state of the data network resource. Known values
 
-    are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", "Deleted".'
+    are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", and
+    "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>

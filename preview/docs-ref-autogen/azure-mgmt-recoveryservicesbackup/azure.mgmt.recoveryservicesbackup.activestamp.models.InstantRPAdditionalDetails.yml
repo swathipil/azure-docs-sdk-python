@@ -8,7 +8,7 @@ inheritances:
 summary: InstantRPAdditionalDetails.
 constructor:
   syntax: 'InstantRPAdditionalDetails(*, azure_backup_rg_name_prefix: str | None =
-    None, azure_backup_rg_name_suffix: str | None = None, **kwargs)'
+    None, azure_backup_rg_name_suffix: str | None = None, **kwargs: Any)'
   parameters:
   - name: azure_backup_rg_name_prefix
     types:

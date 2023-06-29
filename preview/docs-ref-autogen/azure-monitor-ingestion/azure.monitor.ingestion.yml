@@ -5,9 +5,6 @@ fullName: azure.monitor.ingestion
 type: import
 classes:
 - azure.monitor.ingestion.LogsIngestionClient
-- azure.monitor.ingestion.MonitorIngestionClient
-- azure.monitor.ingestion.UploadLogsResult
+- azure.monitor.ingestion.LogsUploadError
 packages:
 - azure.monitor.ingestion.aio
-enums:
-- azure.monitor.ingestion.UploadLogsStatus

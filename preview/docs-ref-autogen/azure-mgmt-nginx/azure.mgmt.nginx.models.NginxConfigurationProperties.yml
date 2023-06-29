@@ -13,7 +13,7 @@ constructor:
   syntax: 'NginxConfigurationProperties(*, files: List[_models.NginxConfigurationFile]
     | None = None, protected_files: List[_models.NginxConfigurationFile] | None =
     None, package: _models.NginxConfigurationPackage | None = None, root_file: str
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: files
     types:

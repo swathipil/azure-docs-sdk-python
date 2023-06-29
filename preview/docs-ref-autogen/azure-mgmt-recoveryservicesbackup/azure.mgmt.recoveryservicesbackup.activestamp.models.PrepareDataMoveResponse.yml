@@ -11,7 +11,7 @@ summary: 'Prepare DataMove Response.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'PrepareDataMoveResponse(*, correlation_id: str | None = None, source_vault_properties:
-    Dict[str, str] | None = None, **kwargs)'
+    Dict[str, str] | None = None, **kwargs: Any)'
   parameters:
   - name: correlation_id
     description: Co-relationId for move operation.

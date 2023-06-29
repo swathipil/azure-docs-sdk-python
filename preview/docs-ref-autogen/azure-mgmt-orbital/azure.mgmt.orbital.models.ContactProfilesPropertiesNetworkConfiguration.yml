@@ -10,7 +10,8 @@ summary: 'Network configuration of customer virtual network.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'ContactProfilesPropertiesNetworkConfiguration(*, subnet_id: str, **kwargs)'
+  syntax: 'ContactProfilesPropertiesNetworkConfiguration(*, subnet_id: str, **kwargs:
+    Any)'
   parameters:
   - name: subnet_id
     description: 'ARM resource identifier of the subnet delegated to the

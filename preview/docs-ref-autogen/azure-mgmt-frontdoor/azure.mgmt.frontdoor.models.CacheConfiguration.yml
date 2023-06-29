@@ -5,13 +5,15 @@ fullName: azure.mgmt.frontdoor.models.CacheConfiguration
 module: azure.mgmt.frontdoor.models
 inheritances:
 - azure.mgmt.frontdoor._serialization.Model
-summary: Caching settings for a caching-type route. To disable caching, do not provide
-  a cacheConfiguration object.
+summary: 'Caching settings for a caching-type route. To disable caching, do not provide
+  a
+
+  cacheConfiguration object.'
 constructor:
   syntax: 'CacheConfiguration(*, query_parameter_strip_directive: str | _models.FrontDoorQuery
     | None = None, query_parameters: str | None = None, dynamic_compression: str |
     _models.DynamicCompressionEnabled | None = None, cache_duration: timedelta | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: query_parameter_strip_directive
     description: 'Treatment of URL query terms when forming the cache

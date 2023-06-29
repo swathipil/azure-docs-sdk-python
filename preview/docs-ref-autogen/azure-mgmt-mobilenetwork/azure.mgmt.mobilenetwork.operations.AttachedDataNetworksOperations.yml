@@ -13,37 +13,52 @@ constructor:
 methods:
 - uid: azure.mgmt.mobilenetwork.operations.AttachedDataNetworksOperations.begin_create_or_update
   name: begin_create_or_update
-  summary: Creates or updates an attached data network.
+  summary: 'Creates or updates an attached data network. Must be created in the same
+    location as its parent
+
+    packet core data plane.'
   signature: 'begin_create_or_update(resource_group_name: str, packet_core_control_plane_name:
     str, packet_core_data_plane_name: str, attached_data_network_name: str, parameters:
-    AttachedDataNetwork, **kwargs: Any) -> LROPoller[AttachedDataNetwork]'
+    _models.AttachedDataNetwork, *, content_type: str = ''application/json'', **kwargs:
+    Any) -> LROPoller[_models.AttachedDataNetwork]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: attached_data_network_name
-    description: The name of the attached data network.
+    description: The name of the attached data network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to the create or update attached data network
+    description: 'Parameters supplied to the create or update attached data network
       operation.
+
+      Is either a model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.AttachedDataNetwork>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -86,22 +101,24 @@ methods:
     Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: attached_data_network_name
-    description: The name of the attached data network.
+    description: The name of the attached data network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -144,22 +161,24 @@ methods:
     str, attached_data_network_name: str, **kwargs: Any) -> AttachedDataNetwork'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: attached_data_network_name
-    description: The name of the attached data network.
+    description: The name of the attached data network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -168,7 +187,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: AttachedDataNetwork, or the result of cls(response)
+    description: AttachedDataNetwork or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.AttachedDataNetwork>
   exceptions:
@@ -178,20 +197,22 @@ methods:
   summary: Gets all the attached data networks associated with a packet core data
     plane.
   signature: 'list_by_packet_core_data_plane(resource_group_name: str, packet_core_control_plane_name:
-    str, packet_core_data_plane_name: str, **kwargs: Any) -> Iterable[AttachedDataNetworkListResult]'
+    str, packet_core_data_plane_name: str, **kwargs: Any) -> Iterable[AttachedDataNetwork]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -200,12 +221,10 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: 'An iterator like instance of either AttachedDataNetworkListResult
-      or the result of
-
-      cls(response)'
+    description: An iterator like instance of either AttachedDataNetwork or the result
+      of cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.AttachedDataNetworkListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.AttachedDataNetwork>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.AttachedDataNetworksOperations.update_tags
@@ -213,39 +232,52 @@ methods:
   summary: Updates an attached data network tags.
   signature: 'update_tags(resource_group_name: str, packet_core_control_plane_name:
     str, packet_core_data_plane_name: str, attached_data_network_name: str, parameters:
-    TagsObject, **kwargs: Any) -> AttachedDataNetwork'
+    _models.TagsObject, *, content_type: str = ''application/json'', **kwargs: Any)
+    -> _models.AttachedDataNetwork'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_control_plane_name
-    description: The name of the packet core control plane.
+    description: The name of the packet core control plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: packet_core_data_plane_name
-    description: The name of the packet core data plane.
+    description: The name of the packet core data plane. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: attached_data_network_name
-    description: The name of the attached data network.
+    description: The name of the attached data network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update attached data network tags.
+    description: 'Parameters supplied to update attached data network tags. Is either
+      a model
+
+      type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: AttachedDataNetwork, or the result of cls(response)
+    description: AttachedDataNetwork or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.AttachedDataNetwork>
   exceptions:

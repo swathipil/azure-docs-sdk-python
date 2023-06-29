@@ -10,7 +10,7 @@ summary: 'Immediate copy Option.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: ImmediateCopyOption(**kwargs)
+  syntax: 'ImmediateCopyOption(**kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

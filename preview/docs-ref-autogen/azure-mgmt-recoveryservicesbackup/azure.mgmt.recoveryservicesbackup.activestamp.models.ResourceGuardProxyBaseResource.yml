@@ -12,7 +12,7 @@ summary: 'ResourceGuardProxyBaseResource.
 constructor:
   syntax: 'ResourceGuardProxyBaseResource(*, location: str | None = None, tags: Dict[str,
     str] | None = None, e_tag: str | None = None, properties: _models.ResourceGuardProxyBase
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

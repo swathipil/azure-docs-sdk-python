@@ -8,7 +8,7 @@ inheritances:
 summary: Cognitive Services account ModelDeprecationInfo.
 constructor:
   syntax: 'ModelDeprecationInfo(*, fine_tune: str | None = None, inference: str |
-    None = None, **kwargs)'
+    None = None, **kwargs: Any)'
   parameters:
   - name: fine_tune
     description: The datetime of deprecation of the fineTune Model.

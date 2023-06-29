@@ -6,7 +6,9 @@ module: azure.mgmt.imagebuilder.models
 inheritances:
 - azure.mgmt.imagebuilder.models._models_py3.ImageTemplateCustomizer
 summary: 'Runs the specified PowerShell on the VM (Windows). Corresponds to Packer
-  powershell provisioner. Exactly one of ''scriptUri'' or ''inline'' can be specified.
+  powershell
+
+  provisioner. Exactly one of ''scriptUri'' or ''inline'' can be specified.
 
 
   All required parameters must be populated in order to send to Azure.'
@@ -14,7 +16,7 @@ constructor:
   syntax: 'ImageTemplatePowerShellCustomizer(*, name: str | None = None, script_uri:
     str | None = None, sha256_checksum: str = '''', inline: List[str] | None = None,
     run_elevated: bool = False, run_as_system: bool = False, valid_exit_codes: List[int]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: Friendly Name to provide context on what this customization step

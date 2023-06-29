@@ -4,7 +4,7 @@ name: dataprotection
 fullName: azure.mgmt.dataprotection
 type: import
 classes:
-- azure.mgmt.dataprotection.DataProtectionClient
+- azure.mgmt.dataprotection.DataProtectionMgmtClient
 packages:
 - azure.mgmt.dataprotection.aio
 - azure.mgmt.dataprotection.models

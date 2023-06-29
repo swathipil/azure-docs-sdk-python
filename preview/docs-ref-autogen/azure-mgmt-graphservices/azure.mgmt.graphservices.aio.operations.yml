@@ -4,6 +4,5 @@ name: operations
 fullName: azure.mgmt.graphservices.aio.operations
 type: import
 classes:
-- azure.mgmt.graphservices.aio.operations.AccountOperations
 - azure.mgmt.graphservices.aio.operations.AccountsOperations
-- azure.mgmt.graphservices.aio.operations.OperationOperations
+- azure.mgmt.graphservices.aio.operations.Operations

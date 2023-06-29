@@ -8,7 +8,8 @@ inheritances:
 summary: Network specific rules that determine how the Azure Cognitive Search service
   may be reached.
 constructor:
-  syntax: 'NetworkRuleSet(*, ip_rules: List[_models.IpRule] | None = None, **kwargs)'
+  syntax: 'NetworkRuleSet(*, ip_rules: List[_models.IpRule] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: ip_rules
     description: 'A list of IP restriction rules that defines the inbound network(s)

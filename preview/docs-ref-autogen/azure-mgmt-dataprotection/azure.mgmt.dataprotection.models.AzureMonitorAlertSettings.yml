@@ -8,7 +8,7 @@ inheritances:
 summary: Settings for Azure Monitor based alerts.
 constructor:
   syntax: 'AzureMonitorAlertSettings(*, alerts_for_all_job_failures: str | _models.AlertsState
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: alerts_for_all_job_failures
     description: 'Known values are: "Enabled" and "Disabled".'

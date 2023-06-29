@@ -31,10 +31,10 @@ methods:
     types:
     - <xref:str>
   - name: workspace
-    description: 'Object containing Workspace definitions. Is either a model type
-      or a IO type.
+    description: 'Object containing Workspace definitions. Is either a Workspace type
+      or a IO
 
-      Required.'
+      type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.Workspace>
@@ -186,10 +186,10 @@ methods:
     types:
     - <xref:str>
   - name: workspace
-    description: 'Object containing Workspace definitions. Is either a model type
-      or a IO type.
+    description: 'Object containing Workspace definitions. Is either a WorkspacePatch
+      type or a
 
-      Default value is None.'
+      IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.desktopvirtualization.models.WorkspacePatch>

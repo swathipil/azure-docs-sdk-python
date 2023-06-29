@@ -12,7 +12,7 @@ summary: 'Azure backup rule.
 constructor:
   syntax: 'AzureBackupRule(*, name: str, data_store: _models.DataStoreInfoBase, trigger:
     _models.TriggerContext, backup_parameters: _models.BackupParameters | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: name
     description: Required.

@@ -13,7 +13,7 @@ constructor:
   syntax: 'CommitmentPlanProperties(*, commitment_plan_guid: str | None = None, hosting_model:
     str | _models.HostingModel | None = None, plan_type: str | None = None, current:
     _models.CommitmentPeriod | None = None, auto_renew: bool | None = None, next:
-    _models.CommitmentPeriod | None = None, **kwargs)'
+    _models.CommitmentPeriod | None = None, **kwargs: Any)'
   parameters:
   - name: commitment_plan_guid
     description: Commitment plan guid.

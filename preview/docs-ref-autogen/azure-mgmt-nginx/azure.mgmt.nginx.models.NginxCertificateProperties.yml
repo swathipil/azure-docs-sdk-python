@@ -11,7 +11,7 @@ summary: 'NginxCertificateProperties.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'NginxCertificateProperties(*, key_virtual_path: str | None = None, certificate_virtual_path:
-    str | None = None, key_vault_secret_id: str | None = None, **kwargs)'
+    str | None = None, key_vault_secret_id: str | None = None, **kwargs: Any)'
   parameters:
   - name: key_virtual_path
     types:

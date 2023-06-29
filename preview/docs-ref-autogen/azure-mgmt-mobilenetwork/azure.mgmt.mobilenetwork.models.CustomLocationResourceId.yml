@@ -4,7 +4,7 @@ name: CustomLocationResourceId
 fullName: azure.mgmt.mobilenetwork.models.CustomLocationResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to an Azure Arc custom location resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'CustomLocationResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Azure Arc custom location resource ID.
+    description: Azure Arc custom location resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Azure Arc custom location resource ID.
+- description: Azure Arc custom location resource ID. Required.
   name: id
   types:
   - <xref:str>
