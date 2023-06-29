@@ -3,10 +3,10 @@ title:
 keywords: Azure, python, SDK, API, azure-mgmt-netapp, netapp
 author: lmazuel
 ms.author: lmazuel
-ms.date: 02/16/2023
+ms.date: 06/29/2023
 ms.topic: reference
 ms.devlang: python
-ms.service: azure-netapp-files
+ms.service: netapp
 ---
 # Microsoft Azure SDK for Python
 
@@ -38,7 +38,7 @@ By default, [Azure Active Directory](https://aka.ms/awps/aad) token authenticati
 
 - `AZURE_CLIENT_ID` for Azure client ID.
 - `AZURE_TENANT_ID` for Azure tenant ID.
-- `AZURE_CLIENT_SECRET` or `AZURE_CLIENT_CERTIFICATE_PATH` for client secret or client certificate.
+- `AZURE_CLIENT_SECRET` for Azure client secret.
 
 In addition, Azure subscription ID can be configured via environment variable `AZURE_SUBSCRIPTION_ID`.
 
