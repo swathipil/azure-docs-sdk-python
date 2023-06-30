@@ -3,11 +3,10 @@ title:
 keywords: Azure, python, SDK, API, azure-common, core
 author: lmazuel
 ms.author: lmazuel
-ms.date: 02/03/2022
+ms.date: 06/30/2023
 ms.topic: reference
-ms.technology: azure
 ms.devlang: python
-ms.service: azure-python
+ms.service: core
 ---
 # Microsoft Azure SDK for Python
 
