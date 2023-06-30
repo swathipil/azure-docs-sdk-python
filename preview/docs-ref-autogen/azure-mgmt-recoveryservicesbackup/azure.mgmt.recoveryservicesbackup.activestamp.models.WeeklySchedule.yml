@@ -8,7 +8,7 @@ inheritances:
 summary: WeeklySchedule.
 constructor:
   syntax: 'WeeklySchedule(*, schedule_run_days: List[str | _models.DayOfWeek] | None
-    = None, schedule_run_times: List[datetime] | None = None, **kwargs)'
+    = None, schedule_run_times: List[datetime] | None = None, **kwargs: Any)'
   parameters:
   - name: schedule_run_days
     types:

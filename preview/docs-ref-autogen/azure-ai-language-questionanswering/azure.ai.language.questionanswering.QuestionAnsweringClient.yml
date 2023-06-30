@@ -4,16 +4,18 @@ name: QuestionAnsweringClient
 fullName: azure.ai.language.questionanswering.QuestionAnsweringClient
 module: azure.ai.language.questionanswering
 inheritances:
-- azure.ai.language.questionanswering._question_answering_client.QuestionAnsweringClient
+- azure.ai.language.questionanswering._client.QuestionAnsweringClient
 summary: 'The language service API is a suite of natural language processing (NLP)
-  skills built with best-in-class Microsoft machine learning algorithms.
+  skills built with best-in-class
+
+  Microsoft machine learning algorithms.
 
 
   The API can be used to analyze unstructured text for tasks such as sentiment
 
   analysis, key phrase extraction, language detection and question answering.
 
-  Further documentation can be found in [https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview](https://docs.microsoft.com/azure/cognitive-services/text-analytics/overview)'
+  Further documentation can be found in [https://learn.microsoft.com/azure/cognitive-services/language-service/overview](https://learn.microsoft.com/azure/cognitive-services/language-service/overview)'
 constructor:
   syntax: 'QuestionAnsweringClient(endpoint: str, credential: AzureKeyCredential |
     TokenCredential, **kwargs: Any)'
@@ -21,7 +23,7 @@ constructor:
   - name: endpoint
     description: 'Supported Cognitive Services endpoint (e.g.,
 
-      [https:/](https:/)/<resource-name>.api.cognitiveservices.azure.com).'
+      [https://](https://)`<resource-name>`.cognitiveservices.azure.com).'
     isRequired: true
     types:
     - <xref:str>
@@ -37,5 +39,12 @@ constructor:
     - <xref:azure.core.credentials.TokenCredential>
   - name: default_language
     description: Sets the default language to use for all operations.
+    types:
+    - <xref:str>
+  - name: api_version
+    description: 'Api Version. Default value is "2021-10-01". Note that overriding
+      this
+
+      default value may result in unsupported behavior.'
     types:
     - <xref:str>

@@ -11,7 +11,7 @@ constructor:
     | None = None, retention_schedule_daily: _models.DailyRetentionFormat | None =
     None, retention_schedule_weekly: _models.WeeklyRetentionFormat | None = None,
     retention_times: List[datetime] | None = None, retention_duration: _models.RetentionDuration
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: retention_schedule_format_type
     description: 'Retention schedule format type for monthly retention

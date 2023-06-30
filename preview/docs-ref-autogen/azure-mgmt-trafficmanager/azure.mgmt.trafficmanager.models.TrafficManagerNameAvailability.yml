@@ -9,7 +9,7 @@ summary: Class representing a Traffic Manager Name Availability response.
 constructor:
   syntax: 'TrafficManagerNameAvailability(*, name: str | None = None, type: str |
     None = None, name_available: bool | None = None, reason: str | None = None, message:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: The relative name.

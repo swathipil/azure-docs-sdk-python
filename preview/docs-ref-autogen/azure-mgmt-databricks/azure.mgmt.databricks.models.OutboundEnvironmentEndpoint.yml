@@ -8,7 +8,7 @@ inheritances:
 summary: Egress endpoints which Workspace connects to for common purposes.
 constructor:
   syntax: 'OutboundEnvironmentEndpoint(*, category: str | None = None, endpoints:
-    List[_models.EndpointDependency] | None = None, **kwargs)'
+    List[_models.EndpointDependency] | None = None, **kwargs: Any)'
   parameters:
   - name: category
     description: 'The category of endpoints accessed by the Workspace, e.g. azure-storage,

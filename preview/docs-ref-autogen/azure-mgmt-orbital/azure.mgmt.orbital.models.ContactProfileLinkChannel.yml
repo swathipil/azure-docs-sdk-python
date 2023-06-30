@@ -13,7 +13,7 @@ constructor:
   syntax: 'ContactProfileLinkChannel(*, name: str, center_frequency_m_hz: float, bandwidth_m_hz:
     float, end_point: _models.EndPoint, modulation_configuration: str | None = None,
     demodulation_configuration: str | None = None, encoding_configuration: str | None
-    = None, decoding_configuration: str | None = None, **kwargs)'
+    = None, decoding_configuration: str | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: Channel name. Required.
@@ -28,7 +28,10 @@ constructor:
     types:
     - <xref:float>
   - name: end_point
-    description: Customer End point to store/retrieve data during a contact. Required.
+    description: 'Customer end point to store and retrieve data during a contact with
+      the
+
+      spacecraft. Required.'
     types:
     - <xref:azure.mgmt.orbital.models.EndPoint>
   - name: modulation_configuration
@@ -70,7 +73,10 @@ variables:
   name: bandwidth_m_hz
   types:
   - <xref:float>
-- description: Customer End point to store/retrieve data during a contact. Required.
+- description: 'Customer end point to store and retrieve data during a contact with
+    the
+
+    spacecraft. Required.'
   name: end_point
   types:
   - <xref:azure.mgmt.orbital.models.EndPoint>

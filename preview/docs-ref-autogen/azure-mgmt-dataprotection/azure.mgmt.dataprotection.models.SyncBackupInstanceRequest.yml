@@ -8,7 +8,7 @@ inheritances:
 summary: Sync BackupInstance Request.
 constructor:
   syntax: 'SyncBackupInstanceRequest(*, sync_type: str | _models.SyncType | None =
-    None, **kwargs)'
+    None, **kwargs: Any)'
   parameters:
   - name: sync_type
     description: 'Field indicating sync type e.g. to sync only in case of failure

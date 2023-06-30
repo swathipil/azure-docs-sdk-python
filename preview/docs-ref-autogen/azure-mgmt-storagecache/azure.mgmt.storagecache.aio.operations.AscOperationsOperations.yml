@@ -17,14 +17,12 @@ methods:
   signature: 'async get(location: str, operation_id: str, **kwargs: Any) -> AscOperation'
   parameters:
   - name: location
-    description: The name of the region used to look up the operation. Required.
+    description: The name of Azure region. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: operation_id
-    description: 'The operation id which uniquely identifies the asynchronous operation.
-
-      Required.'
+    description: The ID of an ongoing async operation. Required.
     isRequired: true
     types:
     - <xref:str>

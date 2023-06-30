@@ -16,7 +16,7 @@ constructor:
     List[str] | None = None, label_selectors: List[str] | None = None, persistent_volume_restore_mode:
     str | _models.PersistentVolumeRestoreMode | None = None, conflict_policy: str
     | _models.ExistingResourcePolicy | None = None, namespace_mappings: Dict[str,
-    str] | None = None, **kwargs)'
+    str] | None = None, **kwargs: Any)'
   parameters:
   - name: include_cluster_scope_resources
     description: 'Gets or sets the include cluster resources property.
@@ -30,37 +30,38 @@ constructor:
 
       the namespaces to be included during restore.'
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: excluded_namespaces
     description: 'Gets or sets the exclude namespaces property. This property sets
 
       the namespaces to be excluded during restore.'
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: included_resource_types
     description: 'Gets or sets the include resource types property. This
 
       property sets the resource types to be included during restore.'
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: excluded_resource_types
     description: 'Gets or sets the exclude resource types property. This
 
       property sets the resource types to be excluded during restore.'
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: label_selectors
     description: 'Gets or sets the LabelSelectors property. This property sets the
 
       resource with such label selectors to be included during restore.'
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: persistent_volume_restore_mode
-    description: 'Gets or sets the PV Restore Mode property. This
+    description: 'Gets or sets the PV (Persistent Volume) Restore Mode
 
-      property sets whether volumes needs to be restored. Known values are: "RestoreWithVolumeData"
+      property. This property sets whether volumes needs to be restored. Known values
+      are:
 
-      and "RestoreWithoutVolumeData".'
+      "RestoreWithVolumeData" and "RestoreWithoutVolumeData".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.dataprotection.models.PersistentVolumeRestoreMode>
@@ -119,12 +120,12 @@ variables:
   name: label_selectors
   types:
   - <xref:list>[<xref:str>]
-- description: 'Gets or sets the PV Restore Mode property. This property
+- description: 'Gets or sets the PV (Persistent Volume) Restore Mode
 
-    sets whether volumes needs to be restored. Known values are: "RestoreWithVolumeData"
-    and
+    property. This property sets whether volumes needs to be restored. Known values
+    are:
 
-    "RestoreWithoutVolumeData".'
+    "RestoreWithVolumeData" and "RestoreWithoutVolumeData".'
   name: persistent_volume_restore_mode
   types:
   - <xref:str>

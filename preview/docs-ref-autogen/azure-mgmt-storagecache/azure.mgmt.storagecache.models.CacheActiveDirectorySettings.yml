@@ -16,7 +16,7 @@ constructor:
   syntax: 'CacheActiveDirectorySettings(*, primary_dns_ip_address: str, domain_name:
     str, domain_net_bios_name: str, cache_net_bios_name: str, secondary_dns_ip_address:
     str | None = None, credentials: _models.CacheActiveDirectorySettingsCredentials
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: primary_dns_ip_address
     description: 'Primary DNS IP address used to resolve the Active Directory

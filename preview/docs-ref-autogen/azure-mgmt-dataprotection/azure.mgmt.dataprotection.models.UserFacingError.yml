@@ -12,7 +12,7 @@ constructor:
     | None = None, inner_error: _models.InnerError | None = None, is_retryable: bool
     | None = None, is_user_error: bool | None = None, properties: Dict[str, str] |
     None = None, message: str | None = None, recommended_action: List[str] | None
-    = None, target: str | None = None, **kwargs)'
+    = None, target: str | None = None, **kwargs: Any)'
   parameters:
   - name: code
     description: Unique code for this error.
@@ -21,7 +21,7 @@ constructor:
   - name: details
     description: Additional related Errors.
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:azure.mgmt.dataprotection.models.UserFacingError>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:azure.mgmt.dataprotection.models.UserFacingError>]
   - name: inner_error
     description: Inner Error.
     types:
@@ -44,7 +44,7 @@ constructor:
   - name: recommended_action
     description: "RecommendedAction \uFFFD localized."
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:str>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:str>]
   - name: target
     description: Target of the error.
     types:

@@ -7,7 +7,7 @@ inheritances:
 - azure.core.polling._poller.LROPoller
 constructor:
   syntax: 'AnalyzeHealthcareEntitiesLROPoller(client: Any, initial_response: Any,
-    deserialization_callback: Callable, polling_method: PollingMethod[PollingReturnType])'
+    deserialization_callback: Callable, polling_method: PollingMethod[PollingReturnType_co])'
   parameters:
   - name: client
   - name: initial_response
@@ -36,7 +36,7 @@ methods:
   - "Cancel an existing health operation.<!--[!code-python[Main](les\\sample_analyze_healthcare_entities_with_cancellation.py\
     \ )]-->\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"\
     dupnames\": [], \"backrefs\": [], \"source\": \"D:\\\\a\\\\_work\\\\1\\\\s\\\\\
-    dist_temp\\\\45\\\\azure-ai-textanalytics-5.3.0b2\\\\samples\\\\sample_analyze_healthcare_entities_with_cancellation.py\"\
+    dist_temp\\\\45\\\\azure-ai-textanalytics-5.3.1a20230629001\\\\samples\\\\sample_analyze_healthcare_entities_with_cancellation.py\"\
     , \"xml:space\": \"preserve\", \"force\": false, \"language\": \"python\", \"\
     highlight_args\": {\"linenostart\": 1}, \"linenos\": false} -->\n\n````python\n\
     \n   import os\n   from azure.core.exceptions import HttpResponseError\n   from\

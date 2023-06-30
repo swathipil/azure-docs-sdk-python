@@ -18,7 +18,7 @@ summary: 'Base class for additional information of operation status.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: OperationStatusExtendedInfo(**kwargs)
+  syntax: 'OperationStatusExtendedInfo(**kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

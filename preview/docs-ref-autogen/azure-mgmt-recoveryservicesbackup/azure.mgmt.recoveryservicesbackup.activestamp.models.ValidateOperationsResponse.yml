@@ -8,7 +8,7 @@ inheritances:
 summary: ValidateOperationsResponse.
 constructor:
   syntax: 'ValidateOperationsResponse(*, validate_operation_response: _models.ValidateOperationResponse
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: validate_operation_response
     description: Base class for validate operation response.

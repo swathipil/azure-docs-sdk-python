@@ -10,7 +10,8 @@ summary: 'Quota bucket details object.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'QuotaResource(*, limit: int | None = None, usage: int | None = None, **kwargs)'
+  syntax: 'QuotaResource(*, limit: int | None = None, usage: int | None = None, **kwargs:
+    Any)'
   parameters:
   - name: limit
     description: Current quota limit of the quota bucket.

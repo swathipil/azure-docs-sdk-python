@@ -15,7 +15,7 @@ summary: 'A class representing database principal entity.
 constructor:
   syntax: 'DatabasePrincipal(*, role: str | _models.DatabasePrincipalRole, name: str,
     type: str | _models.DatabasePrincipalType, fqn: str | None = None, email: str
-    | None = None, app_id: str | None = None, **kwargs)'
+    | None = None, app_id: str | None = None, **kwargs: Any)'
   parameters:
   - name: role
     description: 'Database principal role. Required. Known values are: "Admin", "Ingestor",

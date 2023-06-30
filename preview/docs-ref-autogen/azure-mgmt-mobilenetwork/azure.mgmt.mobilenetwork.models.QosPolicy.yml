@@ -4,7 +4,7 @@ name: QosPolicy
 fullName: azure.mgmt.mobilenetwork.models.QosPolicy
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'QoS policy.
 
 
@@ -58,7 +58,7 @@ constructor:
       TS23.501 section 5.7.2.2 for a full description of the ARP parameters. Known
       values are:
 
-      "NotPreempt", "MayPreempt".'
+      "NotPreempt" and "MayPreempt".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PreemptionCapability>
@@ -71,15 +71,14 @@ constructor:
       priority level. See 3GPP TS23.501 section 5.7.2.2 for a full description of
       the ARP parameters.
 
-      Known values are: "NotPreemptable", "Preemptable".'
+      Known values are: "NotPreemptable" and "Preemptable".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PreemptionVulnerability>
   - name: maximum_bit_rate
-    description: 'Required. The maximum bit rate (MBR) for all service data flows
-      that
+    description: 'The maximum bit rate (MBR) for all service data flows that use this
 
-      use this data flow policy rule or service.'
+      data flow policy rule or service. Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.Ambr>
 variables:
@@ -125,7 +124,7 @@ variables:
     TS23.501 section 5.7.2.2 for a full description of the ARP parameters. Known values
     are:
 
-    "NotPreempt", "MayPreempt".'
+    "NotPreempt" and "MayPreempt".'
   name: preemption_capability
   types:
   - <xref:str>
@@ -138,14 +137,14 @@ variables:
     See 3GPP TS23.501 section 5.7.2.2 for a full description of the ARP parameters.
     Known values
 
-    are: "NotPreemptable", "Preemptable".'
+    are: "NotPreemptable" and "Preemptable".'
   name: preemption_vulnerability
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.PreemptionVulnerability>
-- description: 'Required. The maximum bit rate (MBR) for all service data flows that
+- description: 'The maximum bit rate (MBR) for all service data flows that use this
 
-    use this data flow policy rule or service.'
+    data flow policy rule or service. Required.'
   name: maximum_bit_rate
   types:
   - <xref:azure.mgmt.mobilenetwork.models.Ambr>

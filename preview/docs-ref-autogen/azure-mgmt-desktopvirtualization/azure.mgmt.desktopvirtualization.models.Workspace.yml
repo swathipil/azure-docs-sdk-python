@@ -15,7 +15,7 @@ constructor:
     | None = None, sku: _models.ResourceModelWithAllowedPropertySetSku | None = None,
     plan: _models.ResourceModelWithAllowedPropertySetPlan | None = None, description:
     str | None = None, friendly_name: str | None = None, application_group_references:
-    List[str] | None = None, **kwargs)'
+    List[str] | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: The geo-location where the resource lives.

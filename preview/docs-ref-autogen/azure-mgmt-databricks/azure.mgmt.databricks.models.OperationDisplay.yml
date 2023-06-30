@@ -8,10 +8,11 @@ inheritances:
 summary: The object that represents the operation.
 constructor:
   syntax: 'OperationDisplay(*, provider: str | None = None, resource: str | None =
-    None, operation: str | None = None, **kwargs)'
+    None, operation: str | None = None, description: str | None = None, **kwargs:
+    Any)'
   parameters:
   - name: provider
-    description: 'Service provider: Microsoft.ResourceProvider.'
+    description: 'Service provider: ex Microsoft.Databricks.'
     types:
     - <xref:str>
   - name: resource
@@ -22,8 +23,12 @@ constructor:
     description: 'Operation type: Read, write, delete, etc.'
     types:
     - <xref:str>
+  - name: description
+    description: Description for the resource operation.
+    types:
+    - <xref:str>
 variables:
-- description: 'Service provider: Microsoft.ResourceProvider.'
+- description: 'Service provider: ex Microsoft.Databricks.'
   name: provider
   types:
   - <xref:str>
@@ -33,5 +38,9 @@ variables:
   - <xref:str>
 - description: 'Operation type: Read, write, delete, etc.'
   name: operation
+  types:
+  - <xref:str>
+- description: Description for the resource operation.
+  name: description
   types:
   - <xref:str>

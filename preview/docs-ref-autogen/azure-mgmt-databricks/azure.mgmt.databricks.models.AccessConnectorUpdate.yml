@@ -8,22 +8,22 @@ inheritances:
 summary: An update to an azure databricks accessConnector.
 constructor:
   syntax: 'AccessConnectorUpdate(*, tags: Dict[str, str] | None = None, identity:
-    _models.IdentityData | None = None, **kwargs)'
+    _models.ManagedServiceIdentity | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: identity
-    description: The identity of the resource.
+    description: Managed service identity (system assigned and/or user assigned identities).
     types:
-    - <xref:azure.mgmt.databricks.models.IdentityData>
+    - <xref:azure.mgmt.databricks.models.ManagedServiceIdentity>
 variables:
 - description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: The identity of the resource.
+- description: Managed service identity (system assigned and/or user assigned identities).
   name: identity
   types:
-  - <xref:azure.mgmt.databricks.models.IdentityData>
+  - <xref:azure.mgmt.databricks.models.ManagedServiceIdentity>

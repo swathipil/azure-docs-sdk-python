@@ -49,7 +49,7 @@ methods:
   - name: parameters
     description: 'The Traffic Manager endpoint parameters supplied to the CreateOrUpdate
 
-      operation. Is either a model type or a IO type. Required.'
+      operation. Is either a Endpoint type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.trafficmanager.models.Endpoint>
@@ -192,7 +192,7 @@ methods:
     description: 'The Traffic Manager endpoint parameters supplied to the Update operation.
       Is
 
-      either a model type or a IO type. Required.'
+      either a Endpoint type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.trafficmanager.models.Endpoint>

@@ -13,30 +13,46 @@ constructor:
 methods:
 - uid: azure.mgmt.mobilenetwork.aio.operations.SitesOperations.begin_create_or_update
   name: begin_create_or_update
-  summary: Creates or updates a mobile network site.
+  summary: 'Creates or updates a mobile network site. Must be created in the same
+    location as its parent
+
+    mobile network.'
   signature: 'async begin_create_or_update(resource_group_name: str, mobile_network_name:
-    str, site_name: str, parameters: Site, **kwargs: Any) -> AsyncLROPoller[Site]'
+    str, site_name: str, parameters: _models.Site, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> AsyncLROPoller[_models.Site]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: site_name
-    description: The name of the mobile network site.
+    description: The name of the mobile network site. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to the create or update mobile network site operation.
+    description: 'Parameters supplied to the create or update mobile network site
+      operation.
+
+      Is either a model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.Site>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -71,22 +87,27 @@ methods:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.aio.operations.SitesOperations.begin_delete
   name: begin_delete
-  summary: Deletes the specified mobile network site.
+  summary: 'Deletes the specified mobile network site. This will also delete any network
+    functions that are
+
+    a part of this site.'
   signature: 'async begin_delete(resource_group_name: str, mobile_network_name: str,
     site_name: str, **kwargs: Any) -> AsyncLROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: site_name
-    description: The name of the mobile network site.
+    description: The name of the mobile network site. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -129,17 +150,19 @@ methods:
     str, **kwargs: Any) -> Site'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: site_name
-    description: The name of the mobile network site.
+    description: The name of the mobile network site. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -148,7 +171,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: Site, or the result of cls(response)
+    description: Site or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.Site>
   exceptions:
@@ -157,15 +180,17 @@ methods:
   name: list_by_mobile_network
   summary: Lists all sites in the mobile network.
   signature: 'list_by_mobile_network(resource_group_name: str, mobile_network_name:
-    str, **kwargs: Any) -> AsyncIterable[SiteListResult]'
+    str, **kwargs: Any) -> AsyncIterable[Site]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -174,44 +199,56 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: An iterator like instance of either SiteListResult or the result
-      of cls(response)
+    description: An iterator like instance of either Site or the result of cls(response)
     types:
-    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SiteListResult>]
+    - <xref:azure.core.async_paging.AsyncItemPaged>[<xref:azure.mgmt.mobilenetwork.models.Site>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.aio.operations.SitesOperations.update_tags
   name: update_tags
   summary: Updates site tags.
   signature: 'async update_tags(resource_group_name: str, mobile_network_name: str,
-    site_name: str, parameters: TagsObject, **kwargs: Any) -> Site'
+    site_name: str, parameters: _models.TagsObject, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> _models.Site'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: site_name
-    description: The name of the mobile network site.
+    description: The name of the mobile network site. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update network site tags.
+    description: 'Parameters supplied to update network site tags. Is either a model
+      type or a
+
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: Site, or the result of cls(response)
+    description: Site or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.Site>
   exceptions:

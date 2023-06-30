@@ -8,7 +8,8 @@ inheritances:
 summary: Encryption entities for databricks workspace resource.
 constructor:
   syntax: 'EncryptionEntitiesDefinition(*, managed_services: _models.EncryptionV2
-    | None = None, managed_disk: _models.ManagedDiskEncryption | None = None, **kwargs)'
+    | None = None, managed_disk: _models.ManagedDiskEncryption | None = None, **kwargs:
+    Any)'
   parameters:
   - name: managed_services
     description: Encryption properties for the databricks managed services.

@@ -13,7 +13,7 @@ constructor:
   syntax: 'CustomRule(*, priority: int, rule_type: str | _models.RuleType, match_conditions:
     List[_models.MatchCondition], action: str | _models.ActionType, name: str | None
     = None, enabled_state: str | _models.CustomRuleEnabledState | None = None, rate_limit_duration_in_minutes:
-    int | None = None, rate_limit_threshold: int | None = None, **kwargs)'
+    int | None = None, rate_limit_threshold: int | None = None, **kwargs: Any)'
   parameters:
   - name: name
     description: Describes the name of the rule.
@@ -59,7 +59,7 @@ constructor:
     description: 'Describes what action to be applied when rule matches. Required.
       Known values
 
-      are: "Allow", "Block", "Log", and "Redirect".'
+      are: "Allow", "Block", "Log", "Redirect", and "AnomalyScoring".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.frontdoor.models.ActionType>
@@ -106,7 +106,7 @@ variables:
 - description: 'Describes what action to be applied when rule matches. Required. Known
     values
 
-    are: "Allow", "Block", "Log", and "Redirect".'
+    are: "Allow", "Block", "Log", "Redirect", and "AnomalyScoring".'
   name: action
   types:
   - <xref:str>

@@ -12,7 +12,7 @@ summary: 'The Private Endpoint Connection resource.
 constructor:
   syntax: 'PrivateEndpointConnection(*, private_endpoint: _models.PrivateEndpoint
     | None = None, private_link_service_connection_state: _models.PrivateLinkServiceConnectionState
-    | None = None, **kwargs)'
+    | None = None, group_ids: List[str] | None = None, **kwargs)'
   parameters:
   - name: private_endpoint
     description: The resource of private end point.
@@ -24,6 +24,10 @@ constructor:
       the connection between service consumer and provider.'
     types:
     - <xref:azure.mgmt.botservice.models.PrivateLinkServiceConnectionState>
+  - name: group_ids
+    description: Group ids.
+    types:
+    - <xref:azure.mgmt.botservice.aio.operations.BotsOperations.list>[<xref:str>]
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 
@@ -59,3 +63,7 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.botservice.models.PrivateEndpointConnectionProvisioningState>
+- description: Group ids.
+  name: group_ids
+  types:
+  - <xref:list>[<xref:str>]

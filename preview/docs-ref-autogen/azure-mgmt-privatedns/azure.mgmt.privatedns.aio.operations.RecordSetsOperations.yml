@@ -52,9 +52,9 @@ methods:
     - <xref:str>
   - name: parameters
     description: 'Parameters supplied to the CreateOrUpdate operation. Is either a
-      model type
+      RecordSet
 
-      or a IO type. Required.'
+      type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.privatedns.models.RecordSet>
@@ -338,10 +338,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters supplied to the Update operation. Is either a model type
-      or a IO
+    description: 'Parameters supplied to the Update operation. Is either a RecordSet
+      type or a
 
-      type. Required.'
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.privatedns.models.RecordSet>

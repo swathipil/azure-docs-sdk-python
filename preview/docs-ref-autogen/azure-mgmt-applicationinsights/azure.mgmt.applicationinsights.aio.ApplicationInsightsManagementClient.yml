@@ -72,11 +72,12 @@ methods:
     \ \n\n* 2021-03-08: <xref:azure.mgmt.applicationinsights.v2021_03_08.models#module-azure.mgmt.applicationinsights.v2021_03_08.models>\
     \ \n\n* 2021-08-01: <xref:azure.mgmt.applicationinsights.v2021_08_01.models#module-azure.mgmt.applicationinsights.v2021_08_01.models>\
     \ \n\n* 2021-10-14: <xref:azure.mgmt.applicationinsights.v2021_10.models#module-azure.mgmt.applicationinsights.v2021_10.models>\
-    \ \n\n* 2022-04-01: <xref:azure.mgmt.applicationinsights.v2022_04_01.models#module-azure.mgmt.applicationinsights.v2022_04_01.models>"
-  signature: models(api_version='2022-04-01')
+    \ \n\n* 2022-04-01: <xref:azure.mgmt.applicationinsights.v2022_04_01.models#module-azure.mgmt.applicationinsights.v2022_04_01.models>\
+    \ \n\n* 2022-06-15: <xref:azure.mgmt.applicationinsights.v2022_06_15.models#module-azure.mgmt.applicationinsights.v2022_06_15.models>"
+  signature: models(api_version='2022-06-15')
   parameters:
   - name: api_version
-    defaultValue: '2022-04-01'
+    defaultValue: '2022-06-15'
 attributes:
 - uid: azure.mgmt.applicationinsights.aio.ApplicationInsightsManagementClient.analytics_items
   name: analytics_items
@@ -195,7 +196,8 @@ attributes:
 - uid: azure.mgmt.applicationinsights.aio.ApplicationInsightsManagementClient.web_tests
   name: web_tests
   summary: "Instance depends on the API version:\n\n* 2015-05-01: <xref:azure.mgmt.applicationinsights.v2015_05_01.aio.operations.WebTestsOperations>\
-    \ \n\n* 2018-05-01-preview: <xref:azure.mgmt.applicationinsights.v2018_05_01_preview.aio.operations.WebTestsOperations>"
+    \ \n\n* 2018-05-01-preview: <xref:azure.mgmt.applicationinsights.v2018_05_01_preview.aio.operations.WebTestsOperations>\
+    \ \n\n* 2022-06-15: <xref:azure.mgmt.applicationinsights.v2022_06_15.aio.operations.WebTestsOperations>"
 - uid: azure.mgmt.applicationinsights.aio.ApplicationInsightsManagementClient.work_item_configurations
   name: work_item_configurations
   summary: 'Instance depends on the API version:
@@ -214,7 +216,7 @@ attributes:
     \ \n\n* 2022-04-01: <xref:azure.mgmt.applicationinsights.v2022_04_01.aio.operations.WorkbooksOperations>"
 - uid: azure.mgmt.applicationinsights.aio.ApplicationInsightsManagementClient.DEFAULT_API_VERSION
   name: DEFAULT_API_VERSION
-  signature: DEFAULT_API_VERSION = '2022-04-01'
+  signature: DEFAULT_API_VERSION = '2022-06-15'
 - uid: azure.mgmt.applicationinsights.aio.ApplicationInsightsManagementClient.LATEST_PROFILE
   name: LATEST_PROFILE
   signature: LATEST_PROFILE = azure.mgmt.applicationinsights.ApplicationInsightsManagementClient

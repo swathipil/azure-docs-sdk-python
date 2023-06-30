@@ -12,7 +12,8 @@ summary: 'Azure File Share workload specific backup copy.
 constructor:
   syntax: 'AzureFileShareRecoveryPoint(*, recovery_point_type: str | None = None,
     recovery_point_time: datetime | None = None, file_share_snapshot_uri: str | None
-    = None, recovery_point_size_in_gb: int | None = None, **kwargs)'
+    = None, recovery_point_size_in_gb: int | None = None, recovery_point_properties:
+    _models.RecoveryPointProperties | None = None, **kwargs: Any)'
   parameters:
   - name: recovery_point_type
     description: 'Type of the backup copy. Specifies whether it is a crash
@@ -32,6 +33,10 @@ constructor:
     description: Contains recovery point size.
     types:
     - <xref:int>
+  - name: recovery_point_properties
+    description: Properties of Recovery Point.
+    types:
+    - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties>
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 
@@ -57,3 +62,7 @@ variables:
   name: recovery_point_size_in_gb
   types:
   - <xref:int>
+- description: Properties of Recovery Point.
+  name: recovery_point_properties
+  types:
+  - <xref:azure.mgmt.recoveryservicesbackup.activestamp.models.RecoveryPointProperties>

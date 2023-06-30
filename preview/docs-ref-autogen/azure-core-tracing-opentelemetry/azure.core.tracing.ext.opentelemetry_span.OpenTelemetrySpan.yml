@@ -8,8 +8,8 @@ inheritances:
 - builtins.object
 summary: OpenTelemetry plugin for Azure client libraries.
 constructor:
-  syntax: 'OpenTelemetrySpan(span: Span | None = None, name: str | None = ''span'',
-    **kwargs: Any)'
+  syntax: 'OpenTelemetrySpan(span: Span | None = None, name: str = ''span'', **kwargs:
+    Any)'
   parameters:
   - name: span
     description: The OpenTelemetry span to wrap, or nothing to create a new one.
@@ -24,11 +24,16 @@ constructor:
   - name: kind
     description: The span kind of this span.
     types:
-    - <xref:SpanKind>
+    - <xref:azure.core.tracing.SpanKind>
   - name: links
     description: The list of links to be added to the span.
     types:
     - <xref:list>[<xref:azure.core.tracing.Link>]
+  - name: context
+    description: Context headers of parent span that should be used when creating
+      a new span.
+    types:
+    - <xref:Dict>[<xref:str>, <xref:str>]
 methods:
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.add_attribute
   name: add_attribute
@@ -44,7 +49,7 @@ methods:
     description: The value of the key value pair
     isRequired: true
     types:
-    - <xref:str>
+    - <xref:Union>[<xref:str>, <xref:int>]
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.change_context
   name: change_context
   summary: Change the context for the life of this context manager.
@@ -58,11 +63,11 @@ methods:
   signature: finish() -> None
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.get_current_span
   name: get_current_span
-  summary: Get the current span from the execution context. Return None otherwise.
+  summary: Get the current span from the execution context.
   signature: get_current_span() -> Span
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.get_current_tracer
   name: get_current_tracer
-  summary: Get the current tracer from the execution context. Return None otherwise.
+  summary: Get the current tracer from the execution context.
   signature: get_current_tracer() -> Tracer
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.get_trace_parent
   name: get_trace_parent
@@ -88,7 +93,9 @@ methods:
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.link
   name: link
   summary: Links the context to the current tracer.
-  signature: 'link(traceparent: str, attributes: Attributes = None) -> None'
+  signature: 'link(traceparent: str, attributes: Dict[str, str | bool | int | float
+    | Sequence[str] | Sequence[bool] | Sequence[int] | Sequence[float]] | None = None)
+    -> None'
   parameters:
   - name: traceparent
     description: A complete traceparent
@@ -101,8 +108,9 @@ methods:
   name: link_from_headers
   summary: Given a dictionary, extracts the context and links the context to the current
     tracer.
-  signature: 'link_from_headers(headers: Dict[str, str], attributes: Attributes =
-    None) -> None'
+  signature: 'link_from_headers(headers: Dict[str, str], attributes: Dict[str, str
+    | bool | int | float | Sequence[str] | Sequence[bool] | Sequence[int] | Sequence[float]]
+    | None = None)'
   parameters:
   - name: headers
     description: A key value pair dictionary
@@ -120,43 +128,45 @@ methods:
     isRequired: true
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.set_current_tracer
   name: set_current_tracer
-  summary: 'Set the given tracer as the current tracer in the execution context.
-
-    :param tracer: The tracer to set the current tracer as
-
-    :type tracer: :class: OpenTelemetry.trace.Tracer'
+  summary: Set the given tracer as the current tracer in the execution context.
   signature: 'set_current_tracer(_: Tracer) -> None'
   parameters:
+  - name: tracer
+    description: The tracer to set the current tracer as
+    isRequired: true
   - name: _
     isRequired: true
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.span
   name: span
-  summary: 'Create a child span for the current span and append it to the child spans
-    list in the span instance.
+  summary: 'Create a child span for the current span and return it.
 
     :param name: Name of the child span
 
     :type name: str
 
-    :keyword SpanKind kind: The span kind of this span.
+    :keyword kind: The span kind of this span.
+
+    :paramtype kind: ~azure.core.tracing.SpanKind
 
     :keyword links: The list of links to be added to the span.
 
     :paramtype links: list[Link]
 
     :return: The OpenTelemetrySpan that is wrapping the child span instance'
-  signature: 'span(name: str | None = ''span'', **kwargs: Any) -> OpenTelemetrySpan'
+  signature: 'span(name: str = ''span'', **kwargs: Any) -> OpenTelemetrySpan'
   parameters:
   - name: name
     defaultValue: span
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.start
   name: start
-  signature: start()
+  signature: start() -> None
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.to_header
   name: to_header
   summary: 'Returns a dictionary with the header labels and values.
 
-    :return: A key value pair dictionary'
+    :return: A key value pair dictionary
+
+    :rtype: dict[str, str]'
   signature: to_header() -> Dict[str, str]
 - uid: azure.core.tracing.ext.opentelemetry_span.OpenTelemetrySpan.with_current_context
   name: with_current_context

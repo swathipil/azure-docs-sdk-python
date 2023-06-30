@@ -1,0 +1,14 @@
+### YamlMime:PythonEnum
+uid: azure.mgmt.servermanager.models.server_management_enums.PowerShellExpandOption
+name: PowerShellExpandOption
+fullName: azure.mgmt.servermanager.models.server_management_enums.PowerShellExpandOption
+module: azure.mgmt.servermanager.models.server_management_enums
+constructor:
+  syntax: PowerShellExpandOption(value, names=None, *, module=None, qualname=None,
+    type=None, start=1, boundary=None)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: output
+  uid: azure.mgmt.servermanager.models.server_management_enums.PowerShellExpandOption.output

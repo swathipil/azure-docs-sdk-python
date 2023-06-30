@@ -7,22 +7,24 @@ inheritances:
 - builtins.object
 summary: 'AvroEncoder provides the ability to encode and decode content according
 
-  to the given avro schema. It would automatically register, get and cache the schema.'
+  to the given Avro schema. It would automatically register, get, and cache the schema.'
 constructor:
   syntax: 'AvroEncoder(**kwargs: Any)'
   parameters:
   - name: client
-    description: 'Required. The schema registry client
+    description: 'Required. The schema registry client which is used to register schema
 
-      which is used to register schema and retrieve schema from the service.'
+      and retrieve schema from the service.'
     types:
     - <xref:azure.schemaregistry.SchemaRegistryClient>
   - name: group_name
-    description: Required. Schema group under which schema should be registered.
+    description: 'Required for encoding. Not used when decoding.
+
+      Schema group under which schema should be registered.'
     types:
-    - <xref:str>
+    - <xref:Optional>[<xref:str>]
   - name: auto_register
-    description: 'When true, register new schemas passed to encode.
+    description: 'When true, registers new schemas passed to encode.
 
       Otherwise, and by default, encode will fail if the schema has not been pre-registered
       in the registry.'
@@ -82,8 +84,8 @@ methods:
     : Avro mime type string + schema ID}.\n\nIf *message_type* is set, then additional\
     \ keyword arguments will be passed to the message callback\n   function provided.\n\
     \nSchema must be an Avro RecordSchema:\n[https://avro.apache.org/docs/1.10.0/gettingstartedpython.html#Defining+a+schema](https://avro.apache.org/docs/1.10.0/gettingstartedpython.html#Defining+a+schema)"
-  signature: 'encode(content: Mapping[str, Any], *, schema: str, message_type: Type[MessageTypeT],
-    request_options: Dict[str, Any] | None = None, **kwargs: Any) -> MessageTypeT'
+  signature: 'encode(content: Mapping[str, Any], *, schema: str, message_type: Type[MessageType],
+    request_options: Dict[str, Any] | None = None, **kwargs: Any) -> MessageType'
   parameters:
   - name: content
     description: The content to be encoded.

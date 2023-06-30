@@ -16,7 +16,7 @@ summary: 'Delete Option.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'DeleteOption(*, duration: str, **kwargs)'
+  syntax: 'DeleteOption(*, duration: str, **kwargs: Any)'
   parameters:
   - name: duration
     description: Duration of deletion after given timespan. Required.

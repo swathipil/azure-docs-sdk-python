@@ -17,14 +17,10 @@ summary: 'Specifies information about the image to use. You can specify informat
   creation operations. NOTE: Image reference publisher and offer can only be set when
   you create
 
-  the scale set.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+  the scale set.'
 constructor:
   syntax: 'ImageReference(*, publisher: str | None = None, offer: str | None = None,
-    sku: str | None = None, version: str | None = None, shared_gallery_image_id: str
-    | None = None, **kwargs: Any)'
+    sku: str | None = None, version: str | None = None, **kwargs: Any)'
   parameters:
   - name: publisher
     description: The image publisher.
@@ -57,12 +53,6 @@ constructor:
       after deploy time even if a new version becomes available.'
     types:
     - <xref:str>
-  - name: shared_gallery_image_id
-    description: 'Specified the shared gallery image unique id for vm
-
-      deployment. This can be fetched from shared gallery image GET call.'
-    types:
-    - <xref:str>
 variables:
 - description: The image publisher.
   name: publisher
@@ -93,20 +83,5 @@ variables:
 
     time even if a new version becomes available.'
   name: version
-  types:
-  - <xref:str>
-- description: 'Specifies in decimal numbers, the version of platform image or marketplace
-
-    image used to create the virtual machine. This readonly field differs from ''version'',
-    only if
-
-    the value specified in ''version'' field is ''latest''.'
-  name: exact_version
-  types:
-  - <xref:str>
-- description: 'Specified the shared gallery image unique id for vm deployment.
-
-    This can be fetched from shared gallery image GET call.'
-  name: shared_gallery_image_id
   types:
   - <xref:str>

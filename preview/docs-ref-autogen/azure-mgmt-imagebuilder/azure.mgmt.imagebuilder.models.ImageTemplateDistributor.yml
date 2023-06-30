@@ -19,7 +19,7 @@ summary: 'Generic distribution object.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'ImageTemplateDistributor(*, run_output_name: str, artifact_tags: Dict[str,
-    str] | None = None, **kwargs)'
+    str] | None = None, **kwargs: Any)'
   parameters:
   - name: run_output_name
     description: The name to be used for the associated RunOutput. Required.

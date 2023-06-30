@@ -41,7 +41,7 @@ methods:
   - name: rules_engine_parameters
     description: 'Rules Engine Configuration properties needed to create a new
 
-      Rules Engine Configuration. Is either a model type or a IO type. Required.'
+      Rules Engine Configuration. Is either a RulesEngine type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.frontdoor.models.RulesEngine>

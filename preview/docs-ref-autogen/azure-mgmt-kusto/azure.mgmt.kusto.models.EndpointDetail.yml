@@ -7,7 +7,7 @@ inheritances:
 - azure.mgmt.kusto._serialization.Model
 summary: Current TCP connectivity information from the Kusto cluster to a single endpoint.
 constructor:
-  syntax: 'EndpointDetail(*, port: int | None = None, **kwargs)'
+  syntax: 'EndpointDetail(*, port: int | None = None, **kwargs: Any)'
   parameters:
   - name: port
     description: The port an endpoint is connected to.

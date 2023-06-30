@@ -8,7 +8,7 @@ inheritances:
 summary: NginxConfigurationFile.
 constructor:
   syntax: 'NginxConfigurationFile(*, content: str | None = None, virtual_path: str
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: content
     types:

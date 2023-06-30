@@ -14,7 +14,7 @@ summary: 'The private endpoint connection of a workspace.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'PrivateEndpointConnection(*, properties: _models.PrivateEndpointConnectionProperties,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: properties
     description: The private endpoint connection properties. Required.

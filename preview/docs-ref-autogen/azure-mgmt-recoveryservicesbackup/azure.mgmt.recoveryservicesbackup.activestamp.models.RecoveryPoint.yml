@@ -19,7 +19,7 @@ summary: 'Base class for backup copies. Workload-specific backup copies are deri
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: RecoveryPoint(**kwargs)
+  syntax: 'RecoveryPoint(**kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

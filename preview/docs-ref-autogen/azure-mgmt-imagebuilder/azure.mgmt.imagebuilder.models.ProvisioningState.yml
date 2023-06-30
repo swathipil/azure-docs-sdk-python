@@ -11,6 +11,8 @@ inheritances:
 - builtins.str
 - enum.Enum
 fields:
+- name: CANCELED
+  uid: azure.mgmt.imagebuilder.models.ProvisioningState.CANCELED
 - name: CREATING
   uid: azure.mgmt.imagebuilder.models.ProvisioningState.CREATING
 - name: DELETING

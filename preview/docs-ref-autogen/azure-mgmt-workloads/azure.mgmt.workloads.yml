@@ -4,7 +4,7 @@ name: workloads
 fullName: azure.mgmt.workloads
 type: import
 classes:
-- azure.mgmt.workloads.WorkloadsClient
+- azure.mgmt.workloads.WorkloadsMgmtClient
 packages:
 - azure.mgmt.workloads.aio
 - azure.mgmt.workloads.models

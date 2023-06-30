@@ -1,0 +1,36 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.FunctionRule
+name: FunctionRule
+fullName: azure.communication.jobrouter.FunctionRule
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterRule
+summary: 'A rule providing a binding to an HTTP Triggered Azure Function.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'FunctionRule(*, function_uri: str, credential: _models.FunctionRuleCredential
+    | None = None, **kwargs: Any)'
+  parameters:
+  - name: function_uri
+    description: URL for Azure Function. Required.
+    types:
+    - <xref:str>
+  - name: credential
+    description: Credentials used to access Azure function rule.
+    types:
+    - <xref:azure.communication.jobrouter.models.FunctionRuleCredential>
+variables:
+- description: The type discriminator describing a sub-type of Rule. Required.
+  name: kind
+  types:
+  - <xref:str>
+- description: URL for Azure Function. Required.
+  name: function_uri
+  types:
+  - <xref:str>
+- description: Credentials used to access Azure function rule.
+  name: credential
+  types:
+  - <xref:azure.communication.jobrouter.models.FunctionRuleCredential>

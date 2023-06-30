@@ -17,7 +17,7 @@ summary: 'Base class common to RestoreTargetInfo and RestoreFilesTargetInfo.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'RestoreTargetInfoBase(*, recovery_option: str | _models.RecoveryOption,
-    restore_location: str | None = None, **kwargs)'
+    restore_location: str | None = None, **kwargs: Any)'
   parameters:
   - name: recovery_option
     description: Recovery Option. Required. "FailIfExists"

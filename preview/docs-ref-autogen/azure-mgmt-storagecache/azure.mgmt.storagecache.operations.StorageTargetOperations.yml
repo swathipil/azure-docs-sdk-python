@@ -24,12 +24,14 @@ methods:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: Target resource group. Required.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: cache_name
-    description: 'Name of Cache. Length of name must not be greater than 80 and chars
+    description: 'Name of cache. Length of name must not be greater than 80 and chars
       must be
 
       from the [->>0-9a-zA-Z_<<] char class. Required.'
@@ -83,12 +85,14 @@ methods:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: Target resource group. Required.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: cache_name
-    description: 'Name of Cache. Length of name must not be greater than 80 and chars
+    description: 'Name of cache. Length of name must not be greater than 80 and chars
       must be
 
       from the [->>0-9a-zA-Z_<<] char class. Required.'
@@ -139,12 +143,14 @@ methods:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: Target resource group. Required.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: cache_name
-    description: 'Name of Cache. Length of name must not be greater than 80 and chars
+    description: 'Name of cache. Length of name must not be greater than 80 and chars
       must be
 
       from the [->>0-9a-zA-Z_<<] char class. Required.'
@@ -195,12 +201,14 @@ methods:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: Target resource group. Required.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: cache_name
-    description: 'Name of Cache. Length of name must not be greater than 80 and chars
+    description: 'Name of cache. Length of name must not be greater than 80 and chars
       must be
 
       from the [->>0-9a-zA-Z_<<] char class. Required.'

@@ -6,14 +6,17 @@ module: azure.mgmt.cognitiveservices.models
 inheritances:
 - azure.mgmt.cognitiveservices.models._models_py3.AzureEntityResource
 summary: 'Cognitive Services account is an Azure resource representing the provisioned
-  account, it''s type, location and SKU.
+  account, it''s
+
+  type, location and SKU.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'Account(*, kind: str | None = None, sku: _models.Sku | None = None, identity:
     _models.Identity | None = None, tags: Dict[str, str] | None = None, location:
-    str | None = None, properties: _models.AccountProperties | None = None, **kwargs)'
+    str | None = None, properties: _models.AccountProperties | None = None, **kwargs:
+    Any)'
   parameters:
   - name: kind
     description: The Kind of the resource.

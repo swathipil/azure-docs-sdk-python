@@ -10,3 +10,4 @@ classes:
 - azure.mgmt.search.aio.operations.PrivateLinkResourcesOperations
 - azure.mgmt.search.aio.operations.QueryKeysOperations
 - azure.mgmt.search.aio.operations.ServicesOperations
+- azure.mgmt.search.aio.operations.SharedPrivateLinkResourcesOperations

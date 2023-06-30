@@ -14,7 +14,7 @@ constructor:
     | None = None, source_resource_id: str | None = None, copy_options: str | _models.CopyOptions
     | None = None, restore_request_type: str | _models.RestoreRequestType | None =
     None, restore_file_specs: List[_models.RestoreFileSpecs] | None = None, target_details:
-    _models.TargetAFSRestoreInfo | None = None, **kwargs)'
+    _models.TargetAFSRestoreInfo | None = None, **kwargs: Any)'
   parameters:
   - name: recovery_type
     description: 'Type of this recovery. Known values are: "Invalid", "OriginalLocation",

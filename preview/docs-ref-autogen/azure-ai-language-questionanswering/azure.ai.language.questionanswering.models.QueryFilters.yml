@@ -4,12 +4,12 @@ name: QueryFilters
 fullName: azure.ai.language.questionanswering.models.QueryFilters
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: filters over knowledge base.
 constructor:
   syntax: 'QueryFilters(*, metadata_filter: _models.MetadataFilter | None = None,
     source_filter: List[str] | None = None, logical_operation: str | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: metadata_filter
     description: Find QnAs that are associated with the given list of metadata.

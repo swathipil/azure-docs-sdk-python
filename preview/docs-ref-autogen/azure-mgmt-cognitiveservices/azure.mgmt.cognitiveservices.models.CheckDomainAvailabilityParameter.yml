@@ -11,7 +11,7 @@ summary: 'Check Domain availability parameter.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'CheckDomainAvailabilityParameter(*, subdomain_name: str, type: str, kind:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: subdomain_name
     description: The subdomain name to use. Required.

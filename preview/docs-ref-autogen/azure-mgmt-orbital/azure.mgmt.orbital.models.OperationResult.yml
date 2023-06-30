@@ -11,7 +11,7 @@ summary: 'Operation Result Entity.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'OperationResult(*, properties: MutableMapping[str, Any] | None = None,
-    error: _models.OperationResultErrorProperties | None = None, **kwargs)'
+    error: _models.OperationResultErrorProperties | None = None, **kwargs: Any)'
   parameters:
   - name: properties
     description: Operation result properties.
@@ -50,6 +50,14 @@ variables:
   name: percent_complete
   types:
   - <xref:float>
+- description: A list of results when the operation returns multiple results.
+  name: value
+  types:
+  - <xref:list>[<xref:JSON>]
+- description: The URL to get the next set of results.
+  name: next_link
+  types:
+  - <xref:str>
 - description: Operation result properties.
   name: properties
   types:

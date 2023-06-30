@@ -10,7 +10,7 @@ constructor:
   syntax: 'BMSRPQueryObject(*, start_date: datetime | None = None, end_date: datetime
     | None = None, restore_point_query_type: str | _models.RestorePointQueryType |
     None = None, extended_info: bool | None = None, move_ready_rp_only: bool | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: start_date
     description: Backup copies created after this time.

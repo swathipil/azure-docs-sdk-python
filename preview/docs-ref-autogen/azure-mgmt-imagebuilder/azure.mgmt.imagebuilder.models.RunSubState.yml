@@ -17,6 +17,8 @@ fields:
   uid: azure.mgmt.imagebuilder.models.RunSubState.CUSTOMIZING
 - name: DISTRIBUTING
   uid: azure.mgmt.imagebuilder.models.RunSubState.DISTRIBUTING
+- name: OPTIMIZING
+  uid: azure.mgmt.imagebuilder.models.RunSubState.OPTIMIZING
 - name: QUEUED
   uid: azure.mgmt.imagebuilder.models.RunSubState.QUEUED
 - name: VALIDATING

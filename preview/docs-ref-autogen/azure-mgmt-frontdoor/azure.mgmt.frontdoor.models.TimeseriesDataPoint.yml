@@ -8,7 +8,7 @@ inheritances:
 summary: Defines a timeseries datapoint used in a timeseries.
 constructor:
   syntax: 'TimeseriesDataPoint(*, date_time_utc: str | None = None, value: float |
-    None = None, **kwargs)'
+    None = None, **kwargs: Any)'
   parameters:
   - name: date_time_utc
     description: The DateTime of the Timeseries data point in UTC.
