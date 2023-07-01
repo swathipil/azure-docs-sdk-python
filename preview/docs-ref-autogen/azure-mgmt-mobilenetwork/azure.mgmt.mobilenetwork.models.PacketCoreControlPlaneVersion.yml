@@ -10,25 +10,13 @@ summary: 'Packet core control plane version resource.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'PacketCoreControlPlaneVersion(*, version_state: str | _models.VersionState
-    | None = None, recommended_version: str | _models.RecommendedVersion | None =
-    None, **kwargs)'
+  syntax: 'PacketCoreControlPlaneVersion(*, platforms: List[_models.Platform] | None
+    = None, **kwargs)'
   parameters:
-  - name: version_state
-    description: 'The state of this packet core control plane version. Known values
-      are:
-
-      "Unknown", "Preview", "Validating", "ValidationFailed", "Active", "Deprecated".'
+  - name: platforms
+    description: Platform specific packet core control plane version properties.
     types:
-    - <xref:str>
-    - <xref:azure.mgmt.mobilenetwork.models.VersionState>
-  - name: recommended_version
-    description: 'Indicates whether this is the recommended version to use for new
-
-      packet core control plane deployments. Known values are: "Recommended", "NotRecommended".'
-    types:
-    - <xref:str>
-    - <xref:azure.mgmt.mobilenetwork.models.RecommendedVersion>
+    - <xref:azure.mgmt.mobilenetwork.aio.operations.Operations.list>[<xref:azure.mgmt.mobilenetwork.models.Platform>]
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 
@@ -57,23 +45,12 @@ variables:
 
     resource. Known values are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed",
 
-    "Canceled", "Deleted".'
+    "Canceled", and "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.ProvisioningState>
-- description: 'The state of this packet core control plane version. Known values
-    are:
-
-    "Unknown", "Preview", "Validating", "ValidationFailed", "Active", "Deprecated".'
-  name: version_state
+- description: Platform specific packet core control plane version properties.
+  name: platforms
   types:
-  - <xref:str>
-  - <xref:azure.mgmt.mobilenetwork.models.VersionState>
-- description: 'Indicates whether this is the recommended version to use for new
-
-    packet core control plane deployments. Known values are: "Recommended", "NotRecommended".'
-  name: recommended_version
-  types:
-  - <xref:str>
-  - <xref:azure.mgmt.mobilenetwork.models.RecommendedVersion>
+  - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.Platform>]

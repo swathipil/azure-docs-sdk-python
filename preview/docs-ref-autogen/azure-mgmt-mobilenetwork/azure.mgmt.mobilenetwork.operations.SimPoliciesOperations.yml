@@ -13,30 +13,46 @@ constructor:
 methods:
 - uid: azure.mgmt.mobilenetwork.operations.SimPoliciesOperations.begin_create_or_update
   name: begin_create_or_update
-  summary: Creates or updates a SIM policy.
+  summary: 'Creates or updates a SIM policy. Must be created in the same location
+    as its parent mobile
+
+    network.'
   signature: 'begin_create_or_update(resource_group_name: str, mobile_network_name:
-    str, sim_policy_name: str, parameters: SimPolicy, **kwargs: Any) -> LROPoller[SimPolicy]'
+    str, sim_policy_name: str, parameters: _models.SimPolicy, *, content_type: str
+    = ''application/json'', **kwargs: Any) -> LROPoller[_models.SimPolicy]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: sim_policy_name
-    description: The name of the SIM policy.
+    description: The name of the SIM policy. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to the create or update SIM policy operation.
+    description: 'Parameters supplied to the create or update SIM policy operation.
+      Is either
+
+      a model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimPolicy>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -76,17 +92,19 @@ methods:
     str, **kwargs: Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: sim_policy_name
-    description: The name of the SIM policy.
+    description: The name of the SIM policy. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -129,17 +147,19 @@ methods:
     str, **kwargs: Any) -> SimPolicy'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: sim_policy_name
-    description: The name of the SIM policy.
+    description: The name of the SIM policy. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -148,7 +168,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: SimPolicy, or the result of cls(response)
+    description: SimPolicy or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimPolicy>
   exceptions:
@@ -157,15 +177,17 @@ methods:
   name: list_by_mobile_network
   summary: Gets all the SIM policies in a mobile network.
   signature: 'list_by_mobile_network(resource_group_name: str, mobile_network_name:
-    str, **kwargs: Any) -> Iterable[SimPolicyListResult]'
+    str, **kwargs: Any) -> Iterable[SimPolicy]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -174,44 +196,56 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: An iterator like instance of either SimPolicyListResult or the result
-      of cls(response)
+    description: An iterator like instance of either SimPolicy or the result of cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimPolicyListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimPolicy>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.SimPoliciesOperations.update_tags
   name: update_tags
   summary: Updates SIM policy tags.
   signature: 'update_tags(resource_group_name: str, mobile_network_name: str, sim_policy_name:
-    str, parameters: TagsObject, **kwargs: Any) -> SimPolicy'
+    str, parameters: _models.TagsObject, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> _models.SimPolicy'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: sim_policy_name
-    description: The name of the SIM policy.
+    description: The name of the SIM policy. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update SIM policy tags.
+    description: 'Parameters supplied to update SIM policy tags. Is either a model
+      type or a
+
+      IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: SimPolicy, or the result of cls(response)
+    description: SimPolicy or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimPolicy>
   exceptions:

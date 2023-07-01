@@ -4,7 +4,7 @@ name: PccRuleConfiguration
 fullName: azure.mgmt.mobilenetwork.models.PccRuleConfiguration
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Data flow policy rule configuration.
 
 
@@ -16,25 +16,25 @@ constructor:
     = None, **kwargs)'
   parameters:
   - name: rule_name
-    description: 'Required. The name of the rule. This must be unique within the parent
+    description: 'The name of the rule. This must be unique within the parent service.
+      You
 
-      service. You must not use any of the following reserved strings - `default`,
-      `requested`
+      must not use any of the following reserved strings - `default`, `requested`
+      or
 
-      or `service`.'
+      `service`. Required.'
     types:
     - <xref:str>
   - name: rule_precedence
-    description: 'Required. A precedence value that is used to decide between data
-      flow
+    description: 'A precedence value that is used to decide between data flow policy
 
-      policy rules when identifying the QoS values to use for a particular SIM. A
-      lower value means a
+      rules when identifying the QoS values to use for a particular SIM. A lower value
+      means a higher
 
-      higher priority. This value should be unique among all data flow policy rules
-      configured in the
+      priority. This value should be unique among all data flow policy rules configured
+      in the mobile
 
-      mobile network.'
+      network. Required.'
     types:
     - <xref:int>
   - name: rule_qos_policy
@@ -46,36 +46,36 @@ constructor:
   - name: traffic_control
     description: 'Determines whether flows that match this data flow policy rule are
 
-      permitted. Known values are: "Enabled", "Blocked".'
+      permitted. Known values are: "Enabled" and "Blocked".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.TrafficControlPermission>
   - name: service_data_flow_templates
-    description: 'Required. The set of data flow templates to use for this
+    description: 'The set of data flow templates to use for this data flow
 
-      data flow policy rule.'
+      policy rule. Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.aio.operations.Operations.list>[<xref:azure.mgmt.mobilenetwork.models.ServiceDataFlowTemplate>]
 variables:
-- description: 'Required. The name of the rule. This must be unique within the parent
-    service.
+- description: 'The name of the rule. This must be unique within the parent service.
+    You must
 
-    You must not use any of the following reserved strings - `default`, `requested`
-    or
+    not use any of the following reserved strings - `default`, `requested` or `service`.
 
-    `service`.'
+    Required.'
   name: rule_name
   types:
   - <xref:str>
-- description: 'Required. A precedence value that is used to decide between data flow
+- description: 'A precedence value that is used to decide between data flow policy
+    rules
 
-    policy rules when identifying the QoS values to use for a particular SIM. A lower
-    value means a
+    when identifying the QoS values to use for a particular SIM. A lower value means
+    a higher
 
-    higher priority. This value should be unique among all data flow policy rules
-    configured in the
+    priority. This value should be unique among all data flow policy rules configured
+    in the mobile
 
-    mobile network.'
+    network. Required.'
   name: rule_precedence
   types:
   - <xref:int>
@@ -88,14 +88,14 @@ variables:
   - <xref:azure.mgmt.mobilenetwork.models.PccRuleQosPolicy>
 - description: 'Determines whether flows that match this data flow policy rule are
 
-    permitted. Known values are: "Enabled", "Blocked".'
+    permitted. Known values are: "Enabled" and "Blocked".'
   name: traffic_control
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.TrafficControlPermission>
-- description: 'Required. The set of data flow templates to use for this
+- description: 'The set of data flow templates to use for this data flow
 
-    data flow policy rule.'
+    policy rule. Required.'
   name: service_data_flow_templates
   types:
   - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.ServiceDataFlowTemplate>]

@@ -17,7 +17,7 @@ constructor:
     | None = None, route_configuration: _models.RouteConfiguration | None = None,
     rules_engine: _models.SubResource | None = None, web_application_firewall_policy_link:
     _models.RoutingRuleUpdateParametersWebApplicationFirewallPolicyLink | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: frontend_endpoints
     description: Frontend endpoints associated with this rule.

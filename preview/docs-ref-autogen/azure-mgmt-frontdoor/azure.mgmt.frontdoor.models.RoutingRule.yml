@@ -6,7 +6,9 @@ module: azure.mgmt.frontdoor.models
 inheritances:
 - azure.mgmt.frontdoor.models._models_py3.SubResource
 summary: 'A routing rule represents a specification for traffic to treat and where
-  to send it, along with health probe information.
+  to send it, along with
+
+  health probe information.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
@@ -17,7 +19,7 @@ constructor:
     | _models.RoutingRuleEnabledState | None = None, route_configuration: _models.RouteConfiguration
     | None = None, rules_engine: _models.SubResource | None = None, web_application_firewall_policy_link:
     _models.RoutingRuleUpdateParametersWebApplicationFirewallPolicyLink | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: id
     description: Resource ID.

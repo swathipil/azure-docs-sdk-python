@@ -5,12 +5,14 @@ fullName: azure.mgmt.search.models.PrivateEndpointConnectionPropertiesPrivateLin
 module: azure.mgmt.search.models
 inheritances:
 - azure.mgmt.search._serialization.Model
-summary: Describes the current state of an existing Private Link Service connection
-  to the Azure Private Endpoint.
+summary: 'Describes the current state of an existing Private Link Service connection
+  to the Azure Private
+
+  Endpoint.'
 constructor:
   syntax: 'PrivateEndpointConnectionPropertiesPrivateLinkServiceConnectionState(*,
     status: str | _models.PrivateLinkServiceConnectionStatus | None = None, description:
-    str | None = None, actions_required: str = ''None'', **kwargs)'
+    str | None = None, actions_required: str = ''None'', **kwargs: Any)'
   parameters:
   - name: status
     description: 'Status of the the private link service connection. Can be Pending,

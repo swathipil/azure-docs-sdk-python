@@ -38,7 +38,7 @@ methods:
   - name: virtual_network_peering_parameters
     description: 'Parameters supplied to the create workspace vNet
 
-      Peering. Is either a model type or a IO type. Required.'
+      Peering. Is either a VirtualNetworkPeering type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.databricks.models.VirtualNetworkPeering>

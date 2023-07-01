@@ -1,0 +1,38 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ExceptionRule
+name: ExceptionRule
+fullName: azure.communication.jobrouter.ExceptionRule
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: 'A rule that defines actions to execute upon a specific trigger.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'ExceptionRule(*, trigger: _models.ExceptionTrigger, actions: Dict[str,
+    _models.ExceptionAction], **kwargs: Any)'
+  parameters:
+  - name: trigger
+    description: The trigger for this exception rule. Required.
+    types:
+    - <xref:azure.communication.jobrouter.models.ExceptionTrigger>
+  - name: actions
+    description: 'A dictionary collection of actions to perform once the exception
+      is
+
+      triggered. Key is the Id of each exception action. Required.'
+    types:
+    - <xref:dict>[<xref:str>, <xref:azure.communication.jobrouter.models.ExceptionAction>]
+variables:
+- description: The trigger for this exception rule. Required.
+  name: trigger
+  types:
+  - <xref:azure.communication.jobrouter.models.ExceptionTrigger>
+- description: 'A dictionary collection of actions to perform once the exception is
+    triggered.
+
+    Key is the Id of each exception action. Required.'
+  name: actions
+  types:
+  - <xref:dict>[<xref:str>, <xref:azure.communication.jobrouter.models.ExceptionAction>]

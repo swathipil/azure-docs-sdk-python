@@ -11,8 +11,7 @@ summary: 'Binding resource properties payload.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'BindingResourceProperties(*, resource_id: str | None = None, key: str |
-    None = None, binding_parameters: Dict[str, MutableMapping[str, Any]] | None =
-    None, **kwargs: Any)'
+    None = None, binding_parameters: Dict[str, str] | None = None, **kwargs: Any)'
   parameters:
   - name: resource_id
     description: The Azure resource id of the bound resource.
@@ -25,7 +24,7 @@ constructor:
   - name: binding_parameters
     description: Binding parameters of the Binding resource.
     types:
-    - <xref:dict>[<xref:str>, <xref:JSON>]
+    - <xref:dict>[<xref:str>, <xref:str>]
 variables:
 - description: The name of the bound resource.
   name: resource_name
@@ -46,7 +45,7 @@ variables:
 - description: Binding parameters of the Binding resource.
   name: binding_parameters
   types:
-  - <xref:dict>[<xref:str>, <xref:JSON>]
+  - <xref:dict>[<xref:str>, <xref:str>]
 - description: 'The generated Spring Boot property file for this binding. The
 
     secret will be deducted.'

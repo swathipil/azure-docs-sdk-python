@@ -13,11 +13,10 @@ summary: 'Customer creates a spacecraft resource to schedule a contact.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'Spacecraft(*, location: str, tags: Dict[str, str] | None = None, provisioning_state:
-    str | _models.SpacecraftsPropertiesProvisioningState | None = None, norad_id:
-    str | None = None, title_line: str | None = None, tle_line1: str | None = None,
-    tle_line2: str | None = None, links: List[_models.SpacecraftLink] | None = None,
-    **kwargs)'
+  syntax: 'Spacecraft(*, location: str, title_line: str, tle_line1: str, tle_line2:
+    str, links: List[_models.SpacecraftLink], tags: Dict[str, str] | None = None,
+    provisioning_state: str | _models.SpacecraftsPropertiesProvisioningState | None
+    = None, norad_id: str | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
@@ -30,10 +29,10 @@ constructor:
   - name: provisioning_state
     description: 'The current state of the resource''s creation, deletion, or
 
-      modification. Known values are: "Creating", "Succeeded", "Failed", "Canceled",
-      "Updating", and
+      modification. Known values are: "creating", "succeeded", "failed", "canceled",
+      "updating", and
 
-      "Deleting".'
+      "deleting".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.orbital.models.SpacecraftsPropertiesProvisioningState>
@@ -42,19 +41,19 @@ constructor:
     types:
     - <xref:str>
   - name: title_line
-    description: Title line of the two-line element set (TLE).
+    description: Title line of the two-line element set (TLE). Required.
     types:
     - <xref:str>
   - name: tle_line1
-    description: Line 1 of the two-line element set (TLE).
+    description: Line 1 of the two-line element set (TLE). Required.
     types:
     - <xref:str>
   - name: tle_line2
-    description: Line 2 of the two-line element set (TLE).
+    description: Line 2 of the two-line element set (TLE). Required.
     types:
     - <xref:str>
   - name: links
-    description: Immutable list of Spacecraft links.
+    description: Immutable list of Spacecraft links. Required.
     types:
     - <xref:azure.mgmt.orbital.aio.operations.ContactProfilesOperations.list>[<xref:azure.mgmt.orbital.models.SpacecraftLink>]
 variables:
@@ -89,16 +88,12 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: A unique read-only string that changes whenever the resource is updated.
-  name: etag
-  types:
-  - <xref:str>
 - description: 'The current state of the resource''s creation, deletion, or
 
-    modification. Known values are: "Creating", "Succeeded", "Failed", "Canceled",
-    "Updating", and
+    modification. Known values are: "creating", "succeeded", "failed", "canceled",
+    "updating", and
 
-    "Deleting".'
+    "deleting".'
   name: provisioning_state
   types:
   - <xref:str>
@@ -107,19 +102,19 @@ variables:
   name: norad_id
   types:
   - <xref:str>
-- description: Title line of the two-line element set (TLE).
+- description: Title line of the two-line element set (TLE). Required.
   name: title_line
   types:
   - <xref:str>
-- description: Line 1 of the two-line element set (TLE).
+- description: Line 1 of the two-line element set (TLE). Required.
   name: tle_line1
   types:
   - <xref:str>
-- description: Line 2 of the two-line element set (TLE).
+- description: Line 2 of the two-line element set (TLE). Required.
   name: tle_line2
   types:
   - <xref:str>
-- description: Immutable list of Spacecraft links.
+- description: Immutable list of Spacecraft links. Required.
   name: links
   types:
   - <xref:list>[<xref:azure.mgmt.orbital.models.SpacecraftLink>]

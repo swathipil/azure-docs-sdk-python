@@ -169,7 +169,7 @@ methods:
     description: Name-value pairs associated with the file as metadata.
     defaultValue: None
     types:
-    - <xref:dict>(<xref:str>, <xref:str>)
+    - <xref:Optional>[<xref:Dict>[<xref:str>, <xref:str>]]
   - name: lease
     description: 'Required if the file has an active lease. Value can be a DataLakeLeaseClient
       object
@@ -1078,7 +1078,7 @@ methods:
   - name: metadata
     description: Name-value pairs associated with the blob as metadata.
     types:
-    - <xref:dict>(<xref:str>, <xref:str>)
+    - <xref:Optional>[<xref:Dict>[<xref:str>, <xref:str>]]
   - name: lease
     description: 'Required if the blob has an active lease. Value can be a DataLakeLeaseClient
       object

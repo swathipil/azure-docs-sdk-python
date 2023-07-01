@@ -27,7 +27,7 @@ constructor:
     None, sso_client_id: str | None = None, sso_client_secret_key_vault_path: str
     | None = None, sso_secret_type: str | _models.SSOSecretType | None = None, start_vm_on_connect:
     bool | None = None, agent_update: _models.AgentUpdateProperties | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: location
     description: The geo-location where the resource lives.

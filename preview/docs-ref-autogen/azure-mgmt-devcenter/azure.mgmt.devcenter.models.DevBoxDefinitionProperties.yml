@@ -12,7 +12,7 @@ summary: 'Properties of a Dev Box definition.
 constructor:
   syntax: 'DevBoxDefinitionProperties(*, image_reference: _models.ImageReference |
     None = None, sku: _models.Sku | None = None, os_storage_type: str | None = None,
-    hibernate_support: str | _models.HibernateSupport | None = None, **kwargs)'
+    hibernate_support: str | _models.HibernateSupport | None = None, **kwargs: Any)'
   parameters:
   - name: image_reference
     description: Image reference information.

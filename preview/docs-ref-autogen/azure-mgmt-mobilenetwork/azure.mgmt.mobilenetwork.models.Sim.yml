@@ -14,29 +14,21 @@ summary: 'SIM resource.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'Sim(*, international_mobile_subscriber_identity: str, integrated_circuit_card_identifier:
-    str | None = None, authentication_key: str | None = None, operator_key_code: str
-    | None = None, device_type: str | None = None, sim_policy: _models.SimPolicyResourceId
+    str | None = None, device_type: str | None = None, sim_policy: _models.SimPolicyResourceId
     | None = None, static_ip_configuration: List[_models.SimStaticIpProperties] |
-    None = None, **kwargs)'
+    None = None, authentication_key: str | None = None, operator_key_code: str | None
+    = None, **kwargs)'
   parameters:
   - name: international_mobile_subscriber_identity
-    description: 'Required. The international mobile
+    description: 'The international mobile subscriber identity
 
-      subscriber identity (IMSI) for the SIM.'
+      (IMSI) for the SIM. Required.'
     types:
     - <xref:str>
   - name: integrated_circuit_card_identifier
     description: 'The integrated circuit card ID (ICCID) for the
 
       SIM.'
-    types:
-    - <xref:str>
-  - name: authentication_key
-    description: The Ki value for the SIM.
-    types:
-    - <xref:str>
-  - name: operator_key_code
-    description: The Opc value for the SIM.
     types:
     - <xref:str>
   - name: device_type
@@ -50,7 +42,9 @@ constructor:
     types:
     - <xref:str>
   - name: sim_policy
-    description: The SIM policy used by this SIM.
+    description: 'The SIM policy used by this SIM. The SIM policy must be in the same
+
+      location as the SIM.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimPolicyResourceId>
   - name: static_ip_configuration
@@ -60,6 +54,14 @@ constructor:
       slice}.'
     types:
     - <xref:azure.mgmt.mobilenetwork.aio.operations.Operations.list>[<xref:azure.mgmt.mobilenetwork.models.SimStaticIpProperties>]
+  - name: authentication_key
+    description: The Ki value for the SIM.
+    types:
+    - <xref:str>
+  - name: operator_key_code
+    description: The Opc value for the SIM.
+    types:
+    - <xref:str>
 variables:
 - description: 'Fully qualified resource ID for the resource. Ex -
 
@@ -86,34 +88,34 @@ variables:
   - <xref:azure.mgmt.mobilenetwork.models.SystemData>
 - description: 'The provisioning state of the SIM resource. Known values are:
 
-    "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", "Deleted".'
+    "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", and "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.ProvisioningState>
 - description: 'The state of the SIM resource. Known values are: "Disabled", "Enabled",
+    and
 
     "Invalid".'
   name: sim_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.SimState>
-- description: 'Required. The international mobile subscriber
+- description: 'A dictionary of sites to the provisioning state of this SIM on
 
-    identity (IMSI) for the SIM.'
+    that site.'
+  name: site_provisioning_state
+  types:
+  - <xref:dict>[<xref:str>, <xref:str>
+  - <xref:azure.mgmt.mobilenetwork.models.SiteProvisioningState>]
+- description: 'The international mobile subscriber identity
+
+    (IMSI) for the SIM. Required.'
   name: international_mobile_subscriber_identity
   types:
   - <xref:str>
 - description: The integrated circuit card ID (ICCID) for the SIM.
   name: integrated_circuit_card_identifier
-  types:
-  - <xref:str>
-- description: The Ki value for the SIM.
-  name: authentication_key
-  types:
-  - <xref:str>
-- description: The Opc value for the SIM.
-  name: operator_key_code
   types:
   - <xref:str>
 - description: 'An optional free-form text field that can be used to record the device
@@ -126,7 +128,10 @@ variables:
   name: device_type
   types:
   - <xref:str>
-- description: The SIM policy used by this SIM.
+- description: 'The SIM policy used by this SIM. The SIM policy must be in the same
+    location
+
+    as the SIM.'
   name: sim_policy
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SimPolicyResourceId>
@@ -136,3 +141,21 @@ variables:
   name: static_ip_configuration
   types:
   - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.SimStaticIpProperties>]
+- description: The name of the SIM vendor who provided this SIM, if any.
+  name: vendor_name
+  types:
+  - <xref:str>
+- description: 'The public key fingerprint of the SIM vendor who provided this
+
+    SIM, if any.'
+  name: vendor_key_fingerprint
+  types:
+  - <xref:str>
+- description: The Ki value for the SIM.
+  name: authentication_key
+  types:
+  - <xref:str>
+- description: The Opc value for the SIM.
+  name: operator_key_code
+  types:
+  - <xref:str>

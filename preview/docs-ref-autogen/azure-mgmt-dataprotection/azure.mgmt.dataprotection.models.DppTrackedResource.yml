@@ -4,24 +4,20 @@ name: DppTrackedResource
 fullName: azure.mgmt.dataprotection.models.DppTrackedResource
 module: azure.mgmt.dataprotection.models
 inheritances:
-- azure.mgmt.dataprotection._serialization.Model
+- azure.mgmt.dataprotection.models._models_py3.DppBaseTrackedResource
 summary: 'DppTrackedResource.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: 'DppTrackedResource(*, e_tag: str | None = None, identity: _models.DppIdentityDetails
-    | None = None, location: str | None = None, tags: Dict[str, str] | None = None,
-    **kwargs)'
+  syntax: 'DppTrackedResource(*, e_tag: str | None = None, location: str | None =
+    None, tags: Dict[str, str] | None = None, identity: _models.DppIdentityDetails
+    | None = None, **kwargs: Any)'
   parameters:
   - name: e_tag
     description: Optional ETag.
     types:
     - <xref:str>
-  - name: identity
-    description: Input Managed Identity Details.
-    types:
-    - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
   - name: location
     description: Resource location.
     types:
@@ -30,6 +26,10 @@ constructor:
     description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
+  - name: identity
+    description: Input Managed Identity Details.
+    types:
+    - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
 variables:
 - description: Optional ETag.
   name: e_tag
@@ -39,10 +39,6 @@ variables:
   name: id
   types:
   - <xref:str>
-- description: Input Managed Identity Details.
-  name: identity
-  types:
-  - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
 - description: Resource location.
   name: location
   types:
@@ -65,3 +61,7 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.dataprotection.models.SystemData>
+- description: Input Managed Identity Details.
+  name: identity
+  types:
+  - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>

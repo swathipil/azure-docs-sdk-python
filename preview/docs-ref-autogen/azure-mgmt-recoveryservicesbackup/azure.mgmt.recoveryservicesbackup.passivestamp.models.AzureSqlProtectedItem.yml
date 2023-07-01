@@ -20,7 +20,7 @@ constructor:
     bool | None = None, is_rehydrate: bool | None = None, resource_guard_operation_requests:
     List[str] | None = None, protected_item_data_id: str | None = None, protection_state:
     str | _models.ProtectedItemState | None = None, extended_info: _models.AzureSqlProtectedItemExtendedInfo
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: 'Type of backup management for the backed up item. Known values

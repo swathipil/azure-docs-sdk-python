@@ -1,0 +1,19 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ScheduleAndSuspendMode
+name: ScheduleAndSuspendMode
+fullName: azure.communication.jobrouter.ScheduleAndSuspendMode
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated._serialization.Model
+summary: ScheduleAndSuspendMode.
+constructor:
+  syntax: 'ScheduleAndSuspendMode(*, schedule_at: datetime | None = None, **kwargs:
+    Any)'
+  parameters:
+  - name: schedule_at
+    types:
+    - <xref:datetime.datetime>
+variables:
+- name: schedule_at
+  types:
+  - <xref:datetime.datetime>

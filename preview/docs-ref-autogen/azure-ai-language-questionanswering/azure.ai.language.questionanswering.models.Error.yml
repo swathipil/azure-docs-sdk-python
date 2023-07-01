@@ -4,7 +4,7 @@ name: Error
 fullName: azure.ai.language.questionanswering.models.Error
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: 'The error object.
 
 
@@ -12,11 +12,11 @@ summary: 'The error object.
 constructor:
   syntax: 'Error(*, code: str | _models.ErrorCode, message: str, target: str | None
     = None, details: List[_models.Error] | None = None, innererror: _models.InnerErrorModel
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: code
-    description: 'Required. One of a server-defined set of error codes. Possible values
-      include:
+    description: 'One of a server-defined set of error codes. Required. Known values
+      are:
 
       "InvalidRequest", "InvalidArgument", "Unauthorized", "Forbidden", "NotFound",
 
@@ -24,12 +24,12 @@ constructor:
 
       "AzureCognitiveSearchIndexNotFound", "TooManyRequests", "AzureCognitiveSearchThrottling",
 
-      "AzureCognitiveSearchIndexLimitReached", "InternalServerError", "ServiceUnavailable".'
+      "AzureCognitiveSearchIndexLimitReached", "InternalServerError", and "ServiceUnavailable".'
     types:
     - <xref:str>
     - <xref:azure.ai.language.questionanswering.models.ErrorCode>
   - name: message
-    description: Required. A human-readable representation of the error.
+    description: A human-readable representation of the error. Required.
     types:
     - <xref:str>
   - name: target
@@ -49,8 +49,8 @@ constructor:
     types:
     - <xref:azure.ai.language.questionanswering.models.InnerErrorModel>
 variables:
-- description: 'Required. One of a server-defined set of error codes. Possible values
-    include:
+- description: 'One of a server-defined set of error codes. Required. Known values
+    are:
 
     "InvalidRequest", "InvalidArgument", "Unauthorized", "Forbidden", "NotFound",
 
@@ -58,12 +58,12 @@ variables:
 
     "AzureCognitiveSearchIndexNotFound", "TooManyRequests", "AzureCognitiveSearchThrottling",
 
-    "AzureCognitiveSearchIndexLimitReached", "InternalServerError", "ServiceUnavailable".'
+    "AzureCognitiveSearchIndexLimitReached", "InternalServerError", and "ServiceUnavailable".'
   name: code
   types:
   - <xref:str>
   - <xref:azure.ai.language.questionanswering.models.ErrorCode>
-- description: Required. A human-readable representation of the error.
+- description: A human-readable representation of the error. Required.
   name: message
   types:
   - <xref:str>

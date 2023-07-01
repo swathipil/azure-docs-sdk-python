@@ -13,7 +13,7 @@ constructor:
   syntax: 'DatasourceSet(*, resource_id: str, datasource_type: str | None = None,
     object_type: str | None = None, resource_location: str | None = None, resource_name:
     str | None = None, resource_type: str | None = None, resource_uri: str | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: datasource_type
     description: DatasourceType of the resource.

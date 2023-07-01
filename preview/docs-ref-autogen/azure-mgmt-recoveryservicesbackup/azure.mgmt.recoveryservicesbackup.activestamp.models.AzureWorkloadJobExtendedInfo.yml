@@ -9,7 +9,7 @@ summary: Azure VM workload-specific additional information for job.
 constructor:
   syntax: 'AzureWorkloadJobExtendedInfo(*, tasks_list: List[_models.AzureWorkloadJobTaskDetails]
     | None = None, property_bag: Dict[str, str] | None = None, dynamic_error_message:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: tasks_list
     description: List of tasks for this job.

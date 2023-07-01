@@ -5,7 +5,10 @@ fullName: azure.mgmt.workloads.models.SingleServerConfiguration
 module: azure.mgmt.workloads.models
 inheritances:
 - azure.mgmt.workloads.models._models_py3.InfrastructureConfiguration
-summary: 'Gets or sets the single server configuration.
+summary: 'Gets or sets the single server configuration. For prerequisites for creating
+  the
+
+  infrastructure, please see [here](https://go.microsoft.com/fwlink/?linkid=2212611&clcid=0x409).
 
 
   All required parameters must be populated in order to send to Azure.'

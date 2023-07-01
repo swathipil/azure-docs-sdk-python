@@ -19,9 +19,9 @@ constructor:
     | None = None, created_by: _models.CreatedBy | None = None, updated_by: _models.CreatedBy
     | None = None, storage_account_identity: _models.ManagedIdentityConfiguration
     | None = None, managed_disk_identity: _models.ManagedIdentityConfiguration | None
-    = None, disk_encryption_set_id: str | None = None, encryption: _models.WorkspacePropertiesEncryption
-    | None = None, public_network_access: str | _models.PublicNetworkAccess | None
-    = None, required_nsg_rules: str | _models.RequiredNsgRules | None = None, **kwargs)'
+    = None, encryption: _models.WorkspacePropertiesEncryption | None = None, public_network_access:
+    str | _models.PublicNetworkAccess | None = None, required_nsg_rules: str | _models.RequiredNsgRules
+    | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
@@ -75,10 +75,6 @@ constructor:
       Managed Disk Encryption.'
     types:
     - <xref:azure.mgmt.databricks.models.ManagedIdentityConfiguration>
-  - name: disk_encryption_set_id
-    description: The resource Id of the managed disk encryption set.
-    types:
-    - <xref:str>
   - name: encryption
     description: Encryption properties for databricks workspace.
     types:

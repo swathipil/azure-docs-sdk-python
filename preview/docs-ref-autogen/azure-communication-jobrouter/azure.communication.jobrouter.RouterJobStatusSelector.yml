@@ -1,0 +1,41 @@
+### YamlMime:PythonEnum
+uid: azure.communication.jobrouter.RouterJobStatusSelector
+name: RouterJobStatusSelector
+fullName: azure.communication.jobrouter.RouterJobStatusSelector
+summary: RouterJobStatusSelector.
+module: azure.communication.jobrouter
+constructor:
+  syntax: RouterJobStatusSelector(value, names=None, *, module=None, qualname=None,
+    type=None, start=1, boundary=None)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ACTIVE
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.ACTIVE
+- name: ALL
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.ALL
+- name: ASSIGNED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.ASSIGNED
+- name: CANCELLED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.CANCELLED
+- name: CLASSIFICATION_FAILED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.CLASSIFICATION_FAILED
+- name: CLOSED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.CLOSED
+- name: COMPLETED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.COMPLETED
+- name: CREATED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.CREATED
+- name: PENDING_CLASSIFICATION
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.PENDING_CLASSIFICATION
+- name: PENDING_SCHEDULE
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.PENDING_SCHEDULE
+- name: QUEUED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.QUEUED
+- name: SCHEDULED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.SCHEDULED
+- name: SCHEDULE_FAILED
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.SCHEDULE_FAILED
+- name: WAITING_FOR_ACTIVATION
+  uid: azure.communication.jobrouter.RouterJobStatusSelector.WAITING_FOR_ACTIVATION

@@ -5,7 +5,8 @@ fullName: azure.mgmt.mobilenetwork.models.PacketCoreDataPlane
 module: azure.mgmt.mobilenetwork.models
 inheritances:
 - azure.mgmt.mobilenetwork.models._models_py3.TrackedResource
-summary: 'Packet core data plane resource.
+summary: 'Packet core data plane resource. Must be created in the same location as
+  its parent packet core control plane.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.
@@ -17,18 +18,18 @@ constructor:
     tags: Dict[str, str] | None = None, **kwargs)'
   parameters:
   - name: tags
-    description: A set of tags. Resource tags.
+    description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: location
-    description: Required. The geo-location where the resource lives.
+    description: The geo-location where the resource lives. Required.
     types:
     - <xref:str>
   - name: user_plane_access_interface
-    description: 'Required. The user plane interface on the access network.
+    description: 'The user plane interface on the access network. For 5G
 
-      For 5G networks, this is the N3 interface. For 4G networks, this is the S1-U
-      interface.'
+      networks, this is the N3 interface. For 4G networks, this is the S1-U interface.
+      Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.InterfaceProperties>
 variables:
@@ -55,25 +56,28 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SystemData>
-- description: A set of tags. Resource tags.
+- description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Required. The geo-location where the resource lives.
+- description: The geo-location where the resource lives. Required.
   name: location
   types:
   - <xref:str>
 - description: 'The provisioning state of the packet core data plane resource. Known
 
     values are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled",
+    and
+
     "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.ProvisioningState>
-- description: 'Required. The user plane interface on the access network.
+- description: 'The user plane interface on the access network. For 5G
 
-    For 5G networks, this is the N3 interface. For 4G networks, this is the S1-U interface.'
+    networks, this is the N3 interface. For 4G networks, this is the S1-U interface.
+    Required.'
   name: user_plane_access_interface
   types:
   - <xref:azure.mgmt.mobilenetwork.models.InterfaceProperties>

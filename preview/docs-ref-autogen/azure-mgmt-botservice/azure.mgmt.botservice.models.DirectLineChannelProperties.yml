@@ -5,18 +5,24 @@ fullName: azure.mgmt.botservice.models.DirectLineChannelProperties
 module: azure.mgmt.botservice.models
 inheritances:
 - azure.mgmt.botservice._serialization.Model
-summary: 'The parameters to provide for the Direct Line channel.
-
-
-  Variables are only populated by the server, and will be ignored when sending a request.'
+summary: The parameters to provide for the Direct Line channel.
 constructor:
   syntax: 'DirectLineChannelProperties(*, sites: List[_models.DirectLineSite] | None
-    = None, direct_line_embed_code: str | None = None, **kwargs)'
+    = None, extension_key1: str = '''', extension_key2: str = '''', direct_line_embed_code:
+    str | None = None, **kwargs)'
   parameters:
   - name: sites
     description: The list of Direct Line sites.
     types:
     - <xref:azure.mgmt.botservice.aio.operations.BotsOperations.list>[<xref:azure.mgmt.botservice.models.DirectLineSite>]
+  - name: extension_key1
+    description: The extensionKey1.
+    types:
+    - <xref:str>
+  - name: extension_key2
+    description: The extensionKey2.
+    types:
+    - <xref:str>
   - name: direct_line_embed_code
     description: Direct Line embed code of the resource.
     types:

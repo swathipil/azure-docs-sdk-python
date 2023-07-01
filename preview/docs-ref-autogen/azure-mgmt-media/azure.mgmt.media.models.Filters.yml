@@ -9,8 +9,9 @@ summary: Describes all the filtering operations, such as de-interlacing, rotatio
   etc. that are to be applied to the input media before encoding.
 constructor:
   syntax: 'Filters(*, deinterlace: _models.Deinterlace | None = None, rotation: str
-    | _models.Rotation | None = None, crop: _models.Rectangle | None = None, overlays:
-    List[_models.Overlay] | None = None, **kwargs)'
+    | _models.Rotation | None = None, crop: _models.Rectangle | None = None, fade_in:
+    _models.Fade | None = None, fade_out: _models.Fade | None = None, overlays: List[_models.Overlay]
+    | None = None, **kwargs)'
   parameters:
   - name: deinterlace
     description: The de-interlacing settings.
@@ -32,6 +33,14 @@ constructor:
       input video.
     types:
     - <xref:azure.mgmt.media.models.Rectangle>
+  - name: fade_in
+    description: Describes the properties of a Fade effect applied to the input media.
+    types:
+    - <xref:azure.mgmt.media.models.Fade>
+  - name: fade_out
+    description: Describes the properties of a Fade effect applied to the input media.
+    types:
+    - <xref:azure.mgmt.media.models.Fade>
   - name: overlays
     description: 'The properties of overlays to be applied to the input video. These
       could be
@@ -60,6 +69,14 @@ variables:
   name: crop
   types:
   - <xref:azure.mgmt.media.models.Rectangle>
+- description: Describes the properties of a Fade effect applied to the input media.
+  name: fade_in
+  types:
+  - <xref:azure.mgmt.media.models.Fade>
+- description: Describes the properties of a Fade effect applied to the input media.
+  name: fade_out
+  types:
+  - <xref:azure.mgmt.media.models.Fade>
 - description: 'The properties of overlays to be applied to the input video. These
     could be
 

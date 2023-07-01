@@ -12,7 +12,7 @@ summary: 'Properties of Cognitive Services account deployment.
 constructor:
   syntax: 'DeploymentProperties(*, model: _models.DeploymentModel | None = None, scale_settings:
     _models.DeploymentScaleSettings | None = None, rai_policy_name: str | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: model
     description: Properties of Cognitive Services account deployment model.

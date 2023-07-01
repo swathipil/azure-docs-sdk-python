@@ -10,7 +10,7 @@ constructor:
   syntax: 'BackupResourceEncryptionConfig(*, encryption_at_rest_type: str | _models.EncryptionAtRestType
     | None = None, key_uri: str | None = None, subscription_id: str | None = None,
     last_update_status: str | _models.LastUpdateStatus | None = None, infrastructure_encryption_state:
-    str | _models.InfrastructureEncryptionState | None = None, **kwargs)'
+    str | _models.InfrastructureEncryptionState | None = None, **kwargs: Any)'
   parameters:
   - name: encryption_at_rest_type
     description: 'Encryption At Rest Type. Known values are: "Invalid",

@@ -4,7 +4,7 @@ name: ServiceResourceId
 fullName: azure.mgmt.mobilenetwork.models.ServiceResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to a service resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'ServiceResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Service resource ID.
+    description: Service resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Service resource ID.
+- description: Service resource ID. Required.
   name: id
   types:
   - <xref:str>

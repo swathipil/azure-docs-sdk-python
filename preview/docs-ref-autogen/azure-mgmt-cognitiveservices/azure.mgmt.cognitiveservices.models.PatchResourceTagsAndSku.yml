@@ -5,11 +5,13 @@ fullName: azure.mgmt.cognitiveservices.models.PatchResourceTagsAndSku
 module: azure.mgmt.cognitiveservices.models
 inheritances:
 - azure.mgmt.cognitiveservices.models._models_py3.PatchResourceTags
-summary: The object being used to update tags and sku of a resource, in general used
-  for PATCH operations.
+summary: 'The object being used to update tags and sku of a resource, in general used
+  for PATCH
+
+  operations.'
 constructor:
   syntax: 'PatchResourceTagsAndSku(*, tags: Dict[str, str] | None = None, sku: _models.Sku
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.

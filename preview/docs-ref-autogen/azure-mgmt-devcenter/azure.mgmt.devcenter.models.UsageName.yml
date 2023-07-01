@@ -8,7 +8,7 @@ inheritances:
 summary: The Usage Names.
 constructor:
   syntax: 'UsageName(*, localized_value: str | None = None, value: str | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: localized_value
     description: The localized name of the resource.

@@ -1,0 +1,18 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.DirectMapRule
+name: DirectMapRule
+fullName: azure.communication.jobrouter.DirectMapRule
+module: azure.communication.jobrouter
+inheritances:
+- azure.communication.jobrouter._generated.models._models.RouterRule
+summary: 'A rule that return the same labels as the input labels.
+
+
+  All required parameters must be populated in order to send to Azure.'
+constructor:
+  syntax: 'DirectMapRule(**kwargs: Any)'
+variables:
+- description: The type discriminator describing a sub-type of Rule. Required.
+  name: kind
+  types:
+  - <xref:str>

@@ -4,7 +4,7 @@ name: SimPolicyResourceId
 fullName: azure.mgmt.mobilenetwork.models.SimPolicyResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to a SIM policy resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'SimPolicyResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. SIM policy resource ID.
+    description: SIM policy resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. SIM policy resource ID.
+- description: SIM policy resource ID. Required.
   name: id
   types:
   - <xref:str>

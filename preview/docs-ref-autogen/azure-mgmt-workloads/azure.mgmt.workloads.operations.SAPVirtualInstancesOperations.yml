@@ -6,7 +6,7 @@ module: azure.mgmt.workloads.operations
 inheritances:
 - builtins.object
 summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
-  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.WorkloadsClient>'s\n\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.WorkloadsMgmtClient>'s\n\
   >\n> <xref:sap_virtual_instances> attribute.\n>"
 constructor:
   syntax: SAPVirtualInstancesOperations(*args, **kwargs)
@@ -34,9 +34,9 @@ methods:
     - <xref:str>
   - name: body
     description: 'Virtual Instance for SAP solutions resource request body. Is either
-      a model type
+      a
 
-      or a IO type. Default value is None.'
+      SAPVirtualInstance type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.SAPVirtualInstance>
@@ -224,7 +224,7 @@ methods:
     description: 'The Virtual Instance for SAP solutions resource stop request body.
       Is either a
 
-      model type or a IO type. Default value is None.'
+      StopRequest type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.StopRequest>
@@ -363,7 +363,7 @@ methods:
     description: 'Request body to update a Virtual Instance for SAP solutions resource.
       Is either a
 
-      model type or a IO type. Default value is None.'
+      UpdateSAPVirtualInstanceRequest type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.UpdateSAPVirtualInstanceRequest>

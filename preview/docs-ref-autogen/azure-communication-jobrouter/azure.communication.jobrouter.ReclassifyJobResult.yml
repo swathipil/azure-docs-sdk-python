@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.ReclassifyJobResult
+name: ReclassifyJobResult
+fullName: azure.communication.jobrouter.ReclassifyJobResult
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: ReclassifyJobResult()

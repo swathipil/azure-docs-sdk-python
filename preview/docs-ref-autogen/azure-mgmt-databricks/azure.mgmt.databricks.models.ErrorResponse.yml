@@ -10,7 +10,7 @@ summary: 'Contains details when the response code indicates an error.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'ErrorResponse(*, error: _models.ErrorInfo, **kwargs)'
+  syntax: 'ErrorResponse(*, error: _models.ErrorInfo, **kwargs: Any)'
   parameters:
   - name: error
     description: The error details. Required.

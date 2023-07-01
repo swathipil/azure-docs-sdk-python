@@ -21,7 +21,7 @@ constructor:
     List[str] | None = None, friendly_name: str | None = None, policy_state: str |
     None = None, protection_state: str | _models.ProtectionState | None = None, protected_item_id:
     int | None = None, source_associations: Dict[str, str] | None = None, fabric_name:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: 'Type of backup management for the backed up item. Known values

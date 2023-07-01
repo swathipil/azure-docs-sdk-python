@@ -5,7 +5,10 @@ fullName: azure.mgmt.workloads.models.MountFileShareConfiguration
 module: azure.mgmt.workloads.models
 inheritances:
 - azure.mgmt.workloads.models._models_py3.FileShareConfiguration
-summary: 'Gets or sets the file share configuration for externally mounted cases.
+summary: 'Gets or sets the file share configuration where the transport directory
+  fileshare already
+
+  exists, and user wishes to mount the fileshare as a part of the create infra flow.
 
 
   All required parameters must be populated in order to send to Azure.'

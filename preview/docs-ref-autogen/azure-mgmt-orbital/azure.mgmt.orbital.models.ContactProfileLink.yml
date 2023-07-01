@@ -12,7 +12,8 @@ summary: 'Contact Profile Link.
 constructor:
   syntax: 'ContactProfileLink(*, name: str, polarization: str | _models.Polarization,
     direction: str | _models.Direction, channels: List[_models.ContactProfileLinkChannel],
-    gain_over_temperature: float | None = None, eirpd_bw: float | None = None, **kwargs)'
+    gain_over_temperature: float | None = None, eirpd_bw: float | None = None, **kwargs:
+    Any)'
   parameters:
   - name: name
     description: Link name. Required.
@@ -26,15 +27,15 @@ constructor:
     - <xref:str>
     - <xref:azure.mgmt.orbital.models.Polarization>
   - name: direction
-    description: 'Direction (uplink or downlink). Required. Known values are: "uplink"
+    description: 'Direction (Uplink or Downlink). Required. Known values are: "Uplink"
       and
 
-      "downlink".'
+      "Downlink".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.orbital.models.Direction>
   - name: gain_over_temperature
-    description: 'Gain To Noise Temperature in db/K. It is the required G/T by
+    description: 'Gain to noise temperature in db/K. It is the required G/T by
 
       the customer. Not used yet.'
     types:
@@ -62,15 +63,15 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.orbital.models.Polarization>
-- description: 'Direction (uplink or downlink). Required. Known values are: "uplink"
+- description: 'Direction (Uplink or Downlink). Required. Known values are: "Uplink"
     and
 
-    "downlink".'
+    "Downlink".'
   name: direction
   types:
   - <xref:str>
   - <xref:azure.mgmt.orbital.models.Direction>
-- description: 'Gain To Noise Temperature in db/K. It is the required G/T by the
+- description: 'Gain to noise temperature in db/K. It is the required G/T by the
 
     customer. Not used yet.'
   name: gain_over_temperature

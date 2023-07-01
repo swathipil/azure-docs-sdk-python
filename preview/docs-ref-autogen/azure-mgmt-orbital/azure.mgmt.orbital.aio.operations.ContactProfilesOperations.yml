@@ -15,12 +15,13 @@ methods:
   name: begin_create_or_update
   summary: Creates or updates a contact profile.
   signature: 'async begin_create_or_update(resource_group_name: str, contact_profile_name:
-    str, location: str, tags: Dict[str, str] | None = None, provisioning_state: str
-    | ContactProfilesPropertiesProvisioningState | None = None, minimum_viable_contact_duration:
+    str, location: str, network_configuration: ContactProfilesPropertiesNetworkConfiguration,
+    links: List[ContactProfileLink], tags: Dict[str, str] | None = None, provisioning_state:
+    str | ContactProfilesPropertiesProvisioningState | None = None, minimum_viable_contact_duration:
     str | None = None, minimum_elevation_degrees: float | None = None, auto_tracking_configuration:
     str | AutoTrackingConfiguration | None = None, event_hub_uri: str | None = None,
-    network_configuration: ContactProfilesPropertiesNetworkConfiguration | None =
-    None, links: List[ContactProfileLink] | None = None, **kwargs: Any) -> AsyncLROPoller[ContactProfile]'
+    third_party_configurations: List[ContactProfileThirdPartyConfiguration] | None
+    = None, **kwargs: Any) -> AsyncLROPoller[ContactProfile]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -39,6 +40,19 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: network_configuration
+    description: Network configuration of customer virtual network. Required.
+    isRequired: true
+    types:
+    - <xref:azure.mgmt.orbital.models.ContactProfilesPropertiesNetworkConfiguration>
+  - name: links
+    description: 'Links of the Contact Profile. Describes RF links, modem processing,
+      and IP
+
+      endpoints. Required.'
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.orbital.models.ContactProfileLink>]
   - name: tags
     description: Resource tags. Default value is None.
     isRequired: true
@@ -47,10 +61,10 @@ methods:
   - name: provisioning_state
     description: 'The current state of the resource''s creation, deletion, or
 
-      modification. Known values are: "Creating", "Succeeded", "Failed", "Canceled",
-      "Updating", and
+      modification. Known values are: "creating", "succeeded", "failed", "canceled",
+      "updating", and
 
-      "Deleting". Default value is None.'
+      "deleting". Default value is None.'
     isRequired: true
     types:
     - <xref:str>
@@ -93,21 +107,13 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: network_configuration
-    description: 'Network configuration of customer virtual network. Default value
+  - name: third_party_configurations
+    description: 'Third-party mission configuration of the Contact Profile.
 
-      is None.'
+      Describes RF links, modem processing, and IP endpoints. Default value is None.'
     isRequired: true
     types:
-    - <xref:azure.mgmt.orbital.models.ContactProfilesPropertiesNetworkConfiguration>
-  - name: links
-    description: 'Links of the Contact Profile. Describes RF links, modem processing,
-      and IP
-
-      endpoints. Default value is None.'
-    isRequired: true
-    types:
-    - <xref:list>[<xref:azure.mgmt.orbital.models.ContactProfileLink>]
+    - <xref:list>[<xref:azure.mgmt.orbital.models.ContactProfileThirdPartyConfiguration>]
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -213,9 +219,9 @@ methods:
     - <xref:str>
   - name: parameters
     description: 'Parameters supplied to update contact profile tags. Is either a
-      model type
+      TagsObject
 
-      or a IO type. Required.'
+      type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.orbital.models.TagsObject>

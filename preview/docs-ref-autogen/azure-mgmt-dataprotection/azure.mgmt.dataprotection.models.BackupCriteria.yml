@@ -16,7 +16,7 @@ summary: 'BackupCriteria base class.
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: BackupCriteria(**kwargs)
+  syntax: 'BackupCriteria(**kwargs: Any)'
 variables:
 - description: Type of the specific object - used for deserializing. Required.
   name: object_type

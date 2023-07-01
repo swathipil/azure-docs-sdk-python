@@ -8,7 +8,7 @@ inheritances:
 summary: Describes the error happened when create or update an image template.
 constructor:
   syntax: 'ProvisioningError(*, provisioning_error_code: str | _models.ProvisioningErrorCode
-    | None = None, message: str | None = None, **kwargs)'
+    | None = None, message: str | None = None, **kwargs: Any)'
   parameters:
   - name: provisioning_error_code
     description: 'Error code of the provisioning failure. Known values are:

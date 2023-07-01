@@ -5,21 +5,21 @@ fullName: azure.mgmt.mobilenetwork.aio.MobileNetworkManagementClient
 module: azure.mgmt.mobilenetwork.aio
 inheritances:
 - builtins.object
-summary: 'The resources in this swagger specification will be used to manage attached
-  data network
+summary: 'The resources in this API specification will be used to manage attached
+  data network resources
 
-  resources in mobile network attached to a particular packet core instance.'
+  in mobile network attached to a particular packet core instance.'
 constructor:
   syntax: 'MobileNetworkManagementClient(credential: AsyncTokenCredential, subscription_id:
     str, base_url: str = ''https://management.azure.com'', **kwargs: Any)'
   parameters:
   - name: credential
-    description: Credential needed for the client to connect to Azure.
+    description: Credential needed for the client to connect to Azure. Required.
     isRequired: true
     types:
     - <xref:azure.core.credentials_async.AsyncTokenCredential>
   - name: subscription_id
-    description: The ID of the target subscription.
+    description: The ID of the target subscription. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -29,9 +29,10 @@ constructor:
     types:
     - <xref:str>
   - name: api_version
-    description: 'Api Version. Default value is "2022-04-01-preview". Note that overriding
+    description: 'Api Version. Default value is "2022-11-01". Note that overriding
+      this
 
-      this default value may result in unsupported behavior.'
+      default value may result in unsupported behavior.'
     types:
     - <xref:str>
   - name: polling_interval
@@ -53,18 +54,6 @@ variables:
   name: mobile_networks
   types:
   - <xref:azure.mgmt.mobilenetwork.aio.operations.MobileNetworksOperations>
-- description: SitesOperations operations
-  name: sites
-  types:
-  - <xref:azure.mgmt.mobilenetwork.aio.operations.SitesOperations>
-- description: SimGroupsOperations operations
-  name: sim_groups
-  types:
-  - <xref:azure.mgmt.mobilenetwork.aio.operations.SimGroupsOperations>
-- description: SimsOperations operations
-  name: sims
-  types:
-  - <xref:azure.mgmt.mobilenetwork.aio.operations.SimsOperations>
 - description: Operations operations
   name: operations
   types:
@@ -85,10 +74,22 @@ variables:
   name: services
   types:
   - <xref:azure.mgmt.mobilenetwork.aio.operations.ServicesOperations>
+- description: SimsOperations operations
+  name: sims
+  types:
+  - <xref:azure.mgmt.mobilenetwork.aio.operations.SimsOperations>
+- description: SimGroupsOperations operations
+  name: sim_groups
+  types:
+  - <xref:azure.mgmt.mobilenetwork.aio.operations.SimGroupsOperations>
 - description: SimPoliciesOperations operations
   name: sim_policies
   types:
   - <xref:azure.mgmt.mobilenetwork.aio.operations.SimPoliciesOperations>
+- description: SitesOperations operations
+  name: sites
+  types:
+  - <xref:azure.mgmt.mobilenetwork.aio.operations.SitesOperations>
 - description: SlicesOperations operations
   name: slices
   types:

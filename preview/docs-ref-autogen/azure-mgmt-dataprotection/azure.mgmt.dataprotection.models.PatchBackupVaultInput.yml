@@ -8,7 +8,8 @@ inheritances:
 summary: Backup Vault Contract for Patch Backup Vault API.
 constructor:
   syntax: 'PatchBackupVaultInput(*, monitoring_settings: _models.MonitoringSettings
-    | None = None, security_settings: _models.SecuritySettings | None = None, **kwargs)'
+    | None = None, security_settings: _models.SecuritySettings | None = None, feature_settings:
+    _models.FeatureSettings | None = None, **kwargs: Any)'
   parameters:
   - name: monitoring_settings
     description: Monitoring Settings.
@@ -18,6 +19,10 @@ constructor:
     description: Security Settings.
     types:
     - <xref:azure.mgmt.dataprotection.models.SecuritySettings>
+  - name: feature_settings
+    description: Feature Settings.
+    types:
+    - <xref:azure.mgmt.dataprotection.models.FeatureSettings>
 variables:
 - description: Monitoring Settings.
   name: monitoring_settings
@@ -27,3 +32,7 @@ variables:
   name: security_settings
   types:
   - <xref:azure.mgmt.dataprotection.models.SecuritySettings>
+- description: Feature Settings.
+  name: feature_settings
+  types:
+  - <xref:azure.mgmt.dataprotection.models.FeatureSettings>

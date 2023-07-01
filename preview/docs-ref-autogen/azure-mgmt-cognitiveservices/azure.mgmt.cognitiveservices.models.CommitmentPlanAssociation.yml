@@ -8,7 +8,7 @@ inheritances:
 summary: The commitment plan association.
 constructor:
   syntax: 'CommitmentPlanAssociation(*, commitment_plan_id: str | None = None, commitment_plan_location:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: commitment_plan_id
     description: The Azure resource id of the commitment plan.

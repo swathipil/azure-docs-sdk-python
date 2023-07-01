@@ -15,23 +15,36 @@ methods:
   name: begin_create_or_update
   summary: Creates or updates a mobile network.
   signature: 'begin_create_or_update(resource_group_name: str, mobile_network_name:
-    str, parameters: MobileNetwork, **kwargs: Any) -> LROPoller[MobileNetwork]'
+    str, parameters: _models.MobileNetwork, *, content_type: str = ''application/json'',
+    **kwargs: Any) -> LROPoller[_models.MobileNetwork]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to the create or update mobile network operation.
+    description: 'Parameters supplied to the create or update mobile network operation.
+      Is
+
+      either a model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.MobileNetwork>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -73,12 +86,14 @@ methods:
     Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -114,56 +129,6 @@ methods:
     - <xref:azure.core.polling.LROPoller>[<xref:None>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
-- uid: azure.mgmt.mobilenetwork.operations.MobileNetworksOperations.begin_list_sim_ids
-  name: begin_list_sim_ids
-  summary: Lists the IDs of all provisioned SIMs in a mobile network.
-  signature: 'begin_list_sim_ids(resource_group_name: str, mobile_network_name: str,
-    **kwargs: Any) -> LROPoller[SimIdListResult]'
-  parameters:
-  - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: mobile_network_name
-    description: The name of the mobile network.
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: cls
-    description: A custom type or function that will be passed the direct response
-    types:
-    - <xref:callable>
-  - name: continuation_token
-    description: A continuation token to restart a poller from a saved state.
-    types:
-    - <xref:str>
-  - name: polling
-    description: 'By default, your polling method will be ARMPolling. Pass in False
-      for this
-
-      operation to not poll, or pass in your own initialized polling object for a
-      personal polling
-
-      strategy.'
-    types:
-    - <xref:bool>
-    - <xref:azure.core.polling.PollingMethod>
-  - name: polling_interval
-    description: 'Default waiting time between two polls for LRO operations if no
-
-      Retry-After header is present.'
-    types:
-    - <xref:int>
-  return:
-    description: 'An instance of LROPoller that returns either SimIdListResult or
-      the result of
-
-      cls(response)'
-    types:
-    - <xref:azure.core.polling.LROPoller>[<xref:azure.mgmt.mobilenetwork.models.SimIdListResult>]
-  exceptions:
-  - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.MobileNetworksOperations.get
   name: get
   summary: Gets information about the specified mobile network.
@@ -171,12 +136,14 @@ methods:
     -> MobileNetwork'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -185,7 +152,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: MobileNetwork, or the result of cls(response)
+    description: MobileNetwork or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.MobileNetwork>
   exceptions:
@@ -193,10 +160,12 @@ methods:
 - uid: azure.mgmt.mobilenetwork.operations.MobileNetworksOperations.list_by_resource_group
   name: list_by_resource_group
   summary: Lists all the mobile networks in a resource group.
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[MobileNetworkListResult]'
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[MobileNetwork]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
@@ -205,59 +174,68 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: 'An iterator like instance of either MobileNetworkListResult or the
-      result of
-
-      cls(response)'
+    description: An iterator like instance of either MobileNetwork or the result of
+      cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.MobileNetworkListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.MobileNetwork>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.MobileNetworksOperations.list_by_subscription
   name: list_by_subscription
   summary: Lists all the mobile networks in a subscription.
-  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[MobileNetworkListResult]'
+  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[MobileNetwork]'
   parameters:
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: 'An iterator like instance of either MobileNetworkListResult or the
-      result of
-
-      cls(response)'
+    description: An iterator like instance of either MobileNetwork or the result of
+      cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.MobileNetworkListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.MobileNetwork>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.MobileNetworksOperations.update_tags
   name: update_tags
   summary: Updates mobile network tags.
   signature: 'update_tags(resource_group_name: str, mobile_network_name: str, parameters:
-    TagsObject, **kwargs: Any) -> MobileNetwork'
+    _models.TagsObject, *, content_type: str = ''application/json'', **kwargs: Any)
+    -> _models.MobileNetwork'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: mobile_network_name
-    description: The name of the mobile network.
+    description: The name of the mobile network. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update mobile network tags.
+    description: 'Parameters supplied to update mobile network tags. Is either a model
+      type or
+
+      a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: MobileNetwork, or the result of cls(response)
+    description: MobileNetwork or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.MobileNetwork>
   exceptions:

@@ -15,7 +15,7 @@ summary: 'An Azure Arc PrivateLinkScope definition.
 constructor:
   syntax: 'HybridComputePrivateLinkScope(*, location: str, tags: Dict[str, str] |
     None = None, properties: _models.HybridComputePrivateLinkScopeProperties | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location. Required.

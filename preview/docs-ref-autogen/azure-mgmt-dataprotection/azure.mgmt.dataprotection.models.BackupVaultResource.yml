@@ -14,17 +14,13 @@ summary: 'Backup Vault Resource.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'BackupVaultResource(*, properties: _models.BackupVault, e_tag: str | None
-    = None, identity: _models.DppIdentityDetails | None = None, location: str | None
-    = None, tags: Dict[str, str] | None = None, **kwargs)'
+    = None, location: str | None = None, tags: Dict[str, str] | None = None, identity:
+    _models.DppIdentityDetails | None = None, **kwargs: Any)'
   parameters:
   - name: e_tag
     description: Optional ETag.
     types:
     - <xref:str>
-  - name: identity
-    description: Input Managed Identity Details.
-    types:
-    - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
   - name: location
     description: Resource location.
     types:
@@ -33,6 +29,10 @@ constructor:
     description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
+  - name: identity
+    description: Input Managed Identity Details.
+    types:
+    - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
   - name: properties
     description: BackupVaultResource properties. Required.
     types:
@@ -46,10 +46,6 @@ variables:
   name: id
   types:
   - <xref:str>
-- description: Input Managed Identity Details.
-  name: identity
-  types:
-  - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
 - description: Resource location.
   name: location
   types:
@@ -72,6 +68,10 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.dataprotection.models.SystemData>
+- description: Input Managed Identity Details.
+  name: identity
+  types:
+  - <xref:azure.mgmt.dataprotection.models.DppIdentityDetails>
 - description: BackupVaultResource properties. Required.
   name: properties
   types:

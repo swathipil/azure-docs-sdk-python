@@ -15,11 +15,9 @@ methods:
   name: begin_create_or_update
   summary: Creates or updates a spacecraft resource.
   signature: 'async begin_create_or_update(resource_group_name: str, spacecraft_name:
-    str, location: str, tags: Dict[str, str] | None = None, provisioning_state: str
-    | SpacecraftsPropertiesProvisioningState | None = None, norad_id: str | None =
-    None, title_line: str | None = None, tle_line1: str | None = None, tle_line2:
-    str | None = None, links: List[SpacecraftLink] | None = None, **kwargs: Any) ->
-    AsyncLROPoller[Spacecraft]'
+    str, location: str, title_line: str, tle_line1: str, tle_line2: str, links: List[SpacecraftLink],
+    tags: Dict[str, str] | None = None, provisioning_state: str | SpacecraftsPropertiesProvisioningState
+    | None = None, norad_id: str | None = None, **kwargs: Any) -> AsyncLROPoller[Spacecraft]'
   parameters:
   - name: resource_group_name
     description: 'The name of the resource group. The name is case insensitive.
@@ -38,6 +36,26 @@ methods:
     isRequired: true
     types:
     - <xref:str>
+  - name: title_line
+    description: Title line of the two-line element set (TLE). Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: tle_line1
+    description: Line 1 of the two-line element set (TLE). Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: tle_line2
+    description: Line 2 of the two-line element set (TLE). Required.
+    isRequired: true
+    types:
+    - <xref:str>
+  - name: links
+    description: Immutable list of Spacecraft links. Required.
+    isRequired: true
+    types:
+    - <xref:list>[<xref:azure.mgmt.orbital.models.SpacecraftLink>]
   - name: tags
     description: Resource tags. Default value is None.
     isRequired: true
@@ -46,10 +64,10 @@ methods:
   - name: provisioning_state
     description: 'The current state of the resource''s creation, deletion, or
 
-      modification. Known values are: "Creating", "Succeeded", "Failed", "Canceled",
-      "Updating", and
+      modification. Known values are: "creating", "succeeded", "failed", "canceled",
+      "updating", and
 
-      "Deleting". Default value is None.'
+      "deleting". Default value is None.'
     isRequired: true
     types:
     - <xref:str>
@@ -59,26 +77,6 @@ methods:
     isRequired: true
     types:
     - <xref:str>
-  - name: title_line
-    description: Title line of the two-line element set (TLE). Default value is None.
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: tle_line1
-    description: Line 1 of the two-line element set (TLE). Default value is None.
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: tle_line2
-    description: Line 2 of the two-line element set (TLE). Default value is None.
-    isRequired: true
-    types:
-    - <xref:str>
-  - name: links
-    description: Immutable list of Spacecraft links. Default value is None.
-    isRequired: true
-    types:
-    - <xref:list>[<xref:azure.mgmt.orbital.models.SpacecraftLink>]
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -262,10 +260,10 @@ methods:
     types:
     - <xref:str>
   - name: parameters
-    description: 'Parameters supplied to update spacecraft tags. Is either a model
-      type or a
+    description: 'Parameters supplied to update spacecraft tags. Is either a TagsObject
+      type
 
-      IO type. Required.'
+      or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.orbital.models.TagsObject>

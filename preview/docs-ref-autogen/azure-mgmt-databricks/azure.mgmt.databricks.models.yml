@@ -21,10 +21,10 @@ classes:
 - azure.mgmt.databricks.models.ErrorResponse
 - azure.mgmt.databricks.models.GroupIdInformation
 - azure.mgmt.databricks.models.GroupIdInformationProperties
-- azure.mgmt.databricks.models.IdentityData
 - azure.mgmt.databricks.models.ManagedDiskEncryption
 - azure.mgmt.databricks.models.ManagedDiskEncryptionKeyVaultProperties
 - azure.mgmt.databricks.models.ManagedIdentityConfiguration
+- azure.mgmt.databricks.models.ManagedServiceIdentity
 - azure.mgmt.databricks.models.Operation
 - azure.mgmt.databricks.models.OperationDisplay
 - azure.mgmt.databricks.models.OperationListResult
@@ -39,6 +39,7 @@ classes:
 - azure.mgmt.databricks.models.Sku
 - azure.mgmt.databricks.models.SystemData
 - azure.mgmt.databricks.models.TrackedResource
+- azure.mgmt.databricks.models.UserAssignedIdentity
 - azure.mgmt.databricks.models.VirtualNetworkPeering
 - azure.mgmt.databricks.models.VirtualNetworkPeeringList
 - azure.mgmt.databricks.models.VirtualNetworkPeeringPropertiesFormatDatabricksVirtualNetwork
@@ -57,8 +58,8 @@ enums:
 - azure.mgmt.databricks.models.CreatedByType
 - azure.mgmt.databricks.models.CustomParameterType
 - azure.mgmt.databricks.models.EncryptionKeySource
-- azure.mgmt.databricks.models.IdentityType
 - azure.mgmt.databricks.models.KeySource
+- azure.mgmt.databricks.models.ManagedServiceIdentityType
 - azure.mgmt.databricks.models.PeeringProvisioningState
 - azure.mgmt.databricks.models.PeeringState
 - azure.mgmt.databricks.models.PrivateEndpointConnectionProvisioningState

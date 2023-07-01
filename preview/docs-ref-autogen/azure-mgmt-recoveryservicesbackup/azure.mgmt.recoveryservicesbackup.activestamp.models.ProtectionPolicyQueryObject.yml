@@ -9,7 +9,7 @@ summary: Filters the list backup policies API.
 constructor:
   syntax: 'ProtectionPolicyQueryObject(*, backup_management_type: str | _models.BackupManagementType
     | None = None, fabric_name: str | None = None, workload_type: str | _models.WorkloadType
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: backup_management_type
     description: 'Backup management type for the backup policy. Known values

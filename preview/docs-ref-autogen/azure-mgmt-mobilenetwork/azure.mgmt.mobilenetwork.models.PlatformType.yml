@@ -14,5 +14,5 @@ inheritances:
 fields:
 - name: AKS_HCI
   uid: azure.mgmt.mobilenetwork.models.PlatformType.AKS_HCI
-- name: BASE_VM
-  uid: azure.mgmt.mobilenetwork.models.PlatformType.BASE_VM
+- name: THREE_P_AZURE_STACK_HCI
+  uid: azure.mgmt.mobilenetwork.models.PlatformType.THREE_P_AZURE_STACK_HCI

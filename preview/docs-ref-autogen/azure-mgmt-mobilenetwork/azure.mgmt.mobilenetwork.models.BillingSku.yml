@@ -14,17 +14,17 @@ inheritances:
 - builtins.str
 - enum.Enum
 fields:
-- name: EDGE_SITE2_GBPS
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.EDGE_SITE2_GBPS
-- name: EDGE_SITE3_GBPS
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.EDGE_SITE3_GBPS
-- name: EDGE_SITE4_GBPS
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.EDGE_SITE4_GBPS
-- name: EVALUATION_PACKAGE
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.EVALUATION_PACKAGE
-- name: FLAGSHIP_STARTER_PACKAGE
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.FLAGSHIP_STARTER_PACKAGE
-- name: LARGE_PACKAGE
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.LARGE_PACKAGE
-- name: MEDIUM_PACKAGE
-  uid: azure.mgmt.mobilenetwork.models.BillingSku.MEDIUM_PACKAGE
+- name: G0
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G0
+- name: G1
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G1
+- name: G10
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G10
+- name: G2
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G2
+- name: G3
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G3
+- name: G4
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G4
+- name: G5
+  uid: azure.mgmt.mobilenetwork.models.BillingSku.G5

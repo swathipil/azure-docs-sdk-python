@@ -2,7 +2,7 @@
 uid: azure.mgmt.orbital.models.Direction
 name: Direction
 fullName: azure.mgmt.orbital.models.Direction
-summary: Direction (uplink or downlink).
+summary: Direction (Uplink or Downlink).
 module: azure.mgmt.orbital.models
 constructor:
   syntax: Direction(value, names=None, *, module=None, qualname=None, type=None, start=1,

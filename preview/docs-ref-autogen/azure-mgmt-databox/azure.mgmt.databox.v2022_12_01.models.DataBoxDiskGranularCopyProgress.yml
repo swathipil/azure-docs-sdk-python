@@ -88,6 +88,15 @@ variables:
   name: is_enumeration_in_progress
   types:
   - <xref:bool>
+- description: Error, if any, in the stage.
+  name: error
+  types:
+  - <xref:azure.mgmt.databox.v2022_12_01.models.CloudError>
+- description: Available actions on the job.
+  name: actions
+  types:
+  - <xref:list>[<xref:str>
+  - <xref:azure.mgmt.databox.v2022_12_01.models.CustomerResolutionCode>]
 - description: Disk Serial Number.
   name: serial_number
   types:

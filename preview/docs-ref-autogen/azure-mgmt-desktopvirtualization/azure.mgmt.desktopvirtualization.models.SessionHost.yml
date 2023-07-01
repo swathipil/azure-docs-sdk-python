@@ -15,7 +15,7 @@ constructor:
     = None, assigned_user: str | None = None, friendly_name: str | None = None, status:
     str | _models.Status | None = None, os_version: str | None = None, sx_s_stack_version:
     str | None = None, update_state: str | _models.UpdateState | None = None, update_error_message:
-    str | None = None, **kwargs)'
+    str | None = None, **kwargs: Any)'
   parameters:
   - name: last_heart_beat
     description: Last heart beat from SessionHost.

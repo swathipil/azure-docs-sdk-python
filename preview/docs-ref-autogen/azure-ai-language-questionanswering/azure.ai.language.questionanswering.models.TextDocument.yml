@@ -4,28 +4,28 @@ name: TextDocument
 fullName: azure.ai.language.questionanswering.models.TextDocument
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: 'Represent input text record to be queried.
 
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: 'TextDocument(*, id: str, text: str, **kwargs)'
+  syntax: 'TextDocument(*, id: str, text: str, **kwargs: Any)'
   parameters:
   - name: id
-    description: Required. Unique identifier for the text record.
+    description: Unique identifier for the text record. Required.
     types:
     - <xref:str>
   - name: text
-    description: Required. Text contents of the record.
+    description: Text contents of the record. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Unique identifier for the text record.
+- description: Unique identifier for the text record. Required.
   name: id
   types:
   - <xref:str>
-- description: Required. Text contents of the record.
+- description: Text contents of the record. Required.
   name: text
   types:
   - <xref:str>

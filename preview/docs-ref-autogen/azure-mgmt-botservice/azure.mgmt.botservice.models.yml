@@ -4,6 +4,7 @@ name: models
 fullName: azure.mgmt.botservice.models
 type: import
 classes:
+- azure.mgmt.botservice.models.AcsChatChannel
 - azure.mgmt.botservice.models.AlexaChannel
 - azure.mgmt.botservice.models.AlexaChannelProperties
 - azure.mgmt.botservice.models.Bot
@@ -41,8 +42,10 @@ classes:
 - azure.mgmt.botservice.models.LineChannelProperties
 - azure.mgmt.botservice.models.LineRegistration
 - azure.mgmt.botservice.models.ListChannelWithKeysResponse
+- azure.mgmt.botservice.models.M365Extensions
 - azure.mgmt.botservice.models.MsTeamsChannel
 - azure.mgmt.botservice.models.MsTeamsChannelProperties
+- azure.mgmt.botservice.models.Omnichannel
 - azure.mgmt.botservice.models.OperationDisplayInfo
 - azure.mgmt.botservice.models.OperationEntity
 - azure.mgmt.botservice.models.OperationEntityListResult
@@ -58,6 +61,7 @@ classes:
 - azure.mgmt.botservice.models.QnAMakerEndpointKeysRequestBody
 - azure.mgmt.botservice.models.QnAMakerEndpointKeysResponse
 - azure.mgmt.botservice.models.Resource
+- azure.mgmt.botservice.models.SearchAssistant
 - azure.mgmt.botservice.models.ServiceProvider
 - azure.mgmt.botservice.models.ServiceProviderParameter
 - azure.mgmt.botservice.models.ServiceProviderParameterMetadata
@@ -75,6 +79,10 @@ classes:
 - azure.mgmt.botservice.models.SmsChannelProperties
 - azure.mgmt.botservice.models.TelegramChannel
 - azure.mgmt.botservice.models.TelegramChannelProperties
+- azure.mgmt.botservice.models.TelephonyChannel
+- azure.mgmt.botservice.models.TelephonyChannelProperties
+- azure.mgmt.botservice.models.TelephonyChannelResourceApiConfiguration
+- azure.mgmt.botservice.models.TelephonyPhoneNumbers
 - azure.mgmt.botservice.models.WebChatChannel
 - azure.mgmt.botservice.models.WebChatChannelProperties
 - azure.mgmt.botservice.models.WebChatSite

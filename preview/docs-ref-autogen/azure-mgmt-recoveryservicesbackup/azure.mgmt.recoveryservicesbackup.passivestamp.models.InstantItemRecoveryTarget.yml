@@ -8,7 +8,7 @@ inheritances:
 summary: Target details for file / folder restore.
 constructor:
   syntax: 'InstantItemRecoveryTarget(*, client_scripts: List[_models.ClientScriptForConnect]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: client_scripts
     description: List of client scripts.

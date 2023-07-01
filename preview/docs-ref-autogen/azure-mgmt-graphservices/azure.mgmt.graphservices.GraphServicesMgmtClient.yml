@@ -26,9 +26,10 @@ constructor:
     types:
     - <xref:str>
   - name: api_version
-    description: 'Api Version. Default value is "2022-09-22-preview". Note that overriding
+    description: 'Api Version. Default value is "2023-04-13". Note that overriding
+      this
 
-      this default value may result in unsupported behavior.'
+      default value may result in unsupported behavior.'
     types:
     - <xref:str>
   - name: polling_interval
@@ -42,14 +43,10 @@ variables:
   name: accounts
   types:
   - <xref:azure.mgmt.graphservices.operations.AccountsOperations>
-- description: AccountOperations operations
-  name: account
+- description: Operations operations
+  name: operations
   types:
-  - <xref:azure.mgmt.graphservices.operations.AccountOperations>
-- description: OperationOperations operations
-  name: operation
-  types:
-  - <xref:azure.mgmt.graphservices.operations.OperationOperations>
+  - <xref:azure.mgmt.graphservices.operations.Operations>
 methods:
 - uid: azure.mgmt.graphservices.GraphServicesMgmtClient.close
   name: close

@@ -12,7 +12,7 @@ summary: 'NginxConfiguration.
 constructor:
   syntax: 'NginxConfiguration(*, properties: _models.NginxConfigurationProperties
     | None = None, tags: Dict[str, str] | None = None, location: str | None = None,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: properties
     types:

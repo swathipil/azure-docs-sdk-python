@@ -9,7 +9,7 @@ summary: Class representing a Traffic Manager HeatMap traffic flow properties.
 constructor:
   syntax: 'TrafficFlow(*, source_ip: str | None = None, latitude: float | None = None,
     longitude: float | None = None, query_experiences: List[_models.QueryExperience]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: source_ip
     description: The IP address that this query experience originated from.

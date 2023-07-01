@@ -4,7 +4,7 @@ name: DataNetworkConfiguration
 fullName: azure.mgmt.mobilenetwork.models.DataNetworkConfiguration
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Settings controlling data network use.
 
 
@@ -16,21 +16,23 @@ constructor:
     = None, preemption_capability: str | _models.PreemptionCapability | None = None,
     preemption_vulnerability: str | _models.PreemptionVulnerability | None = None,
     default_session_type: str | _models.PduSessionType | None = None, additional_allowed_session_types:
-    List[str | _models.PduSessionType] | None = None, **kwargs)'
+    List[str | _models.PduSessionType] | None = None, maximum_number_of_buffered_packets:
+    int = 10, **kwargs)'
   parameters:
   - name: data_network
-    description: Required. A reference to the data network that these settings apply
-      to.
+    description: 'A reference to the data network that these settings apply to. The
+      data
+
+      network must be in the same location as the SIM policy. Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.DataNetworkResourceId>
   - name: session_ambr
-    description: 'Required. Aggregate maximum bit rate across all non-GBR QoS flows
-      of a
+    description: 'Aggregate maximum bit rate across all non-GBR QoS flows of a given
+      PDU
 
-      given PDU session. See 3GPP TS23.501 section 5.7.2.6 for a full description
-      of the
+      session. See 3GPP TS23.501 section 5.7.2.6 for a full description of the Session-AMBR.
 
-      Session-AMBR.'
+      Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.Ambr>
   - name: five_qi
@@ -76,7 +78,7 @@ constructor:
       level. See 3GPP TS23.501 section 5.7.2.2 for a full description of the ARP parameters.
       Known
 
-      values are: "NotPreempt", "MayPreempt".'
+      values are: "NotPreempt" and "MayPreempt".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PreemptionCapability>
@@ -89,14 +91,14 @@ constructor:
       priority level. See 3GPP TS23.501 section 5.7.2.2 for a full description of
       the ARP parameters.
 
-      Known values are: "NotPreemptable", "Preemptable".'
+      Known values are: "NotPreemptable" and "Preemptable".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PreemptionVulnerability>
   - name: default_session_type
     description: 'The default PDU session type, which is used if the UE does not
 
-      request a specific session type. Known values are: "IPv4", "IPv6".'
+      request a specific session type. Known values are: "IPv4" and "IPv6".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PduSessionType>
@@ -108,25 +110,40 @@ constructor:
     - <xref:azure.mgmt.mobilenetwork.aio.operations.Operations.list>[<xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.PduSessionType>]
   - name: allowed_services
-    description: 'Required. List of services that can be used as part of this SIM
+    description: 'List of services that can be used as part of this SIM policy. The
 
-      policy. The list must not contain duplicate items and must contain at least
-      one item.'
+      list must not contain duplicate items and must contain at least one item. The
+      services must be
+
+      in the same location as the SIM policy. Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.aio.operations.Operations.list>[<xref:azure.mgmt.mobilenetwork.models.ServiceResourceId>]
+  - name: maximum_number_of_buffered_packets
+    description: 'The maximum number of downlink packets to buffer
+
+      at the user plane for High Latency Communication - Extended Buffering. See 3GPP
+      TS29.272
+
+      v15.10.0 section 7.3.188 for a full description. This maximum is not guaranteed
+      because there
+
+      is a internal limit on buffered packets across all PDU sessions.'
+    types:
+    - <xref:int>
 variables:
-- description: Required. A reference to the data network that these settings apply
-    to.
+- description: 'A reference to the data network that these settings apply to. The
+    data
+
+    network must be in the same location as the SIM policy. Required.'
   name: data_network
   types:
   - <xref:azure.mgmt.mobilenetwork.models.DataNetworkResourceId>
-- description: 'Required. Aggregate maximum bit rate across all non-GBR QoS flows
-    of a
+- description: 'Aggregate maximum bit rate across all non-GBR QoS flows of a given
+    PDU
 
-    given PDU session. See 3GPP TS23.501 section 5.7.2.6 for a full description of
-    the
+    session. See 3GPP TS23.501 section 5.7.2.6 for a full description of the Session-AMBR.
 
-    Session-AMBR.'
+    Required.'
   name: session_ambr
   types:
   - <xref:azure.mgmt.mobilenetwork.models.Ambr>
@@ -172,7 +189,7 @@ variables:
     3GPP TS23.501 section 5.7.2.2 for a full description of the ARP parameters. Known
     values are:
 
-    "NotPreempt", "MayPreempt".'
+    "NotPreempt" and "MayPreempt".'
   name: preemption_capability
   types:
   - <xref:str>
@@ -185,14 +202,14 @@ variables:
     priority level. See 3GPP TS23.501 section 5.7.2.2 for a full description of the
     ARP parameters.
 
-    Known values are: "NotPreemptable", "Preemptable".'
+    Known values are: "NotPreemptable" and "Preemptable".'
   name: preemption_vulnerability
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.PreemptionVulnerability>
 - description: 'The default PDU session type, which is used if the UE does not
 
-    request a specific session type. Known values are: "IPv4", "IPv6".'
+    request a specific session type. Known values are: "IPv4" and "IPv6".'
   name: default_session_type
   types:
   - <xref:str>
@@ -204,9 +221,25 @@ variables:
   types:
   - <xref:list>[<xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.PduSessionType>]
-- description: 'Required. List of services that can be used as part of this SIM policy.
+- description: 'List of services that can be used as part of this SIM policy. The
+    list
 
-    The list must not contain duplicate items and must contain at least one item.'
+    must not contain duplicate items and must contain at least one item. The services
+    must be in
+
+    the same location as the SIM policy. Required.'
   name: allowed_services
   types:
   - <xref:list>[<xref:azure.mgmt.mobilenetwork.models.ServiceResourceId>]
+- description: 'The maximum number of downlink packets to buffer at
+
+    the user plane for High Latency Communication - Extended Buffering. See 3GPP TS29.272
+    v15.10.0
+
+    section 7.3.188 for a full description. This maximum is not guaranteed because
+    there is a
+
+    internal limit on buffered packets across all PDU sessions.'
+  name: maximum_number_of_buffered_packets
+  types:
+  - <xref:int>

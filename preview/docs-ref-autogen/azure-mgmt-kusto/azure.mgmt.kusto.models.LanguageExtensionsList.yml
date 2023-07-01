@@ -8,7 +8,7 @@ inheritances:
 summary: The list of language extension objects.
 constructor:
   syntax: 'LanguageExtensionsList(*, value: List[_models.LanguageExtension] | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: value
     description: The list of language extensions.
