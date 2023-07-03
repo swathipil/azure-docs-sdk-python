@@ -3,12 +3,12 @@ title: Azure Purview Sharing client library for Python
 keywords: Azure, python, SDK, API, azure-purview-sharing, purview
 author: iscai-msft
 ms.author: iscai
-ms.date: 06/07/2023
+ms.date: 07/03/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: purview
 ---
-# Azure Purview Sharing client library for Python - version 1.0.0b2 
+# Azure Purview Sharing client library for Python - version 1.0.0a20230703001 
 
 
 Microsoft Purview Share is a fully managed cloud service.
@@ -403,7 +403,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 
 <!-- LINKS -->
 
-[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-sharing_1.0.0b2/sdk/purview/azure-purview-sharing/azure/purview/sharing
+[source_code]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/purview/azure-purview-sharing/azure/purview/sharing
 [client_pypi_package]: https://aka.ms/azsdk/python/purviewsharing/pypi
 [sharing_ref_docs]: https://aka.ms/azsdk/python/purviewcatalog/ref-docs
 [sharing_product_documentation]: https://azure.microsoft.com/services/purview/
@@ -411,12 +411,12 @@ This project has adopted the [Microsoft Open Source Code of Conduct][code_of_con
 [purview_resource]: /azure/purview
 [pip]: https://pypi.org/project/pip/
 [authenticate_with_token]: /azure/cognitive-services/authentication?tabs=powershell#authenticate-with-an-authentication-token
-[azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-sharing_1.0.0b2/sdk/identity/azure-identity#credentials
+[azure_identity_credentials]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#credentials
 [azure_identity_pip]: https://pypi.org/project/azure-identity/
-[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/azure-purview-sharing_1.0.0b2/sdk/identity/azure-identity#defaultazurecredential
+[default_azure_credential]: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/identity/azure-identity#defaultazurecredential
 [request_builders_and_client]: https://aka.ms/azsdk/python/protocol/quickstart
 [enable_aad]: /azure/purview/
-[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/azure-purview-sharing_1.0.0b2/sdk/core/azure-core/README.md
+[azure_core]: https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/core/azure-core/README.md
 [python_logging]: https://docs.python.org/3.5/library/logging.html
 [cla]: https://cla.microsoft.com
 [code_of_conduct]: https://opensource.microsoft.com/codeofconduct/
