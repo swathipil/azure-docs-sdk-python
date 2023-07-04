@@ -15,23 +15,36 @@ methods:
   name: begin_create_or_update
   summary: Creates or updates a SIM group.
   signature: 'begin_create_or_update(resource_group_name: str, sim_group_name: str,
-    parameters: SimGroup, **kwargs: Any) -> LROPoller[SimGroup]'
+    parameters: _models.SimGroup, *, content_type: str = ''application/json'', **kwargs:
+    Any) -> LROPoller[_models.SimGroup]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: sim_group_name
-    description: The name of the SIM Group.
+    description: The name of the SIM Group. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to the create or update SIM group operation.
+    description: 'Parameters supplied to the create or update SIM group operation.
+      Is either a
+
+      model type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimGroup>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
@@ -71,12 +84,14 @@ methods:
     Any) -> LROPoller[None]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: sim_group_name
-    description: The name of the SIM Group.
+    description: The name of the SIM Group. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -119,12 +134,14 @@ methods:
     SimGroup'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: sim_group_name
-    description: The name of the SIM Group.
+    description: The name of the SIM Group. Required.
     isRequired: true
     types:
     - <xref:str>
@@ -133,7 +150,7 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: SimGroup, or the result of cls(response)
+    description: SimGroup or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimGroup>
   exceptions:
@@ -141,10 +158,12 @@ methods:
 - uid: azure.mgmt.mobilenetwork.operations.SimGroupsOperations.list_by_resource_group
   name: list_by_resource_group
   summary: Gets all the SIM groups in a resource group.
-  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[SimGroupListResult]'
+  signature: 'list_by_resource_group(resource_group_name: str, **kwargs: Any) -> Iterable[SimGroup]'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
@@ -153,55 +172,66 @@ methods:
     types:
     - <xref:callable>
   return:
-    description: An iterator like instance of either SimGroupListResult or the result
-      of cls(response)
+    description: An iterator like instance of either SimGroup or the result of cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimGroupListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimGroup>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.SimGroupsOperations.list_by_subscription
   name: list_by_subscription
   summary: Gets all the SIM groups in a subscription.
-  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[SimGroupListResult]'
+  signature: 'list_by_subscription(**kwargs: Any) -> Iterable[SimGroup]'
   parameters:
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: An iterator like instance of either SimGroupListResult or the result
-      of cls(response)
+    description: An iterator like instance of either SimGroup or the result of cls(response)
     types:
-    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimGroupListResult>]
+    - <xref:azure.core.paging.ItemPaged>[<xref:azure.mgmt.mobilenetwork.models.SimGroup>]
   exceptions:
   - type: azure.core.exceptions.HttpResponseError
 - uid: azure.mgmt.mobilenetwork.operations.SimGroupsOperations.update_tags
   name: update_tags
   summary: Updates SIM group tags.
   signature: 'update_tags(resource_group_name: str, sim_group_name: str, parameters:
-    TagsObject, **kwargs: Any) -> SimGroup'
+    _models.TagsObject, *, content_type: str = ''application/json'', **kwargs: Any)
+    -> _models.SimGroup'
   parameters:
   - name: resource_group_name
-    description: The name of the resource group. The name is case insensitive.
+    description: 'The name of the resource group. The name is case insensitive.
+
+      Required.'
     isRequired: true
     types:
     - <xref:str>
   - name: sim_group_name
-    description: The name of the SIM Group.
+    description: The name of the SIM Group. Required.
     isRequired: true
     types:
     - <xref:str>
   - name: parameters
-    description: Parameters supplied to update SIM group tags.
+    description: 'Parameters supplied to update SIM group tags. Is either a model
+      type or a IO
+
+      type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.mobilenetwork.models.TagsObject>
+    - <xref:IO>
+  - name: content_type
+    description: 'Body Parameter content-type. Known values are: ''application/json''.
+
+      Default value is None.'
+    types:
+    - <xref:str>
   - name: cls
     description: A custom type or function that will be passed the direct response
     types:
     - <xref:callable>
   return:
-    description: SimGroup, or the result of cls(response)
+    description: SimGroup or the result of cls(response)
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SimGroup>
   exceptions:

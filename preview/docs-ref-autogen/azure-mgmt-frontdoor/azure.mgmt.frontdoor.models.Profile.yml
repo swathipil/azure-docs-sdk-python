@@ -11,7 +11,8 @@ summary: 'Defines an Network Experiment Profile and lists of Experiments.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'Profile(*, location: str | None = None, tags: Dict[str, str] | None = None,
-    etag: str | None = None, enabled_state: str | _models.State | None = None, **kwargs)'
+    etag: str | None = None, enabled_state: str | _models.State | None = None, **kwargs:
+    Any)'
   parameters:
   - name: location
     description: Resource location.

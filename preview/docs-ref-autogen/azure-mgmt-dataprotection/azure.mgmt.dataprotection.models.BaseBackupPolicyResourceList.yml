@@ -8,7 +8,7 @@ inheritances:
 summary: List of BaseBackupPolicy resources.
 constructor:
   syntax: 'BaseBackupPolicyResourceList(*, next_link: str | None = None, value: List[_models.BaseBackupPolicyResource]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: next_link
     description: 'The uri to fetch the next page of resources. Call ListNext() fetches
@@ -20,7 +20,7 @@ constructor:
   - name: value
     description: List of resources.
     types:
-    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesExtensionRoutingOperations.list>[<xref:azure.mgmt.dataprotection.models.BaseBackupPolicyResource>]
+    - <xref:azure.mgmt.dataprotection.aio.operations.BackupInstancesOperations.list>[<xref:azure.mgmt.dataprotection.models.BaseBackupPolicyResource>]
 variables:
 - description: 'The uri to fetch the next page of resources. Call ListNext() fetches
     next page

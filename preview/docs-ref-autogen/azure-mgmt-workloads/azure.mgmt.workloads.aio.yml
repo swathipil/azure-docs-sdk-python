@@ -4,6 +4,6 @@ name: aio
 fullName: azure.mgmt.workloads.aio
 type: import
 classes:
-- azure.mgmt.workloads.aio.WorkloadsClient
+- azure.mgmt.workloads.aio.WorkloadsMgmtClient
 packages:
 - azure.mgmt.workloads.aio.operations

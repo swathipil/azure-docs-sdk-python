@@ -11,7 +11,7 @@ summary: 'Target copy settings.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'TargetCopySetting(*, copy_after: _models.CopyOption, data_store: _models.DataStoreInfoBase,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: copy_after
     description: It can be CustomCopyOption or ImmediateCopyOption. Required.

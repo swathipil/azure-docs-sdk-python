@@ -4,8 +4,8 @@ name: AzureStackEdgeDeviceResourceId
 fullName: azure.mgmt.mobilenetwork.models.AzureStackEdgeDeviceResourceId
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
-summary: 'Reference to an Azure Arc custom location resource.
+- azure.mgmt.mobilenetwork._serialization.Model
+summary: 'Reference to an Azure Stack Edge device resource.
 
 
   All required parameters must be populated in order to send to Azure.'
@@ -13,11 +13,11 @@ constructor:
   syntax: 'AzureStackEdgeDeviceResourceId(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Azure Stack Edge device resource ID.
+    description: Azure Stack Edge device resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Azure Stack Edge device resource ID.
+- description: Azure Stack Edge device resource ID. Required.
   name: id
   types:
   - <xref:str>

@@ -14,7 +14,7 @@ summary: 'Represents a devcenter resource.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'DevCenter(*, location: str, tags: Dict[str, str] | None = None, identity:
-    _models.ManagedServiceIdentity | None = None, **kwargs)'
+    _models.ManagedServiceIdentity | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
@@ -75,7 +75,7 @@ variables:
   types:
   - <xref:str>
   - <xref:azure.mgmt.devcenter.models.ProvisioningState>
-- description: The URI of the resource.
+- description: The URI of the Dev Center.
   name: dev_center_uri
   types:
   - <xref:str>

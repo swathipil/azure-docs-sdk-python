@@ -17,7 +17,8 @@ constructor:
     actions_info: List[str | _models.JobSupportedAction] | None = None, mab_server_name:
     str | None = None, mab_server_type: str | _models.MabServerType | None = None,
     workload_type: str | _models.WorkloadType | None = None, error_details: List[_models.MabErrorInfo]
-    | None = None, extended_info: _models.MabJobExtendedInfo | None = None, **kwargs)'
+    | None = None, extended_info: _models.MabJobExtendedInfo | None = None, **kwargs:
+    Any)'
   parameters:
   - name: entity_friendly_name
     description: 'Friendly name of the entity on which the current job is

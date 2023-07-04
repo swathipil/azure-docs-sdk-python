@@ -18,7 +18,7 @@ constructor:
     = None, should_use_alternate_target_location: bool | None = None, is_non_recoverable:
     bool | None = None, alternate_directory_paths: List[_models.SQLDataDirectoryMapping]
     | None = None, recovery_point_rehydration_info: _models.RecoveryPointRehydrationInfo
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: recovery_type
     description: 'Type of this recovery. Known values are: "Invalid", "OriginalLocation",

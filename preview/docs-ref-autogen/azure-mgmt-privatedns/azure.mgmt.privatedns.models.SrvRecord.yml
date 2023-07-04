@@ -8,7 +8,7 @@ inheritances:
 summary: An SRV record.
 constructor:
   syntax: 'SrvRecord(*, priority: int | None = None, weight: int | None = None, port:
-    int | None = None, target: str | None = None, **kwargs)'
+    int | None = None, target: str | None = None, **kwargs: Any)'
   parameters:
   - name: priority
     description: The priority value for this SRV record.

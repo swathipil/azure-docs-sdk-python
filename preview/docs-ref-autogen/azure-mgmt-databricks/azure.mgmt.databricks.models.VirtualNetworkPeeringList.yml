@@ -8,7 +8,7 @@ inheritances:
 summary: Gets all virtual network peerings under a workspace.
 constructor:
   syntax: 'VirtualNetworkPeeringList(*, value: List[_models.VirtualNetworkPeering]
-    | None = None, next_link: str | None = None, **kwargs)'
+    | None = None, next_link: str | None = None, **kwargs: Any)'
   parameters:
   - name: value
     description: List of virtual network peerings on workspace.

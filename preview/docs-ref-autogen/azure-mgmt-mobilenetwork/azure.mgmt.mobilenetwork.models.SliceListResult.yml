@@ -4,7 +4,7 @@ name: SliceListResult
 fullName: azure.mgmt.mobilenetwork.models.SliceListResult
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Response for network slice API service call.
 
 

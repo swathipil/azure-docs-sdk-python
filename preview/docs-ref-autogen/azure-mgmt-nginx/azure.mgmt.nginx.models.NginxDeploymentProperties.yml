@@ -12,7 +12,7 @@ summary: 'NginxDeploymentProperties.
 constructor:
   syntax: 'NginxDeploymentProperties(*, managed_resource_group: str | None = None,
     network_profile: _models.NginxNetworkProfile | None = None, enable_diagnostics_support:
-    bool | None = None, logging: _models.NginxLogging | None = None, **kwargs)'
+    bool | None = None, logging: _models.NginxLogging | None = None, **kwargs: Any)'
   parameters:
   - name: managed_resource_group
     description: 'The managed resource group to deploy VNet injection related

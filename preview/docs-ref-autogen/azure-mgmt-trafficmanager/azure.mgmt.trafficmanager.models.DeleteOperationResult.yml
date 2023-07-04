@@ -10,7 +10,7 @@ summary: 'The result of the request or operation.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: DeleteOperationResult(**kwargs)
+  syntax: 'DeleteOperationResult(**kwargs: Any)'
 variables:
 - description: The result of the operation or request.
   name: operation_result

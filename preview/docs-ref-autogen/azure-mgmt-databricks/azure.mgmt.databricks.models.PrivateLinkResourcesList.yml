@@ -8,7 +8,7 @@ inheritances:
 summary: The available private link resources for a workspace.
 constructor:
   syntax: 'PrivateLinkResourcesList(*, value: List[_models.GroupIdInformation] | None
-    = None, next_link: str | None = None, **kwargs)'
+    = None, next_link: str | None = None, **kwargs: Any)'
   parameters:
   - name: value
     description: The list of available private link resources for a workspace.

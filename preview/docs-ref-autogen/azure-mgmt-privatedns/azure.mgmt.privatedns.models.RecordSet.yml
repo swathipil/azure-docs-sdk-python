@@ -6,7 +6,9 @@ module: azure.mgmt.privatedns.models
 inheritances:
 - azure.mgmt.privatedns.models._models_py3.ProxyResource
 summary: 'Describes a DNS record set (a collection of DNS records with the same name
-  and type) in a Private DNS zone.
+  and type) in a
+
+  Private DNS zone.
 
 
   Variables are only populated by the server, and will be ignored when sending a request.'
@@ -17,7 +19,7 @@ constructor:
     | None = None, mx_records: List[_models.MxRecord] | None = None, ptr_records:
     List[_models.PtrRecord] | None = None, soa_record: _models.SoaRecord | None =
     None, srv_records: List[_models.SrvRecord] | None = None, txt_records: List[_models.TxtRecord]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: etag
     description: The ETag of the record set.

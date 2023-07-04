@@ -4,20 +4,20 @@ name: NaptConfiguration
 fullName: azure.mgmt.mobilenetwork.models.NaptConfiguration
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: The network address and port translation settings to use for the attached
   data network.
 constructor:
-  syntax: 'NaptConfiguration(*, enabled: str | _models.NaptEnabled | None = ''Enabled'',
+  syntax: 'NaptConfiguration(*, enabled: str | _models.NaptEnabled = ''Enabled'',
     port_range: _models.PortRange | None = None, port_reuse_hold_time: _models.PortReuseHoldTimes
-    | None = None, pinhole_limits: int | None = 65536, pinhole_timeouts: _models.PinholeTimeouts
+    | None = None, pinhole_limits: int = 65536, pinhole_timeouts: _models.PinholeTimeouts
     | None = None, **kwargs)'
   parameters:
   - name: enabled
     description: 'Whether NAPT is enabled for connections to this attached data network.
       Known
 
-      values are: "Enabled", "Disabled". Default value: "Enabled".'
+      values are: "Enabled" and "Disabled".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.mobilenetwork.models.NaptEnabled>
@@ -40,7 +40,7 @@ constructor:
       was used by a closed pinhole can be recycled for use by another pinhole. All
       hold times must be
 
-      minimum 1 second.'
+      at least 1 second.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.PortReuseHoldTimes>
   - name: pinhole_limits
@@ -62,7 +62,7 @@ variables:
 - description: 'Whether NAPT is enabled for connections to this attached data network.
     Known
 
-    values are: "Enabled", "Disabled". Default value: "Enabled".'
+    values are: "Enabled" and "Disabled".'
   name: enabled
   types:
   - <xref:str>
@@ -82,9 +82,9 @@ variables:
 - description: 'The minimum time (in seconds) that will pass before a port that was
 
     used by a closed pinhole can be recycled for use by another pinhole. All hold
-    times must be
+    times must be at
 
-    minimum 1 second.'
+    least 1 second.'
   name: port_reuse_hold_time
   types:
   - <xref:azure.mgmt.mobilenetwork.models.PortReuseHoldTimes>

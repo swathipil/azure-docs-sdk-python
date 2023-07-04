@@ -12,7 +12,7 @@ summary: 'BackupResourceEncryptionConfigResource.
 constructor:
   syntax: 'BackupResourceEncryptionConfigResource(*, location: str | None = None,
     tags: Dict[str, str] | None = None, e_tag: str | None = None, properties: _models.BackupResourceEncryptionConfig
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

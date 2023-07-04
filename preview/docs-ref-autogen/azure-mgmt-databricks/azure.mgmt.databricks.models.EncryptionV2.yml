@@ -11,7 +11,7 @@ summary: 'The object that contains details of encryption used on the workspace.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'EncryptionV2(*, key_source: str | _models.EncryptionKeySource, key_vault_properties:
-    _models.EncryptionV2KeyVaultProperties | None = None, **kwargs)'
+    _models.EncryptionV2KeyVaultProperties | None = None, **kwargs: Any)'
   parameters:
   - name: key_source
     description: 'The encryption keySource (provider). Possible values (case-insensitive):

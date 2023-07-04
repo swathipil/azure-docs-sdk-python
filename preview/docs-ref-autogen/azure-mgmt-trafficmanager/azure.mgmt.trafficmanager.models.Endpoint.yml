@@ -15,7 +15,8 @@ constructor:
     None = None, min_child_endpoints_i_pv4: int | None = None, min_child_endpoints_i_pv6:
     int | None = None, geo_mapping: List[str] | None = None, subnets: List[_models.EndpointPropertiesSubnetsItem]
     | None = None, custom_headers: List[_models.EndpointPropertiesCustomHeadersItem]
-    | None = None, always_serve: str | _models.AlwaysServe | None = None, **kwargs)'
+    | None = None, always_serve: str | _models.AlwaysServe | None = None, **kwargs:
+    Any)'
   parameters:
   - name: id
     description: 'Fully qualified resource Id for the resource. Ex -
@@ -83,7 +84,8 @@ constructor:
   - name: endpoint_monitor_status
     description: 'The monitoring status of the endpoint. Known values are:
 
-      "CheckingEndpoint", "Online", "Degraded", "Disabled", "Inactive", and "Stopped".'
+      "CheckingEndpoint", "Online", "Degraded", "Disabled", "Inactive", "Stopped",
+      and "Unmonitored".'
     types:
     - <xref:str>
     - <xref:azure.mgmt.trafficmanager.models.EndpointMonitorStatus>
@@ -216,7 +218,8 @@ variables:
   - <xref:str>
 - description: 'The monitoring status of the endpoint. Known values are:
 
-    "CheckingEndpoint", "Online", "Degraded", "Disabled", "Inactive", and "Stopped".'
+    "CheckingEndpoint", "Online", "Degraded", "Disabled", "Inactive", "Stopped", and
+    "Unmonitored".'
   name: endpoint_monitor_status
   types:
   - <xref:str>

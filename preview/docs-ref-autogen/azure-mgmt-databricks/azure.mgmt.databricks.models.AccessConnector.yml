@@ -14,8 +14,8 @@ summary: 'Information about azure databricks accessConnector.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'AccessConnector(*, location: str, tags: Dict[str, str] | None = None, identity:
-    _models.IdentityData | None = None, properties: _models.AccessConnectorProperties
-    | None = None, **kwargs)'
+    _models.ManagedServiceIdentity | None = None, properties: _models.AccessConnectorProperties
+    | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.
@@ -26,9 +26,9 @@ constructor:
     types:
     - <xref:str>
   - name: identity
-    description: Identity for the resource.
+    description: Managed service identity (system assigned and/or user assigned identities).
     types:
-    - <xref:azure.mgmt.databricks.models.IdentityData>
+    - <xref:azure.mgmt.databricks.models.ManagedServiceIdentity>
   - name: properties
     description: Azure Databricks accessConnector properties.
     types:
@@ -58,10 +58,14 @@ variables:
   name: location
   types:
   - <xref:str>
-- description: Identity for the resource.
+- description: Managed service identity (system assigned and/or user assigned identities).
   name: identity
   types:
-  - <xref:azure.mgmt.databricks.models.IdentityData>
+  - <xref:azure.mgmt.databricks.models.ManagedServiceIdentity>
+- description: The system metadata relating to this resource.
+  name: system_data
+  types:
+  - <xref:azure.mgmt.databricks.models.SystemData>
 - description: Azure Databricks accessConnector properties.
   name: properties
   types:

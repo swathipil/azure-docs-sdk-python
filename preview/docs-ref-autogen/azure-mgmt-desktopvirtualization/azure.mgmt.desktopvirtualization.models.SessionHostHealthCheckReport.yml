@@ -10,7 +10,7 @@ summary: 'The report for session host information.
 
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
-  syntax: SessionHostHealthCheckReport(**kwargs)
+  syntax: 'SessionHostHealthCheckReport(**kwargs: Any)'
 variables:
 - description: 'Represents the name of the health check operation performed. Known
 

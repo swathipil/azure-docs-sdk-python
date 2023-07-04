@@ -17,7 +17,7 @@ summary: 'Base class for restore request. Workload-specific restore requests are
 
   All required parameters must be populated in order to send to Azure.'
 constructor:
-  syntax: RestoreRequest(**kwargs)
+  syntax: 'RestoreRequest(**kwargs: Any)'
 variables:
 - description: 'This property will be used as the discriminator for deciding the specific
 

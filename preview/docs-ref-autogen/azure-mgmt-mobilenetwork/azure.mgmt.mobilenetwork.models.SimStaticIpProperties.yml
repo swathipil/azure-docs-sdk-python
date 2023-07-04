@@ -4,7 +4,7 @@ name: SimStaticIpProperties
 fullName: azure.mgmt.mobilenetwork.models.SimStaticIpProperties
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: Static IP configuration for a SIM, scoped to a particular attached data network
   and slice.
 constructor:
@@ -18,14 +18,17 @@ constructor:
       be used. The combination of attached data network and slice defines the network
       scope of the IP
 
-      address.'
+      address. The attached data network must be in the same location as the SIM.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.AttachedDataNetworkResourceId>
   - name: slice
     description: 'The network slice on which the static IP address will be used. The
       combination
 
-      of attached data network and slice defines the network scope of the IP address.'
+      of attached data network and slice defines the network scope of the IP address.
+      The slice must
+
+      be in the same location as the SIM.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.SliceResourceId>
   - name: static_ip
@@ -40,14 +43,17 @@ variables:
     used. The combination of attached data network and slice defines the network scope
     of the IP
 
-    address.'
+    address. The attached data network must be in the same location as the SIM.'
   name: attached_data_network
   types:
   - <xref:azure.mgmt.mobilenetwork.models.AttachedDataNetworkResourceId>
 - description: 'The network slice on which the static IP address will be used. The
     combination of
 
-    attached data network and slice defines the network scope of the IP address.'
+    attached data network and slice defines the network scope of the IP address. The
+    slice must be
+
+    in the same location as the SIM.'
   name: slice
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SliceResourceId>

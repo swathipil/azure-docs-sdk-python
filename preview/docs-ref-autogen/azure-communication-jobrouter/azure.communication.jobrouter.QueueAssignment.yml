@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.QueueAssignment
+name: QueueAssignment
+fullName: azure.communication.jobrouter.QueueAssignment
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: QueueAssignment()

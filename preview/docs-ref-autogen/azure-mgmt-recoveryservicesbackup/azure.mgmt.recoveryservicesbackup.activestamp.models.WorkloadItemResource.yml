@@ -13,7 +13,7 @@ summary: 'Base class for backup item. Workload-specific backup items are derived
 constructor:
   syntax: 'WorkloadItemResource(*, location: str | None = None, tags: Dict[str, str]
     | None = None, e_tag: str | None = None, properties: _models.WorkloadItem | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: location
     description: Resource location.

@@ -7,7 +7,7 @@ inheritances:
 - azure.mgmt.databricks._serialization.Model
 summary: An update to a workspace.
 constructor:
-  syntax: 'WorkspaceUpdate(*, tags: Dict[str, str] | None = None, **kwargs)'
+  syntax: 'WorkspaceUpdate(*, tags: Dict[str, str] | None = None, **kwargs: Any)'
   parameters:
   - name: tags
     description: Resource tags.

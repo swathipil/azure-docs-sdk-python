@@ -11,7 +11,7 @@ summary: 'List Restore Ranges Response.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'AzureBackupFindRestorableTimeRangesResponseResource(*, properties: _models.AzureBackupFindRestorableTimeRangesResponse
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: properties
     description: AzureBackupFindRestorableTimeRangesResponseResource properties.

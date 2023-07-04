@@ -6,7 +6,7 @@ module: azure.mgmt.workloads.aio.operations
 inheritances:
 - builtins.object
 summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
-  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.aio.WorkloadsClient>'s\n\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.workloads.aio.WorkloadsMgmtClient>'s\n\
   >\n> <xref:sap_database_instances> attribute.\n>"
 constructor:
   syntax: SAPDatabaseInstancesOperations(*args, **kwargs)
@@ -46,10 +46,9 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Request body of Database resource of a SAP system. Is either a model
-      type or a IO
+    description: 'Request body of Database resource of a SAP system. Is either a SAPDatabaseInstance
 
-      type. Default value is None.'
+      type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.SAPDatabaseInstance>
@@ -252,9 +251,9 @@ methods:
     - <xref:str>
   - name: body
     description: 'Stop request for the database instance of the SAP system. Is either
-      a model type
+      a StopRequest
 
-      or a IO type. Default value is None.'
+      type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.StopRequest>
@@ -329,10 +328,9 @@ methods:
     types:
     - <xref:str>
   - name: body
-    description: 'Database resource update request body. Is either a model type or
-      a IO type.
+    description: 'Database resource update request body. Is either a
 
-      Default value is None.'
+      UpdateSAPDatabaseInstanceRequest type or a IO type. Default value is None.'
     isRequired: true
     types:
     - <xref:azure.mgmt.workloads.models.UpdateSAPDatabaseInstanceRequest>

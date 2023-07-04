@@ -17,15 +17,15 @@ constructor:
     _models.PlmnId, tags: Dict[str, str] | None = None, **kwargs)'
   parameters:
   - name: tags
-    description: A set of tags. Resource tags.
+    description: Resource tags.
     types:
     - <xref:dict>[<xref:str>, <xref:str>]
   - name: location
-    description: Required. The geo-location where the resource lives.
+    description: The geo-location where the resource lives. Required.
     types:
     - <xref:str>
   - name: public_land_mobile_network_identifier
-    description: 'Required. The unique public land mobile network
+    description: 'The unique public land mobile network
 
       identifier for the network. This is made up of the mobile country code and mobile
       network code,
@@ -34,7 +34,9 @@ constructor:
       The values 001-01 and 001-001 can be used
 
       for testing and the values 999-99 and 999-999 can be used on internal private
-      networks.'
+      networks.
+
+      Required.'
     types:
     - <xref:azure.mgmt.mobilenetwork.models.PlmnId>
 variables:
@@ -61,31 +63,31 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.mobilenetwork.models.SystemData>
-- description: A set of tags. Resource tags.
+- description: Resource tags.
   name: tags
   types:
   - <xref:dict>[<xref:str>, <xref:str>]
-- description: Required. The geo-location where the resource lives.
+- description: The geo-location where the resource lives. Required.
   name: location
   types:
   - <xref:str>
 - description: 'The provisioning state of the mobile network resource. Known values
 
-    are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", "Deleted".'
+    are: "Unknown", "Succeeded", "Accepted", "Deleting", "Failed", "Canceled", and
+    "Deleted".'
   name: provisioning_state
   types:
   - <xref:str>
   - <xref:azure.mgmt.mobilenetwork.models.ProvisioningState>
-- description: 'Required. The unique public land mobile network
+- description: 'The unique public land mobile network identifier
 
-    identifier for the network. This is made up of the mobile country code and mobile
-    network code,
+    for the network. This is made up of the mobile country code and mobile network
+    code, as defined
 
-    as defined in [https://www.itu.int/rec/T-REC-E.212](https://www.itu.int/rec/T-REC-E.212).
-    The values 001-01 and 001-001 can be used
+    in [https://www.itu.int/rec/T-REC-E.212](https://www.itu.int/rec/T-REC-E.212).
+    The values 001-01 and 001-001 can be used for testing
 
-    for testing and the values 999-99 and 999-999 can be used on internal private
-    networks.'
+    and the values 999-99 and 999-999 can be used on internal private networks. Required.'
   name: public_land_mobile_network_identifier
   types:
   - <xref:azure.mgmt.mobilenetwork.models.PlmnId>

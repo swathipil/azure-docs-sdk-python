@@ -33,7 +33,7 @@ methods:
   - name: parameters
     description: 'Parameters supplied to the create or update an azure databricks
 
-      accessConnector. Is either a model type or a IO type. Required.'
+      accessConnector. Is either a AccessConnector type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.databricks.models.AccessConnector>
@@ -149,9 +149,8 @@ methods:
     - <xref:str>
   - name: parameters
     description: 'The update to the azure databricks accessConnector. Is either a
-      model type
 
-      or a IO type. Required.'
+      AccessConnectorUpdate type or a IO type. Required.'
     isRequired: true
     types:
     - <xref:azure.mgmt.databricks.models.AccessConnectorUpdate>

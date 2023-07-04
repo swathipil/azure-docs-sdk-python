@@ -15,12 +15,16 @@ summary: 'The properties of a private endpoint connection.
 constructor:
   syntax: 'PrivateEndpointConnectionProperties(*, private_link_service_connection_state:
     _models.PrivateLinkServiceConnectionState, private_endpoint: _models.PrivateEndpoint
-    | None = None, **kwargs)'
+    | None = None, group_ids: List[str] | None = None, **kwargs: Any)'
   parameters:
   - name: private_endpoint
     description: Private endpoint.
     types:
     - <xref:azure.mgmt.databricks.models.PrivateEndpoint>
+  - name: group_ids
+    description: GroupIds from the private link service resource.
+    types:
+    - <xref:azure.mgmt.databricks.aio.operations.Operations.list>[<xref:str>]
   - name: private_link_service_connection_state
     description: Private endpoint connection state. Required.
     types:
@@ -30,6 +34,10 @@ variables:
   name: private_endpoint
   types:
   - <xref:azure.mgmt.databricks.models.PrivateEndpoint>
+- description: GroupIds from the private link service resource.
+  name: group_ids
+  types:
+  - <xref:list>[<xref:str>]
 - description: Private endpoint connection state. Required.
   name: private_link_service_connection_state
   types:

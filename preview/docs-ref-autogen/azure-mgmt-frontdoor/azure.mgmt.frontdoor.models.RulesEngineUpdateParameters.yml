@@ -8,7 +8,7 @@ inheritances:
 summary: Rules Engine Configuration to apply to a Routing Rule.
 constructor:
   syntax: 'RulesEngineUpdateParameters(*, rules: List[_models.RulesEngineRule] | None
-    = None, **kwargs)'
+    = None, **kwargs: Any)'
   parameters:
   - name: rules
     description: A list of rules that define a particular Rules Engine Configuration.

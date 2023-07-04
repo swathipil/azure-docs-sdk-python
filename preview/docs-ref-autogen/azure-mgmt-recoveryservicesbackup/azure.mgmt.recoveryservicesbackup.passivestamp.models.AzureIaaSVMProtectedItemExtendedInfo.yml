@@ -9,7 +9,7 @@ summary: Additional information on Azure IaaS VM specific backup item.
 constructor:
   syntax: 'AzureIaaSVMProtectedItemExtendedInfo(*, oldest_recovery_point: datetime
     | None = None, recovery_point_count: int | None = None, policy_inconsistent: bool
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: oldest_recovery_point
     description: The oldest backup copy available for this backup item.

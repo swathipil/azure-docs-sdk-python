@@ -4,12 +4,12 @@ name: TextAnswer
 fullName: azure.ai.language.questionanswering.models.TextAnswer
 module: azure.ai.language.questionanswering.models
 inheritances:
-- msrest.serialization.Model
+- azure.ai.language.questionanswering._serialization.Model
 summary: Represents answer result.
 constructor:
   syntax: 'TextAnswer(*, answer: str | None = None, confidence: float | None = None,
     id: str | None = None, short_answer: _models.AnswerSpan | None = None, offset:
-    int | None = None, length: int | None = None, **kwargs)'
+    int | None = None, length: int | None = None, **kwargs: Any)'
   parameters:
   - name: answer
     description: Answer.

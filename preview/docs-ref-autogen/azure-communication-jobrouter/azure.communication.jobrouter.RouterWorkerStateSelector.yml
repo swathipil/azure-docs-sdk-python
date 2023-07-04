@@ -1,0 +1,21 @@
+### YamlMime:PythonEnum
+uid: azure.communication.jobrouter.RouterWorkerStateSelector
+name: RouterWorkerStateSelector
+fullName: azure.communication.jobrouter.RouterWorkerStateSelector
+summary: RouterWorkerStateSelector.
+module: azure.communication.jobrouter
+constructor:
+  syntax: RouterWorkerStateSelector(value, names=None, *, module=None, qualname=None,
+    type=None, start=1, boundary=None)
+inheritances:
+- builtins.str
+- enum.Enum
+fields:
+- name: ACTIVE
+  uid: azure.communication.jobrouter.RouterWorkerStateSelector.ACTIVE
+- name: ALL
+  uid: azure.communication.jobrouter.RouterWorkerStateSelector.ALL
+- name: DRAINING
+  uid: azure.communication.jobrouter.RouterWorkerStateSelector.DRAINING
+- name: INACTIVE
+  uid: azure.communication.jobrouter.RouterWorkerStateSelector.INACTIVE

@@ -14,7 +14,7 @@ constructor:
     | None = None, monitor_config: _models.MonitorConfig | None = None, endpoints:
     List[_models.Endpoint] | None = None, traffic_view_enrollment_status: str | _models.TrafficViewEnrollmentStatus
     | None = None, allowed_endpoint_record_types: List[str | _models.AllowedEndpointRecordType]
-    | None = None, max_return: int | None = None, **kwargs)'
+    | None = None, max_return: int | None = None, **kwargs: Any)'
   parameters:
   - name: id
     description: 'Fully qualified resource Id for the resource. Ex -

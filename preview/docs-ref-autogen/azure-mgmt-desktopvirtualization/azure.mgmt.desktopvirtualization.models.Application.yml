@@ -18,7 +18,8 @@ constructor:
     | None = None, msix_package_family_name: str | None = None, msix_package_application_id:
     str | None = None, application_type: str | _models.RemoteApplicationType | None
     = None, command_line_arguments: str | None = None, show_in_portal: bool | None
-    = None, icon_path: str | None = None, icon_index: int | None = None, **kwargs)'
+    = None, icon_path: str | None = None, icon_index: int | None = None, **kwargs:
+    Any)'
   parameters:
   - name: description
     description: Description of Application.

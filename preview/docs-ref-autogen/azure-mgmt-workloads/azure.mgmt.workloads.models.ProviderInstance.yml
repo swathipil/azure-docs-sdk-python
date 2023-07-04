@@ -15,11 +15,11 @@ constructor:
     Any)'
   parameters:
   - name: identity
-    description: Managed service identity (user assigned identities).
+    description: '[currently not in use] Managed service identity(user assigned identities).'
     types:
     - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>
   - name: provider_settings
-    description: Defines the provider instance errors.
+    description: Defines the provider specific properties.
     types:
     - <xref:azure.mgmt.workloads.models.ProviderSpecificProperties>
 variables:
@@ -46,7 +46,7 @@ variables:
   name: system_data
   types:
   - <xref:azure.mgmt.workloads.models.SystemData>
-- description: Managed service identity (user assigned identities).
+- description: '[currently not in use] Managed service identity(user assigned identities).'
   name: identity
   types:
   - <xref:azure.mgmt.workloads.models.UserAssignedServiceIdentity>
@@ -61,7 +61,7 @@ variables:
   name: errors
   types:
   - <xref:azure.mgmt.workloads.models.ProviderInstancePropertiesErrors>
-- description: Defines the provider instance errors.
+- description: Defines the provider specific properties.
   name: provider_settings
   types:
   - <xref:azure.mgmt.workloads.models.ProviderSpecificProperties>

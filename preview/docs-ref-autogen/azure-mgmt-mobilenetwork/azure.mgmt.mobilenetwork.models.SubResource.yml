@@ -4,7 +4,7 @@ name: SubResource
 fullName: azure.mgmt.mobilenetwork.models.SubResource
 module: azure.mgmt.mobilenetwork.models
 inheritances:
-- msrest.serialization.Model
+- azure.mgmt.mobilenetwork._serialization.Model
 summary: 'Reference to another sub resource.
 
 
@@ -13,11 +13,11 @@ constructor:
   syntax: 'SubResource(*, id: str, **kwargs)'
   parameters:
   - name: id
-    description: Required. Resource ID.
+    description: Resource ID. Required.
     types:
     - <xref:str>
 variables:
-- description: Required. Resource ID.
+- description: Resource ID. Required.
   name: id
   types:
   - <xref:str>

@@ -6,7 +6,7 @@ module: azure.mgmt.dataprotection.aio.operations
 inheritances:
 - builtins.object
 summary: "> [!WARNING]\n> DO NOT instantiate this class directly.\n>\n> \n>\n> Instead,\
-  \ you should access the following operations through\n>\n> <xref:azure.mgmt.dataprotection.aio.DataProtectionClient>'s\n\
+  \ you should access the following operations through\n>\n> <xref:azure.mgmt.dataprotection.aio.DataProtectionMgmtClient>'s\n\
   >\n> <xref:operation_status_backup_vault_context> attribute.\n>"
 constructor:
   syntax: OperationStatusBackupVaultContextOperations(*args, **kwargs)
@@ -21,7 +21,7 @@ methods:
     **kwargs: Any) -> OperationResource'
   parameters:
   - name: resource_group_name
-    description: 'The name of the resource group where the backup vault is present.
+    description: 'The name of the resource group. The name is case insensitive.
 
       Required.'
     isRequired: true

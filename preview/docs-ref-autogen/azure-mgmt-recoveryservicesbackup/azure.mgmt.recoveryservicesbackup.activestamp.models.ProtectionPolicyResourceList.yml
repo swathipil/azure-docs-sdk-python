@@ -8,7 +8,7 @@ inheritances:
 summary: List of ProtectionPolicy resources.
 constructor:
   syntax: 'ProtectionPolicyResourceList(*, next_link: str | None = None, value: List[_models.ProtectionPolicyResource]
-    | None = None, **kwargs)'
+    | None = None, **kwargs: Any)'
   parameters:
   - name: next_link
     description: 'The uri to fetch the next page of resources. Call ListNext() fetches

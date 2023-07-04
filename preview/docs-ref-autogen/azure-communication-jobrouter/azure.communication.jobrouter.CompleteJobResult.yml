@@ -1,0 +1,9 @@
+### YamlMime:PythonClass
+uid: azure.communication.jobrouter.CompleteJobResult
+name: CompleteJobResult
+fullName: azure.communication.jobrouter.CompleteJobResult
+module: azure.communication.jobrouter
+inheritances:
+- builtins.dict
+constructor:
+  syntax: CompleteJobResult()

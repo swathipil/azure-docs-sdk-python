@@ -11,7 +11,8 @@ summary: 'Defines the LatencyScorecard.
   Variables are only populated by the server, and will be ignored when sending a request.'
 constructor:
   syntax: 'LatencyScorecard(*, location: str | None = None, tags: Dict[str, str] |
-    None = None, latency_metrics: List[_models.LatencyMetric] | None = None, **kwargs)'
+    None = None, latency_metrics: List[_models.LatencyMetric] | None = None, **kwargs:
+    Any)'
   parameters:
   - name: location
     description: Resource location.

@@ -11,7 +11,7 @@ summary: 'Encryption properties for databricks workspace.
   All required parameters must be populated in order to send to Azure.'
 constructor:
   syntax: 'WorkspacePropertiesEncryption(*, entities: _models.EncryptionEntitiesDefinition,
-    **kwargs)'
+    **kwargs: Any)'
   parameters:
   - name: entities
     description: Encryption entities definition for the workspace. Required.

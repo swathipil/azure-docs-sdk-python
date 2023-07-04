@@ -20,7 +20,7 @@ constructor:
     | None = None, description: str | None = None, friendly_name: str | None = None,
     host_pool_type: str | _models.ScalingHostPoolType = ''Pooled'', exclusion_tag:
     str | None = None, schedules: List[_models.ScalingSchedule] | None = None, host_pool_references:
-    List[_models.ScalingHostPoolReference] | None = None, **kwargs)'
+    List[_models.ScalingHostPoolReference] | None = None, **kwargs: Any)'
   parameters:
   - name: location
     description: The geo-location where the resource lives.
