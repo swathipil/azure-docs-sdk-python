@@ -1,0 +1,14 @@
+{
+  "Name": "azure-mgmt-containerservice",
+  "Version": "24.0.0a20230704001",
+  "DevVersion": "24.0.0a20230704001",
+  "DirectoryPath": "sdk/containerservice/azure-mgmt-containerservice",
+  "ServiceDirectory": "containerservice",
+  "ReadMePath": "sdk/containerservice/azure-mgmt-containerservice/README.md",
+  "ChangeLogPath": "sdk/containerservice/azure-mgmt-containerservice/CHANGELOG.md",
+  "Group": null,
+  "SdkType": "mgmt",
+  "IsNewSdk": true,
+  "ArtifactName": "azure-mgmt-containerservice",
+  "ReleaseStatus": "2023-06-21"
+}
